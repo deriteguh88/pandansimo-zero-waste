@@ -133,8 +133,11 @@
     // Setiap elemen [lang="id"]/[lang="en"] punya atribut HTML "hidden" bawaan;
     // itu harus dilepas/dipasang langsung di sini, CSS saja tidak cukup
     // untuk mengalahkan atribut "hidden" bawaan tadi.
-    document.querySelectorAll('[lang="id"]').forEach(function(el){ el.hidden = (lang !== 'id'); });
-    document.querySelectorAll('[lang="en"]').forEach(function(el){ el.hidden = (lang !== 'en'); });
+    // Dicari dari document.body, BUKAN document (dokumen), supaya elemen
+    // <html lang="id"> itu sendiri tidak ikut ter-"hidden" (yang membuat
+    // seluruh halaman jadi putih kosong).
+    document.body.querySelectorAll('[lang="id"]').forEach(function(el){ el.hidden = (lang !== 'id'); });
+    document.body.querySelectorAll('[lang="en"]').forEach(function(el){ el.hidden = (lang !== 'en'); });
     document.querySelectorAll('.langtoggle button').forEach(function(b){
       b.classList.toggle('active', b.getAttribute('data-lang') === lang);
     });
