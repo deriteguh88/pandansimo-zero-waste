@@ -63,6 +63,9 @@ body{background:var(--sand);}
 .imgcard{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;margin-bottom:14px;display:flex;gap:16px;align-items:center;flex-wrap:wrap;}
 .imgcard .thumb{width:100px;height:72px;border-radius:8px;object-fit:cover;background:var(--sand);flex:0 0 auto;border:1px solid var(--line);}
 .imgcard .thumb.round{width:72px;height:72px;border-radius:50%;}
+.imgcard .thumb.videothumb{display:flex;align-items:center;justify-content:center;font-size:1.8rem;}
+.imgcard .vstatus{font-size:.82rem;color:var(--muted);margin-bottom:8px;}
+.imgcard .vstatus a{color:var(--green-dark);font-weight:600;}
 .imgcard .meta{flex:1;min-width:160px;}
 .imgcard .meta .flabel{font-size:.85rem;font-weight:600;color:var(--navy);margin-bottom:6px;}
 .imgcard .uprow{display:flex;gap:10px;align-items:center;flex-wrap:wrap;}
@@ -188,6 +191,16 @@ function selectPage(file){
     html += '<div class="section-label">Gambar</div>';
     images.forEach(function(im){
       var url = imageUrls[im.key] || im.defaultUrl || '';
+      if(im.kind === 'video'){
+        var statusTxt = url ? '<a href="'+esc(url)+'" target="_blank">▶ Lihat video tersimpan</a>' : 'Belum ada video — banner pakai foto biasa.';
+        html += '<div class="imgcard" data-imgkey="'+im.key+'" data-kind="video">' +
+          '<div class="thumb videothumb">🎬</div>' +
+          '<div class="meta"><div class="flabel">'+esc(im.label)+'</div>' +
+          '<div class="vstatus">'+statusTxt+'</div>' +
+          '<div class="uprow"><input type="file" accept="video/mp4,video/webm,video/quicktime" data-upload="'+im.key+'">' +
+          '<span class="ustatus"></span></div></div></div>';
+        return;
+      }
       var thumbClass = im.kind === 'avatar' ? 'thumb round' : 'thumb';
       html += '<div class="imgcard" data-imgkey="'+im.key+'" data-kind="'+im.kind+'">' +
         (url ? '<img class="'+thumbClass+'" src="'+esc(url)+'">' : '<div class="'+thumbClass+'"></div>') +
@@ -275,6 +288,8 @@ function wireUploads(){
           statusEl.textContent = 'Tersimpan ✓';
           var thumb = card.querySelector('.thumb');
           if(thumb && thumb.tagName === 'IMG'){ thumb.src = url; }
+          var vstatus = card.querySelector('.vstatus');
+          if(vstatus){ vstatus.innerHTML = '<a href="'+url+'" target="_blank">▶ Lihat video tersimpan</a>'; }
           setTimeout(function(){ statusEl.textContent=''; }, 2500);
         });
       });
