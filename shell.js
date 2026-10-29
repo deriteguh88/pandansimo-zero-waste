@@ -130,6 +130,11 @@
 
   function applyLang(lang){
     document.documentElement.setAttribute('data-lang', lang);
+    // Setiap elemen [lang="id"]/[lang="en"] punya atribut HTML "hidden" bawaan;
+    // itu harus dilepas/dipasang langsung di sini, CSS saja tidak cukup
+    // untuk mengalahkan atribut "hidden" bawaan tadi.
+    document.querySelectorAll('[lang="id"]').forEach(function(el){ el.hidden = (lang !== 'id'); });
+    document.querySelectorAll('[lang="en"]').forEach(function(el){ el.hidden = (lang !== 'en'); });
     document.querySelectorAll('.langtoggle button').forEach(function(b){
       b.classList.toggle('active', b.getAttribute('data-lang') === lang);
     });
