@@ -53,6 +53,13 @@ body{background:var(--sand);}
   border:1px solid var(--line);resize:vertical;min-height:44px;
 }
 .fieldcard textarea:focus{outline:none;border-color:var(--green);}
+.fieldcard .encell{display:flex;flex-direction:column;gap:6px;}
+.translatebtn{
+  align-self:flex-start;font-size:.76rem;font-weight:600;padding:5px 11px;border-radius:6px;
+  border:1px solid var(--line);background:var(--sand);color:var(--navy);cursor:pointer;
+}
+.translatebtn:hover{background:#e8f3fc;border-color:var(--green);}
+.translatebtn:disabled{opacity:.6;cursor:wait;}
 .imgcard{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;margin-bottom:14px;display:flex;gap:16px;align-items:center;flex-wrap:wrap;}
 .imgcard .thumb{width:100px;height:72px;border-radius:8px;object-fit:cover;background:var(--sand);flex:0 0 auto;border:1px solid var(--line);}
 .imgcard .thumb.round{width:72px;height:72px;border-radius:50%;}
@@ -199,7 +206,10 @@ function selectPage(file){
       html += '<div class="fieldcard" data-key="'+f.key+'">' +
         '<div class="flabel">'+esc(f.label)+'</div>' +
         '<div class="langrow"><div class="badge">ID</div><textarea data-lang="id">'+esc(valId)+'</textarea></div>' +
-        '<div class="langrow"><div class="badge">EN</div><textarea data-lang="en">'+esc(valEn)+'</textarea></div>' +
+        '<div class="langrow"><div class="badge">EN</div><div class="encell">' +
+          '<textarea data-lang="en">'+esc(valEn)+'</textarea>' +
+          '<button type="button" class="translatebtn" data-key="'+f.key+'">↻ Terjemahkan dari ID</button>' +
+        '</div></div>' +
         '</div>';
     });
   }
@@ -209,6 +219,39 @@ function selectPage(file){
   saveStatus.textContent = '';
   autoGrow();
   wireUploads();
+  wireTranslateButtons();
+}
+
+function wireTranslateButtons(){
+  editorEl.querySelectorAll('.translatebtn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var card = btn.closest('.fieldcard');
+      var idTa = card.querySelector('[data-lang="id"]');
+      var enTa = card.querySelector('[data-lang="en"]');
+      var text = (idTa.value || '').trim();
+      if(!text){ return; }
+      btn.disabled = true;
+      btn.textContent = 'Menerjemahkan...';
+      fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(text) + '&langpair=id|en')
+        .then(function(r){ return r.json(); })
+        .then(function(data){
+          var t = data && data.responseData && data.responseData.translatedText;
+          if(t){
+            enTa.value = t;
+            enTa.dispatchEvent(new Event('input'));
+          } else {
+            alert('Terjemahan gagal, coba lagi atau isi manual.');
+          }
+        })
+        .catch(function(){
+          alert('Tidak bisa terhubung ke layanan terjemahan. Isi manual saja untuk field ini, atau coba lagi nanti.');
+        })
+        .finally(function(){
+          btn.disabled = false;
+          btn.textContent = '↻ Terjemahkan dari ID';
+        });
+    });
+  });
 }
 
 function wireUploads(){
