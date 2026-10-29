@@ -32,6 +32,17 @@
     return '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 14c0-5.5 4.5-10 10-10 1 0 1.5.5 1.5 1.5C15.5 10.5 11 15 5.5 15 4.5 15 4 14.5 4 14z"/><path d="M4.5 19.5 14 10"/></svg>';
   }
 
+  // Ikon kecil di sebelah tiap nama menu utama. Mau ganti bentuknya?
+  // tinggal ganti isi path SVG-nya di sini (key = nama menu di MENU di atas).
+  var NAV_ICONS = {
+    "Beranda": '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v9a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1v-9"/></svg>',
+    "Zero Waste": '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 13c0-5 4-9 9-9 1 0 1.3.4 1.3 1.3C14.3 9.6 10 13 5.3 13 4.4 13 4 12.6 4 13z"/><path d="M4.5 19 14 9"/></svg>',
+    "Pandansimo": '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v9"/><path d="M12 12 6 8"/><path d="M12 12l6 2"/><path d="M12 12 8 18"/><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/><path d="M12 21v-2"/></svg>',
+    "Artikel": '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3.5" width="16" height="17" rx="1.5"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>',
+    "Tentang Kami": '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="8" r="2.6"/><path d="M15.5 14.3c2.6.4 4.5 2.7 4.5 5.7"/></svg>',
+    "Kontak": '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>',
+  };
+
   function buildHeader(){
     var cur = (document.body.getAttribute('data-page') || '').trim();
 
@@ -62,11 +73,12 @@
     var navItems = MENU.map(function(item){
       var isActive = item.href === cur || (item.children && item.children.some(function(c){return c.href===cur;}));
       var hasKids = !!item.children;
+      var icon = NAV_ICONS[item.id] ? '<span class="navicon">'+NAV_ICONS[item.id]+'</span>' : '';
       var head = hasKids
-        ? '<button type="button">' +
+        ? '<button type="button">' + icon +
             '<span lang="id">'+item.id+'</span><span lang="en" hidden>'+item.en+'</span>' +
             '<span class="caret"></span></button>'
-        : '<a href="'+item.href+'">' +
+        : '<a href="'+item.href+'">' + icon +
             '<span lang="id">'+item.id+'</span><span lang="en" hidden>'+item.en+'</span></a>';
       var kids = hasKids
         ? '<div class="dropdown">' + item.children.map(function(c){
