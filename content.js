@@ -15,8 +15,24 @@
     }
   }
 
+  function applyVideo(key, url, videoEls){
+    var isDesktop = !window.matchMedia || window.matchMedia('(min-width:761px)').matches;
+    videoEls.forEach(function(video){
+      if(!isDesktop){ video.style.display = 'none'; return; }
+      video.src = url;
+      video.style.display = 'block';
+      var section = video.closest('.hero');
+      var overlay = section && section.querySelector('.hero-overlay');
+      if(overlay) overlay.style.display = 'block';
+      var playPromise = video.play && video.play();
+      if(playPromise && playPromise.catch) playPromise.catch(function(){});
+    });
+  }
+
   function applyImage(key, url){
     if(!url) return;
+    var videoEls = document.querySelectorAll('[data-vid="'+key+'"]');
+    if(videoEls.length){ applyVideo(key, url, videoEls); }
     document.querySelectorAll('[data-img="'+key+'"]').forEach(function(el){
       el.src = url;
       el.style.display = '';
