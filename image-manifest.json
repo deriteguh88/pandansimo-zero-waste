@@ -196,5 +196,11 @@
     "kind": "hero",
     "defaultUrl": null,
     "page": "kontak.html"
+  },
+  "hero.index.video": {
+    "label": "Video Banner Beranda (MP4, opsional — kosongkan untuk pakai foto saja)",
+    "kind": "video",
+    "defaultUrl": null,
+    "page": "index.html"
   }
 }
