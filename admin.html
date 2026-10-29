@@ -184,6 +184,11 @@ var BUCKET = 'pz-uploads';
 var ARTICLES_KEY = '__articles__';
 var articles = [];        // dari Supabase pz_articles
 var editingArticleId = null; // null = form tambah baru, selain itu = sedang edit artikel ini
+var TAG_OPTIONS = [
+  { id: 'Zero Waste', en: 'Zero Waste' },
+  { id: 'Pandansimo', en: 'Pandansimo' },
+  { id: 'Rekayasa Hijau', en: 'Green Engineering' },
+];
 
 function esc(s){ return String(s==null?'':s).replace(/</g,'&lt;'); }
 
@@ -389,12 +394,21 @@ function renderArticleForm(){
   var editing = editingArticleId ? articles.find(function(a){ return a.id === editingArticleId; }) : null;
   var heading = editing ? 'Edit Artikel' : '+ Tambah Artikel Baru';
 
+  var editingTagId = editing ? (editing.tag_id || '') : '';
+  var matchIdx = TAG_OPTIONS.findIndex(function(t){ return t.id === editingTagId; });
+  var isCustomTag = editingTagId !== '' && matchIdx === -1;
+  var selectValue = isCustomTag ? 'custom' : String(matchIdx !== -1 ? matchIdx : 0);
+
   var html = '<div class="artform">' +
     '<h3>'+heading+'</h3>' +
-    '<div class="field"><label>Kategori / Tag (contoh: Zero Waste, Pandansimo)</label>' +
-    '<div class="row2">' +
-      '<input type="text" id="artTagId" placeholder="Bahasa Indonesia" value="'+esc(editing?editing.tag_id:'')+'">' +
-      '<input type="text" id="artTagEn" placeholder="English" value="'+esc(editing?editing.tag_en:'')+'">' +
+    '<div class="field"><label>Kategori / Tag</label>' +
+    '<select id="artTagSelect" style="width:100%;font-family:inherit;font-size:.9rem;padding:9px 12px;border-radius:8px;border:1px solid var(--line);background:#fff;">' +
+      TAG_OPTIONS.map(function(t,i){ return '<option value="'+i+'"'+(selectValue===String(i)?' selected':'')+'>'+esc(t.id)+'</option>'; }).join('') +
+      '<option value="custom"'+(selectValue==='custom'?' selected':'')+'>Lainnya (isi manual)…</option>' +
+    '</select>' +
+    '<div class="row2" id="artTagCustomWrap" style="display:'+(selectValue==='custom'?'grid':'none')+';margin-top:8px;">' +
+      '<input type="text" id="artTagId" placeholder="Kategori (ID)" value="'+esc(isCustomTag?editingTagId:'')+'">' +
+      '<input type="text" id="artTagEn" placeholder="Category (EN)" value="'+esc(isCustomTag?(editing.tag_en||''):'')+'">' +
     '</div></div>' +
     '<div class="field"><label>Judul</label>' +
     '<div class="row2">' +
@@ -424,6 +438,11 @@ function renderArticleForm(){
 
   holder.innerHTML = html;
 
+  document.getElementById('artTagSelect').addEventListener('change', function(){
+    var wrap = document.getElementById('artTagCustomWrap');
+    wrap.style.display = (this.value === 'custom') ? 'grid' : 'none';
+  });
+
   document.getElementById('artImageFile').addEventListener('change', function(){
     var file = this.files && this.files[0];
     if(!file) return;
@@ -440,11 +459,21 @@ function renderArticleForm(){
     });
   });
 
+  function currentTag(){
+    var sel = document.getElementById('artTagSelect').value;
+    if(sel === 'custom'){
+      return { id: document.getElementById('artTagId').value.trim(), en: document.getElementById('artTagEn').value.trim() };
+    }
+    var opt = TAG_OPTIONS[parseInt(sel, 10)] || TAG_OPTIONS[0];
+    return { id: opt.id, en: opt.en };
+  }
+
   document.getElementById('artTranslateBtn').addEventListener('click', function(){
     var btn = this;
     var titleId = document.getElementById('artTitleId').value.trim();
     var excId = document.getElementById('artExcId').value.trim();
-    var tagId = document.getElementById('artTagId').value.trim();
+    var isCustomSel = document.getElementById('artTagSelect').value === 'custom';
+    var tagId = isCustomSel ? document.getElementById('artTagId').value.trim() : '';
     if(!titleId && !excId && !tagId) return;
     btn.disabled = true; btn.textContent = 'Menerjemahkan...';
     var translateOne = function(text){
@@ -472,10 +501,11 @@ function renderArticleForm(){
 
   document.getElementById('artSaveBtn').addEventListener('click', function(){
     var statusEl = document.getElementById('artFormStatus');
+    var tag = currentTag();
     var row = {
       id: editing ? editing.id : ('art_' + Date.now()),
-      tag_id: document.getElementById('artTagId').value.trim(),
-      tag_en: document.getElementById('artTagEn').value.trim(),
+      tag_id: tag.id,
+      tag_en: tag.en,
       title_id: document.getElementById('artTitleId').value.trim(),
       title_en: document.getElementById('artTitleEn').value.trim(),
       excerpt_id: document.getElementById('artExcId').value.trim(),
