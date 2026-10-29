@@ -79,6 +79,28 @@ body{background:var(--sand);}
 }
 .savebar .status{font-size:.85rem;color:var(--muted);}
 .empty-state{padding:60px 20px;text-align:center;color:var(--muted);}
+
+.artlist-item{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin-bottom:10px;display:flex;gap:14px;align-items:center;}
+.artlist-item img{width:72px;height:52px;object-fit:cover;border-radius:6px;background:var(--sand);flex:0 0 auto;}
+.artlist-item .info{flex:1;min-width:0;}
+.artlist-item .info .ttl{font-weight:600;font-size:.92rem;margin-bottom:2px;}
+.artlist-item .info .sub{font-size:.78rem;color:var(--muted);}
+.artlist-item .acts{display:flex;gap:8px;flex:0 0 auto;}
+.artform{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;margin-bottom:18px;}
+.artform h3{margin:0 0 14px;font-size:1rem;}
+.artform .field{margin-bottom:12px;}
+.artform .field label{display:block;font-size:.8rem;font-weight:600;color:var(--navy);margin-bottom:5px;}
+.artform input[type=text], .artform textarea{
+  width:100%;font-family:inherit;font-size:.9rem;padding:9px 12px;border-radius:8px;
+  border:1px solid var(--line);resize:vertical;
+}
+.artform .row2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.artform .row2 .field{margin-bottom:0;}
+.artform .actbar{display:flex;gap:10px;align-items:center;margin-top:14px;}
+.btn.small{font-size:.82rem;padding:7px 14px;}
+.btn.danger{background:#b23a2e;color:#fff;border-color:#b23a2e;}
+.btn.danger:hover{background:#962f25;}
+@media (max-width:640px){.artform .row2{grid-template-columns:1fr;}}
 </style>
 </head>
 <body class="admin-shell" data-page="admin.html">
@@ -159,11 +181,16 @@ var imagesByPage = {};    // file -> [ {key,label,kind,defaultUrl} ]
 var imageUrls = {};       // dari Supabase pz_images: key -> url
 var currentPage = null;
 var BUCKET = 'pz-uploads';
+var ARTICLES_KEY = '__articles__';
+var articles = [];        // dari Supabase pz_articles
+var editingArticleId = null; // null = form tambah baru, selain itu = sedang edit artikel ini
 
 function esc(s){ return String(s==null?'':s).replace(/</g,'&lt;'); }
 
 function renderPageList(){
-  var html = '';
+  var html = '<button type="button" data-file="'+ARTICLES_KEY+'" style="margin-bottom:10px;border:1px dashed var(--green-dark);">+ Kelola Artikel Tambahan' +
+    '<div class="count">'+articles.length+' artikel</div></button>' +
+    '<div style="height:1px;background:var(--line);margin:4px 0 10px;"></div>';
   Object.keys(PAGE_TITLES).forEach(function(file){
     var n = (manifest[file]||[]).length;
     var ni = (imagesByPage[file]||[]).length;
@@ -182,6 +209,14 @@ function selectPage(file){
   pageListEl.querySelectorAll('button').forEach(function(b){
     b.classList.toggle('active', b.getAttribute('data-file') === file);
   });
+
+  if(file === ARTICLES_KEY){
+    editingArticleId = null;
+    saveBar.style.display = 'none';
+    renderArticlesManager();
+    return;
+  }
+
   var fields = manifest[file] || [];
   var images = imagesByPage[file] || [];
   var html = '<div class="editor-head"><h2>'+PAGE_TITLES[file]+'</h2>' +
@@ -297,6 +332,173 @@ function wireUploads(){
   });
 }
 
+function renderArticlesManager(){
+  var html = '<div class="editor-head"><h2>Kelola Artikel Tambahan</h2>' +
+    '<a href="artikel.html" target="_blank" class="btn ghost small">Lihat Halaman Artikel</a></div>' +
+    '<p style="font-size:.88rem;color:var(--muted);margin-top:-8px;margin-bottom:18px;">' +
+    'Artikel yang ditambahkan di sini otomatis muncul di halaman Artikel, di bawah 6 artikel draf yang sudah ada. ' +
+    'Tidak perlu minta bantuan edit file lagi.</p>';
+
+  html += '<div id="artFormHolder"></div>';
+
+  html += '<div class="section-label">Daftar Artikel Tambahan</div>';
+  if(!articles.length){
+    html += '<div class="empty-state" style="padding:30px 10px;">Belum ada artikel tambahan. Klik "+ Tambah Artikel Baru" di atas.</div>';
+  } else {
+    articles.forEach(function(a){
+      html += '<div class="artlist-item" data-artid="'+esc(a.id)+'">' +
+        (a.image_url ? '<img src="'+esc(a.image_url)+'">' : '<div style="width:72px;height:52px;border-radius:6px;background:var(--sand);flex:0 0 auto;"></div>') +
+        '<div class="info"><div class="ttl">'+esc(a.title_id||'(tanpa judul)')+'</div>' +
+        '<div class="sub">'+esc(a.tag_id||'')+'</div></div>' +
+        '<div class="acts">' +
+        '<button type="button" class="btn ghost small" data-edit="'+esc(a.id)+'">Edit</button>' +
+        '<button type="button" class="btn danger small" data-del="'+esc(a.id)+'">Hapus</button>' +
+        '</div></div>';
+    });
+  }
+
+  editorEl.innerHTML = html;
+  renderArticleForm();
+
+  editorEl.querySelectorAll('[data-edit]').forEach(function(b){
+    b.addEventListener('click', function(){
+      editingArticleId = b.getAttribute('data-edit');
+      renderArticleForm();
+      var holder = document.getElementById('artFormHolder');
+      if(holder && holder.scrollIntoView){ holder.scrollIntoView({ behavior:'smooth', block:'start' }); }
+    });
+  });
+  editorEl.querySelectorAll('[data-del]').forEach(function(b){
+    b.addEventListener('click', function(){
+      if(!confirm('Hapus artikel ini? Tindakan ini tidak bisa dibatalkan.')) return;
+      var id = b.getAttribute('data-del');
+      sb.from('pz_articles').delete().eq('id', id).then(function(res){
+        if(res.error){ alert('Gagal hapus: ' + res.error.message); return; }
+        articles = articles.filter(function(a){ return a.id !== id; });
+        if(editingArticleId === id) editingArticleId = null;
+        renderPageList();
+        renderArticlesManager();
+      });
+    });
+  });
+}
+
+function renderArticleForm(){
+  var holder = document.getElementById('artFormHolder');
+  if(!holder) return;
+  var editing = editingArticleId ? articles.find(function(a){ return a.id === editingArticleId; }) : null;
+  var heading = editing ? 'Edit Artikel' : '+ Tambah Artikel Baru';
+
+  var html = '<div class="artform">' +
+    '<h3>'+heading+'</h3>' +
+    '<div class="field"><label>Kategori / Tag (contoh: Zero Waste, Pandansimo)</label>' +
+    '<div class="row2">' +
+      '<input type="text" id="artTagId" placeholder="Bahasa Indonesia" value="'+esc(editing?editing.tag_id:'')+'">' +
+      '<input type="text" id="artTagEn" placeholder="English" value="'+esc(editing?editing.tag_en:'')+'">' +
+    '</div></div>' +
+    '<div class="field"><label>Judul</label>' +
+    '<div class="row2">' +
+      '<input type="text" id="artTitleId" placeholder="Judul (ID)" value="'+esc(editing?editing.title_id:'')+'">' +
+      '<input type="text" id="artTitleEn" placeholder="Title (EN)" value="'+esc(editing?editing.title_en:'')+'">' +
+    '</div></div>' +
+    '<div class="field"><label>Ringkasan/Isi Singkat</label>' +
+    '<div class="row2">' +
+      '<textarea id="artExcId" rows="4" placeholder="Isi (ID)">'+esc(editing?editing.excerpt_id:'')+'</textarea>' +
+      '<textarea id="artExcEn" rows="4" placeholder="Content (EN)">'+esc(editing?editing.excerpt_en:'')+'</textarea>' +
+    '</div></div>' +
+    '<div class="field"><label>Gambar Artikel</label>' +
+    '<div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;">' +
+      (editing && editing.image_url ? '<img src="'+esc(editing.image_url)+'" style="width:100px;height:72px;object-fit:cover;border-radius:8px;border:1px solid var(--line);">' : '') +
+      '<input type="file" id="artImageFile" accept="image/*">' +
+      '<span class="ustatus" id="artImgStatus"></span>' +
+    '</div></div>' +
+    '<div class="actbar">' +
+      '<button type="button" class="translatebtn" id="artTranslateBtn">↻ Terjemahkan judul &amp; isi dari ID</button>' +
+      '<span style="flex:1;"></span>' +
+      (editing ? '<button type="button" class="btn ghost small" id="artCancelBtn">Batal</button>' : '') +
+      '<button type="button" class="btn primary small" id="artSaveBtn">'+(editing?'Simpan Perubahan':'Tambahkan Artikel')+'</button>' +
+      '<span class="status" id="artFormStatus" style="font-size:.85rem;color:var(--muted);"></span>' +
+    '</div>' +
+    (editing ? '<input type="hidden" id="artPendingImageUrl" value="'+esc(editing.image_url||'')+'">' : '<input type="hidden" id="artPendingImageUrl" value="">') +
+    '</div>';
+
+  holder.innerHTML = html;
+
+  document.getElementById('artImageFile').addEventListener('change', function(){
+    var file = this.files && this.files[0];
+    if(!file) return;
+    var statusEl = document.getElementById('artImgStatus');
+    statusEl.textContent = 'Mengunggah...';
+    var ext = (file.name.split('.').pop() || 'jpg').toLowerCase();
+    var path = 'articles/img-' + Date.now() + '.' + ext;
+    sb.storage.from(BUCKET).upload(path, file, { upsert: true }).then(function(upRes){
+      if(upRes.error){ statusEl.textContent = 'Gagal upload: ' + upRes.error.message; return; }
+      var pub = sb.storage.from(BUCKET).getPublicUrl(path);
+      document.getElementById('artPendingImageUrl').value = pub.data.publicUrl;
+      statusEl.textContent = 'Tersimpan ✓';
+      setTimeout(function(){ statusEl.textContent=''; }, 2000);
+    });
+  });
+
+  document.getElementById('artTranslateBtn').addEventListener('click', function(){
+    var btn = this;
+    var titleId = document.getElementById('artTitleId').value.trim();
+    var excId = document.getElementById('artExcId').value.trim();
+    var tagId = document.getElementById('artTagId').value.trim();
+    if(!titleId && !excId && !tagId) return;
+    btn.disabled = true; btn.textContent = 'Menerjemahkan...';
+    var translateOne = function(text){
+      if(!text) return Promise.resolve('');
+      return fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(text) + '&langpair=id|en')
+        .then(function(r){ return r.json(); })
+        .then(function(d){ return (d && d.responseData && d.responseData.translatedText) || ''; })
+        .catch(function(){ return ''; });
+    };
+    Promise.all([translateOne(tagId), translateOne(titleId), translateOne(excId)]).then(function(res){
+      if(res[0]) document.getElementById('artTagEn').value = res[0];
+      if(res[1]) document.getElementById('artTitleEn').value = res[1];
+      if(res[2]) document.getElementById('artExcEn').value = res[2];
+      btn.disabled = false; btn.textContent = '↻ Terjemahkan judul & isi dari ID';
+    });
+  });
+
+  var cancelBtn = document.getElementById('artCancelBtn');
+  if(cancelBtn){
+    cancelBtn.addEventListener('click', function(){
+      editingArticleId = null;
+      renderArticleForm();
+    });
+  }
+
+  document.getElementById('artSaveBtn').addEventListener('click', function(){
+    var statusEl = document.getElementById('artFormStatus');
+    var row = {
+      id: editing ? editing.id : ('art_' + Date.now()),
+      tag_id: document.getElementById('artTagId').value.trim(),
+      tag_en: document.getElementById('artTagEn').value.trim(),
+      title_id: document.getElementById('artTitleId').value.trim(),
+      title_en: document.getElementById('artTitleEn').value.trim(),
+      excerpt_id: document.getElementById('artExcId').value.trim(),
+      excerpt_en: document.getElementById('artExcEn').value.trim(),
+      image_url: document.getElementById('artPendingImageUrl').value || null,
+    };
+    if(!row.title_id){ statusEl.textContent = 'Judul (ID) wajib diisi.'; return; }
+    statusEl.textContent = 'Menyimpan...';
+    sb.from('pz_articles').upsert([row], { onConflict: 'id' }).then(function(res){
+      if(res.error){ statusEl.textContent = 'Gagal: ' + res.error.message; return; }
+      if(editing){
+        var idx = articles.findIndex(function(a){ return a.id === row.id; });
+        if(idx !== -1) articles[idx] = row; else articles.unshift(row);
+      } else {
+        articles.unshift(row);
+      }
+      editingArticleId = null;
+      renderPageList();
+      renderArticlesManager();
+    });
+  });
+}
+
 function autoGrow(){
   editorEl.querySelectorAll('textarea').forEach(function(t){
     t.style.height = 'auto';
@@ -309,7 +511,7 @@ function autoGrow(){
 }
 
 function saveCurrentPage(){
-  if(!currentPage) return;
+  if(!currentPage || currentPage === ARTICLES_KEY) return;
   saveStatus.textContent = 'Menyimpan...';
   var cards = editorEl.querySelectorAll('.fieldcard');
   var rows = [];
@@ -338,11 +540,14 @@ function loadManifestAndOverrides(){
     fetch('image-manifest.json').then(function(r){ return r.json(); }),
     sb.from('pz_content').select('key,value_id,value_en'),
     sb.from('pz_images').select('key,url'),
+    sb.from('pz_articles').select('*').order('created_at', { ascending: false }),
   ]).then(function(results){
     manifest = results[0];
     imageManifest = results[1];
     var contentRes = results[2];
     var imagesRes = results[3];
+    var articlesRes = results[4];
+    articles = (articlesRes && articlesRes.data) || [];
 
     overrides = {};
     (contentRes.data||[]).forEach(function(row){ overrides[row.key] = { value_id: row.value_id, value_en: row.value_en }; });
