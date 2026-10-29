@@ -105,6 +105,8 @@ nav.mainnav .navitem > a:hover, nav.mainnav .navitem.open > button{
   background:var(--green);color:var(--navy);text-decoration:none;
 }
 nav.mainnav .caret{width:9px;height:9px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);margin-top:-3px;}
+nav.mainnav .navicon{display:inline-flex;flex:0 0 auto;opacity:.9;}
+nav.mainnav .navicon svg{display:block;}
 .dropdown{
   position:absolute;top:100%;left:0;min-width:280px;
   background:#fff;border:1px solid var(--line);border-top:3px solid var(--green);
