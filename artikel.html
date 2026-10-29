@@ -117,6 +117,72 @@
   </div>
 </section>
 
+<section id="dynamicArticlesSection" style="display:none;">
+  <div class="wrap">
+    <div class="section-h">
+      <h2 lang="id">Artikel Tambahan dari Tim</h2>
+      <h2 lang="en" hidden>Additional Articles from Our Team</h2>
+    </div>
+    <div class="grid cols-3" id="dynamicArticles"></div>
+  </div>
+</section>
+
+<script>
+(function(){
+  if(!window.supabase || !window.ZW_SUPABASE_URL){ return; }
+  var sbArt = window.supabase.createClient(window.ZW_SUPABASE_URL, window.ZW_SUPABASE_KEY);
+  var sectionEl = document.getElementById('dynamicArticlesSection');
+  var gridEl = document.getElementById('dynamicArticles');
+
+  function esc(s){ return String(s==null?'':s).replace(/</g,'&lt;'); }
+
+  function renderArticles(list){
+    if(!list || !list.length){ sectionEl.style.display = 'none'; return; }
+    sectionEl.style.display = '';
+    gridEl.innerHTML = list.map(function(a){
+      var img = a.image_url || 'https://picsum.photos/seed/'+encodeURIComponent(a.id)+'/500/340';
+      return '<article class="article-card">' +
+        '<img src="'+esc(img)+'" alt="">' +
+        '<div class="body">' +
+          (a.tag_id ? '<span class="tag" lang="id">'+esc(a.tag_id)+'</span>' : '') +
+          (a.tag_en ? '<span class="tag" lang="en" hidden>'+esc(a.tag_en)+'</span>' : '') +
+          '<h3 lang="id">'+esc(a.title_id||'')+'</h3>' +
+          (a.title_en ? '<h3 lang="en" hidden>'+esc(a.title_en)+'</h3>' : '') +
+          '<p lang="id">'+esc(a.excerpt_id||'')+'</p>' +
+          (a.excerpt_en ? '<p lang="en" hidden>'+esc(a.excerpt_en)+'</p>' : '') +
+        '</div></article>';
+    }).join('');
+    // Samakan dengan bahasa yang sedang aktif di halaman.
+    var curLang = document.documentElement.getAttribute('data-lang') || 'id';
+    gridEl.querySelectorAll('[lang="id"]').forEach(function(el){ el.hidden = (curLang !== 'id'); });
+    gridEl.querySelectorAll('[lang="en"]').forEach(function(el){ el.hidden = (curLang !== 'en'); });
+  }
+
+  function load(){
+    sbArt.from('pz_articles').select('*').order('created_at', { ascending: false }).then(function(res){
+      if(res.error){ return; }
+      renderArticles(res.data || []);
+    });
+  }
+
+  load();
+  sbArt.channel('pz_articles_public')
+    .on('postgres_changes', { event: '*', schema: 'public', table: 'pz_articles' }, load)
+    .subscribe();
+
+  // Ikut berubah saat tombol ID/EN diklik.
+  document.addEventListener('click', function(e){
+    if(e.target.closest('.langtoggle button')){
+      setTimeout(function(){
+        var curLang = document.documentElement.getAttribute('data-lang') || 'id';
+        gridEl.querySelectorAll('[lang="id"]').forEach(function(el){ el.hidden = (curLang !== 'id'); });
+        gridEl.querySelectorAll('[lang="en"]').forEach(function(el){ el.hidden = (curLang !== 'en'); });
+      }, 0);
+    }
+  });
+})();
+</script>
+
 <div id="site-footer"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.117.1/dist/umd/supabase.js"></script>
