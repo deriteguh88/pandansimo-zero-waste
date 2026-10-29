@@ -1,0 +1,255 @@
+/* =========================================================
+   Pandansimo & Zero Waste — gaya mengikuti pola who.int
+   (utility bar + masthead + nav gelap + hero) dengan
+   identitas warna hijau-navy untuk tema lingkungan/energi.
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap');
+
+:root{
+  --navy:#0e2a47;        /* masthead / nav gelap, seperti WHO */
+  --navy-2:#153a62;
+  --green:#4fa8e0;       /* aksen biru muda (dulu hijau) */
+  --green-dark:#2d7fb8;  /* biru lebih gelap untuk hover */
+  --sand:#f4f7fa;        /* latar lembut kebiruan */
+  --surface:#ffffff;
+  --ink:#1b2430;
+  --muted:#5b6672;
+  --line:#dde6ee;
+  --amber:#e0a62b;       /* aksen "Donate"-style WHO */
+  --radius:10px;
+  --maxw:1200px;
+  --shadow:0 12px 32px -14px rgba(14,42,71,.25);
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;background:var(--sand);color:var(--ink);
+  font-family:'Public Sans',system-ui,sans-serif;
+  line-height:1.6;-webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{
+  font-family:'Fraunces',serif;font-weight:600;
+  line-height:1.2;margin:0 0 .5em;color:var(--navy);
+}
+p{margin:0 0 1em;color:var(--muted);}
+a{color:var(--green);text-decoration:none;}
+a:hover{text-decoration:underline;}
+img{max-width:100%;display:block;}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+ul{margin:0;padding:0;list-style:none;}
+
+/* ---------- lang toggle visibility ---------- */
+[lang]{ }
+html[data-lang="id"] [lang="en"]{display:none !important;}
+html[data-lang="en"] [lang="id"]{display:none !important;}
+
+/* ---------- utility bar (seperti WHO: Global/Regions/Search/Language) ---------- */
+.utilitybar{
+  background:var(--navy);color:#cfe0ef;font-size:.82rem;
+}
+.utilitybar .wrap{
+  display:flex;align-items:center;justify-content:space-between;
+  height:38px;
+}
+.utilitybar .ub-left{display:flex;gap:18px;align-items:center;}
+.utilitybar a{color:#cfe0ef;}
+.utilitybar a:hover{color:#fff;}
+.langtoggle{display:flex;gap:4px;background:rgba(255,255,255,.08);border-radius:999px;padding:2px;}
+.langtoggle button{
+  border:none;background:transparent;color:#cfe0ef;
+  font-size:.78rem;font-weight:700;padding:4px 12px;border-radius:999px;cursor:pointer;
+}
+.langtoggle button.active{background:#fff;color:var(--navy);}
+
+/* ---------- masthead (logo + judul proyek) ---------- */
+.masthead{background:var(--surface);border-bottom:1px solid var(--line);}
+.masthead .wrap{
+  display:flex;align-items:center;justify-content:space-between;
+  height:88px;gap:20px;
+}
+.brand{display:flex;align-items:center;gap:14px;color:var(--navy);}
+.brand .mark{
+  width:48px;height:48px;border-radius:50%;flex:0 0 auto;
+  background:var(--green);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+}
+.brand .names{line-height:1.25;}
+.brand .names .t1{font-family:'Fraunces',serif;font-weight:700;font-size:1.15rem;color:var(--navy);}
+.brand .names .t2{font-size:.82rem;color:var(--muted);}
+.masthead .btn{flex:0 0 auto;}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:11px 22px;border-radius:999px;
+  font-weight:700;font-size:.9rem;border:1px solid transparent;cursor:pointer;
+}
+.btn.primary{background:var(--green);color:#fff;}
+.btn.primary:hover{background:var(--green-dark);text-decoration:none;}
+.btn.ghost{background:transparent;border-color:var(--navy);color:var(--navy);}
+.btn.ghost:hover{background:var(--navy);color:#fff;text-decoration:none;}
+.btn.small{padding:7px 16px;font-size:.82rem;}
+
+/* ---------- nav gelap dengan dropdown ---------- */
+nav.mainnav{background:var(--navy-2);position:relative;z-index:40;}
+nav.mainnav .wrap{display:flex;align-items:stretch;}
+nav.mainnav .navitem{position:relative;}
+nav.mainnav .navitem > a, nav.mainnav .navitem > button{
+  display:flex;align-items:center;gap:6px;height:52px;
+  padding:0 18px;color:#fff;font-weight:600;font-size:.92rem;
+  background:none;border:none;cursor:pointer;white-space:nowrap;
+}
+nav.mainnav .navitem > a:hover, nav.mainnav .navitem.open > button{
+  background:var(--green);color:var(--navy);text-decoration:none;
+}
+nav.mainnav .caret{width:9px;height:9px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);margin-top:-3px;}
+.dropdown{
+  position:absolute;top:100%;left:0;min-width:280px;
+  background:#fff;border:1px solid var(--line);border-top:3px solid var(--green);
+  box-shadow:var(--shadow);border-radius:0 0 8px 8px;
+  padding:8px;display:none;
+}
+.navitem.open .dropdown{display:block;}
+.dropdown a{
+  display:block;padding:10px 14px;border-radius:6px;color:var(--navy);font-size:.9rem;font-weight:500;
+}
+.dropdown a:hover{background:var(--sand);text-decoration:none;color:var(--green-dark);}
+.navtoggle{display:none;}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;color:#fff;min-height:420px;
+  display:flex;align-items:flex-end;
+  background:linear-gradient(180deg,rgba(14,42,71,.25),rgba(10,24,38,.78)),
+             linear-gradient(135deg,var(--navy),var(--green-dark));
+  background-size:cover;background-position:center;
+}
+.hero .wrap{padding:56px 24px 48px;}
+.hero .eyebrow{
+  display:inline-block;background:var(--green);color:#fff;
+  font-size:.78rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;
+  padding:5px 14px;border-radius:4px;margin-bottom:14px;
+}
+.hero h1{color:#fff;font-size:clamp(1.8rem,4vw,2.8rem);max-width:760px;}
+.hero p.lead{color:#e8edf2;max-width:620px;font-size:1.05rem;}
+.hero.compact{min-height:220px;}
+.hero.compact .wrap{padding:40px 24px 32px;}
+
+/* ---------- breadcrumb ---------- */
+.crumbs{background:var(--surface);border-bottom:1px solid var(--line);font-size:.85rem;}
+.crumbs .wrap{height:44px;display:flex;align-items:center;gap:8px;color:var(--muted);}
+.crumbs a{color:var(--muted);}
+.crumbs .sep{opacity:.5;}
+.crumbs .current{color:var(--navy);font-weight:600;}
+
+/* ---------- sections ---------- */
+section{padding:56px 0;}
+.section-h{max-width:720px;margin:0 0 32px;}
+.section-h.center{margin-left:auto;margin-right:auto;text-align:center;}
+.section-h h2{font-size:clamp(1.5rem,3vw,2rem);}
+
+.grid{display:grid;gap:22px;}
+.grid.cols-4{grid-template-columns:repeat(4,1fr);}
+.grid.cols-3{grid-template-columns:repeat(3,1fr);}
+.grid.cols-2{grid-template-columns:repeat(2,1fr);}
+
+.card{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px;box-shadow:var(--shadow);
+}
+.card .tag{
+  display:inline-block;background:#e8f3fc;color:var(--green-dark);
+  font-size:.72rem;font-weight:800;letter-spacing:.03em;text-transform:uppercase;
+  padding:4px 10px;border-radius:4px;margin-bottom:10px;
+}
+.card h3{font-size:1.05rem;margin-bottom:6px;}
+.card p{font-size:.92rem;margin:0;}
+.card .icon{
+  width:44px;height:44px;border-radius:8px;background:var(--sand);color:var(--green);
+  display:flex;align-items:center;justify-content:center;margin-bottom:14px;
+}
+
+/* ---------- stat band ---------- */
+.statband{background:var(--navy);color:#fff;}
+.statband .grid{grid-template-columns:repeat(4,1fr);text-align:center;}
+.statband .num{font-family:'Fraunces',serif;font-weight:700;font-size:2.2rem;color:#fff;}
+.statband .lbl{font-size:.85rem;color:#c7d6e4;}
+
+/* ---------- CTA band ---------- */
+.band{
+  background:var(--green);color:#fff;border-radius:var(--radius);
+  padding:40px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;
+}
+.band h2,.band p{color:#fff;}
+.band .btn.primary{background:#fff;color:var(--green-dark);}
+
+/* ---------- content body (artikel/isi halaman) ---------- */
+.content-body{max-width:780px;}
+.content-body h2{margin-top:1.5em;font-size:1.35rem;}
+.content-body h3{margin-top:1.2em;font-size:1.1rem;color:var(--green-dark);}
+.content-body ul{padding-left:1.3em;list-style:disc;color:var(--muted);margin-bottom:1em;}
+.content-body li{margin-bottom:.4em;}
+.content-body .source-note{
+  font-size:.82rem;color:var(--muted);background:var(--sand);
+  border-left:3px solid var(--green);padding:10px 14px;border-radius:0 6px 6px 0;margin:1.4em 0;
+}
+.content-body .source-note a{font-weight:600;}
+
+/* ---------- hierarchy diagram (zero waste hierarchy) ---------- */
+.hierarchy{display:flex;flex-direction:column;gap:2px;max-width:640px;margin:0 auto;}
+.hierarchy .tier{
+  color:#fff;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;
+  font-weight:700;
+}
+.hierarchy .tier .en{font-weight:500;font-size:.82rem;opacity:.85;}
+.hierarchy .tier:nth-child(1){background:var(--navy);border-radius:10px 10px 0 0;}
+.hierarchy .tier:nth-child(2){background:#1a5e8f;}
+.hierarchy .tier:nth-child(3){background:var(--green-dark);}
+.hierarchy .tier:nth-child(4){background:#e0a62b;}
+.hierarchy .tier:nth-child(5){background:#b23a2e;border-radius:0 0 10px 10px;}
+
+/* ---------- timeline (profil/sejarah) ---------- */
+.timeline{position:relative;padding-left:28px;border-left:3px solid var(--line);}
+.timeline .ev{position:relative;padding-bottom:28px;}
+.timeline .ev::before{
+  content:'';position:absolute;left:-35px;top:3px;width:14px;height:14px;
+  border-radius:50%;background:var(--green);border:3px solid #fff;box-shadow:0 0 0 2px var(--green);
+}
+.timeline .yr{font-family:'Fraunces',serif;font-weight:700;color:var(--green-dark);}
+
+/* ---------- footer ---------- */
+footer.site{background:var(--navy);color:#cfe0ef;padding:48px 0 24px;margin-top:40px;}
+footer.site h4{color:#fff;font-size:.95rem;margin-bottom:12px;}
+footer.site a{color:#cfe0ef;font-size:.88rem;}
+footer.site a:hover{color:#fff;}
+footer.site .grid{grid-template-columns:repeat(4,1fr);margin-bottom:28px;}
+footer.site .fcol li{margin-bottom:8px;}
+footer.site .bottom{
+  border-top:1px solid rgba(255,255,255,.15);padding-top:18px;
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.82rem;color:#9fb3c4;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:900px){
+  .grid.cols-4{grid-template-columns:repeat(2,1fr);}
+  .grid.cols-3{grid-template-columns:repeat(2,1fr);}
+  .statband .grid{grid-template-columns:repeat(2,1fr);}
+  footer.site .grid{grid-template-columns:repeat(2,1fr);}
+}
+@media (max-width:760px){
+  .masthead .btn{display:none;}
+  nav.mainnav .wrap{flex-direction:column;align-items:stretch;display:none;}
+  nav.mainnav.open .wrap{display:flex;}
+  nav.mainnav .navitem > a, nav.mainnav .navitem > button{height:auto;padding:14px 18px;width:100%;justify-content:space-between;}
+  .dropdown{position:static;box-shadow:none;border:none;border-top:none;background:rgba(255,255,255,.04);}
+  .dropdown a{color:#fff;}
+  .dropdown a:hover{background:rgba(255,255,255,.08);}
+  .navtoggle{
+    display:flex;align-items:center;justify-content:center;
+    width:44px;height:44px;background:none;border:none;color:var(--navy);cursor:pointer;
+  }
+  .grid.cols-4,.grid.cols-3,.grid.cols-2{grid-template-columns:1fr;}
+  footer.site .grid{grid-template-columns:1fr;}
+}

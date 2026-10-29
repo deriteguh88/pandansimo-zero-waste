@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin — Zero Waste &amp; Pandansimo</title>
+<link rel="stylesheet" href="theme.css">
+<style>
+body{background:var(--sand);}
+.admin-shell{min-height:100vh;display:flex;flex-direction:column;}
+.admin-login{flex:1;display:flex;align-items:center;justify-content:center;padding:24px;}
+.admin-login .card{max-width:380px;width:100%;}
+.admin-login h1{font-size:1.3rem;text-align:center;}
+.admin-login .btn{width:100%;justify-content:center;margin-top:8px;}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px;}
+.field label{font-size:.85rem;font-weight:600;color:var(--navy);}
+.field input{font-family:inherit;font-size:.95rem;padding:10px 14px;border-radius:8px;border:1px solid var(--line);background:#fff;}
+.field input:focus{outline:none;border-color:var(--green);}
+.err{background:#fdecec;color:#9b2c2c;border:1px solid #f3c6c6;border-radius:8px;padding:10px 14px;font-size:.85rem;margin-bottom:10px;}
+
+.topbar{position:sticky;top:0;z-index:50;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:space-between;padding:14px 22px;}
+.topbar .brand{font-family:'Fraunces',serif;font-weight:700;font-size:1.05rem;}
+.topbar .btn.ghost{border-color:rgba(255,255,255,.5);color:#fff;}
+.topbar .btn.ghost:hover{background:#fff;color:var(--navy);}
+
+.admin-body{flex:1;display:flex;min-height:0;}
+.pagelist{
+  width:280px;flex:0 0 auto;background:#fff;border-right:1px solid var(--line);
+  overflow-y:auto;padding:14px;
+}
+.pagelist button{
+  display:block;width:100%;text-align:left;background:none;border:none;
+  padding:10px 12px;border-radius:8px;cursor:pointer;font-size:.88rem;color:var(--ink);
+  margin-bottom:2px;
+}
+.pagelist button:hover{background:var(--sand);}
+.pagelist button.active{background:var(--green);color:#fff;font-weight:600;}
+.pagelist .count{font-size:.72rem;opacity:.7;}
+
+.editor{flex:1;overflow-y:auto;padding:28px 32px;}
+.editor-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;flex-wrap:wrap;gap:10px;}
+.editor-head h2{margin:0;}
+.fieldcard{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;margin-bottom:14px;}
+.fieldcard .flabel{font-size:.8rem;color:var(--muted);margin-bottom:10px;}
+.fieldcard .langrow{display:grid;grid-template-columns:36px 1fr;gap:10px;align-items:start;margin-bottom:10px;}
+.fieldcard .langrow:last-child{margin-bottom:0;}
+.fieldcard .badge{
+  width:32px;height:28px;border-radius:6px;background:var(--sand);color:var(--navy);
+  display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:800;
+}
+.fieldcard textarea{
+  width:100%;font-family:inherit;font-size:.9rem;padding:9px 12px;border-radius:8px;
+  border:1px solid var(--line);resize:vertical;min-height:44px;
+}
+.fieldcard textarea:focus{outline:none;border-color:var(--green);}
+.imgcard{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;margin-bottom:14px;display:flex;gap:16px;align-items:center;flex-wrap:wrap;}
+.imgcard .thumb{width:100px;height:72px;border-radius:8px;object-fit:cover;background:var(--sand);flex:0 0 auto;border:1px solid var(--line);}
+.imgcard .thumb.round{width:72px;height:72px;border-radius:50%;}
+.imgcard .meta{flex:1;min-width:160px;}
+.imgcard .meta .flabel{font-size:.85rem;font-weight:600;color:var(--navy);margin-bottom:6px;}
+.imgcard .uprow{display:flex;gap:10px;align-items:center;flex-wrap:wrap;}
+.imgcard input[type=file]{font-size:.82rem;}
+.imgcard .ustatus{font-size:.78rem;color:var(--muted);}
+.section-label{font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.03em;color:var(--muted);margin:24px 0 10px;}
+.section-label:first-child{margin-top:0;}
+.savebar{
+  position:sticky;bottom:0;background:#fff;border-top:1px solid var(--line);
+  padding:14px 32px;display:flex;align-items:center;gap:14px;
+}
+.savebar .status{font-size:.85rem;color:var(--muted);}
+.empty-state{padding:60px 20px;text-align:center;color:var(--muted);}
+</style>
+</head>
+<body class="admin-shell" data-page="admin.html">
+
+<div id="loginView" class="admin-login">
+  <div class="card">
+    <h1>Masuk Admin</h1>
+    <p style="text-align:center;font-size:.9rem;">Khusus pengelola situs Zero Waste &amp; Pandansimo.</p>
+    <div id="loginMsg"></div>
+    <div class="field">
+      <label>Email</label>
+      <input type="email" id="loginEmail" autocomplete="username" autocapitalize="off" autocorrect="off">
+    </div>
+    <div class="field">
+      <label>Kata Sandi</label>
+      <input type="password" id="loginPass" autocomplete="current-password">
+    </div>
+    <button class="btn primary" id="loginBtn">Masuk</button>
+  </div>
+</div>
+
+<div id="editorView" style="display:none;flex-direction:column;flex:1;min-height:0;">
+  <div class="topbar">
+    <span class="brand">Admin — Zero Waste &amp; Pandansimo</span>
+    <div style="display:flex;gap:10px;align-items:center;">
+      <a href="index.html" class="btn ghost small" target="_blank">Lihat Situs</a>
+      <button class="btn ghost small" id="logoutBtn">Keluar</button>
+    </div>
+  </div>
+  <div class="admin-body">
+    <nav class="pagelist" id="pageList"></nav>
+    <div class="editor" id="editor">
+      <div class="empty-state">Pilih halaman di sebelah kiri untuk mulai mengedit.</div>
+    </div>
+  </div>
+  <div class="savebar" id="saveBar" style="display:none;">
+    <button class="btn primary" id="saveBtn">Simpan Perubahan Halaman Ini</button>
+    <span class="status" id="saveStatus"></span>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.117.1/dist/umd/supabase.js"></script>
+<script src="config.js"></script>
+<script>
+var PAGE_TITLES = {
+  'index.html':'Beranda',
+  'zw-tentang.html':'Zero Waste — Apa itu Zero Waste',
+  'zw-hierarki.html':'Zero Waste — Hierarki',
+  'zw-gerakan-dunia.html':'Zero Waste — Gerakan Dunia',
+  'zw-gerakan-indonesia.html':'Zero Waste — Gerakan Indonesia',
+  'zw-rekayasa-hijau.html':'Zero Waste — Rekayasa Hijau',
+  'pandansimo-profil.html':'Pandansimo — Profil & Sejarah',
+  'pandansimo-potensi.html':'Pandansimo — Potensi Kawasan',
+  'pandansimo-masterplan.html':'Pandansimo — Masterplan/Siteplan',
+  'pandansimo-implementasi.html':'Pandansimo — Implementasi & Teknologi',
+  'pandansimo-kegiatan.html':'Pandansimo — Kegiatan & Dokumentasi',
+  'pandansimo-capaian.html':'Pandansimo — Capaian Saat Ini',
+  'pandansimo-analisis.html':'Pandansimo — Analisis & Evaluasi',
+  'pandansimo-solusi.html':'Pandansimo — Tantangan & Solusi',
+  'artikel.html':'Artikel',
+  'tentang-kami.html':'Tentang Kami',
+  'kontak.html':'Kontak',
+};
+
+var sb = window.supabase.createClient(window.ZW_SUPABASE_URL, window.ZW_SUPABASE_KEY);
+var loginView = document.getElementById('loginView');
+var editorView = document.getElementById('editorView');
+var loginMsg = document.getElementById('loginMsg');
+var pageListEl = document.getElementById('pageList');
+var editorEl = document.getElementById('editor');
+var saveBar = document.getElementById('saveBar');
+var saveStatus = document.getElementById('saveStatus');
+
+var manifest = null;      // dari content-manifest.json (default teks per field)
+var overrides = {};       // dari Supabase pz_content: key -> {value_id, value_en}
+var imageManifest = null; // dari image-manifest.json (slot gambar per field)
+var imagesByPage = {};    // file -> [ {key,label,kind,defaultUrl} ]
+var imageUrls = {};       // dari Supabase pz_images: key -> url
+var currentPage = null;
+var BUCKET = 'pz-uploads';
+
+function esc(s){ return String(s==null?'':s).replace(/</g,'&lt;'); }
+
+function renderPageList(){
+  var html = '';
+  Object.keys(PAGE_TITLES).forEach(function(file){
+    var n = (manifest[file]||[]).length;
+    var ni = (imagesByPage[file]||[]).length;
+    var countTxt = n + ' teks' + (ni ? ', ' + ni + ' gambar' : '');
+    html += '<button type="button" data-file="'+file+'">'+PAGE_TITLES[file]+
+      '<div class="count">'+countTxt+'</div></button>';
+  });
+  pageListEl.innerHTML = html;
+  pageListEl.querySelectorAll('button').forEach(function(b){
+    b.addEventListener('click', function(){ selectPage(b.getAttribute('data-file')); });
+  });
+}
+
+function selectPage(file){
+  currentPage = file;
+  pageListEl.querySelectorAll('button').forEach(function(b){
+    b.classList.toggle('active', b.getAttribute('data-file') === file);
+  });
+  var fields = manifest[file] || [];
+  var images = imagesByPage[file] || [];
+  var html = '<div class="editor-head"><h2>'+PAGE_TITLES[file]+'</h2>' +
+    '<a href="'+file+'" target="_blank" class="btn ghost small">Lihat Halaman</a></div>';
+
+  if(images.length){
+    html += '<div class="section-label">Gambar</div>';
+    images.forEach(function(im){
+      var url = imageUrls[im.key] || im.defaultUrl || '';
+      var thumbClass = im.kind === 'avatar' ? 'thumb round' : 'thumb';
+      html += '<div class="imgcard" data-imgkey="'+im.key+'" data-kind="'+im.kind+'">' +
+        (url ? '<img class="'+thumbClass+'" src="'+esc(url)+'">' : '<div class="'+thumbClass+'"></div>') +
+        '<div class="meta"><div class="flabel">'+esc(im.label)+'</div>' +
+        '<div class="uprow"><input type="file" accept="image/*" data-upload="'+im.key+'">' +
+        '<span class="ustatus"></span></div></div></div>';
+    });
+  }
+
+  if(fields.length){
+    html += '<div class="section-label">Teks</div>';
+    fields.forEach(function(f){
+      var ov = overrides[f.key] || {};
+      var valId = ov.value_id != null ? ov.value_id : f.id;
+      var valEn = ov.value_en != null ? ov.value_en : f.en;
+      html += '<div class="fieldcard" data-key="'+f.key+'">' +
+        '<div class="flabel">'+esc(f.label)+'</div>' +
+        '<div class="langrow"><div class="badge">ID</div><textarea data-lang="id">'+esc(valId)+'</textarea></div>' +
+        '<div class="langrow"><div class="badge">EN</div><textarea data-lang="en">'+esc(valEn)+'</textarea></div>' +
+        '</div>';
+    });
+  }
+
+  editorEl.innerHTML = html || '<div class="empty-state">Tidak ada teks atau gambar yang bisa diedit di halaman ini.</div>';
+  saveBar.style.display = fields.length ? 'flex' : 'none';
+  saveStatus.textContent = '';
+  autoGrow();
+  wireUploads();
+}
+
+function wireUploads(){
+  editorEl.querySelectorAll('[data-upload]').forEach(function(input){
+    input.addEventListener('change', function(){
+      var key = input.getAttribute('data-upload');
+      var file = input.files && input.files[0];
+      if(!file) return;
+      var card = input.closest('.imgcard');
+      var statusEl = card.querySelector('.ustatus');
+      statusEl.textContent = 'Mengunggah...';
+      var ext = (file.name.split('.').pop() || 'jpg').toLowerCase();
+      var path = key + '-' + Date.now() + '.' + ext;
+      sb.storage.from(BUCKET).upload(path, file, { upsert: true }).then(function(upRes){
+        if(upRes.error){ statusEl.textContent = 'Gagal upload: ' + upRes.error.message; return; }
+        var pub = sb.storage.from(BUCKET).getPublicUrl(path);
+        var url = pub.data.publicUrl;
+        return sb.from('pz_images').upsert([{ key: key, url: url, updated_at: new Date().toISOString() }], { onConflict: 'key' }).then(function(res){
+          if(res.error){ statusEl.textContent = 'Gagal simpan: ' + res.error.message; return; }
+          imageUrls[key] = url;
+          statusEl.textContent = 'Tersimpan ✓';
+          var thumb = card.querySelector('.thumb');
+          if(thumb && thumb.tagName === 'IMG'){ thumb.src = url; }
+          setTimeout(function(){ statusEl.textContent=''; }, 2500);
+        });
+      });
+    });
+  });
+}
+
+function autoGrow(){
+  editorEl.querySelectorAll('textarea').forEach(function(t){
+    t.style.height = 'auto';
+    t.style.height = Math.min(t.scrollHeight, 300) + 'px';
+    t.addEventListener('input', function(){
+      t.style.height = 'auto';
+      t.style.height = Math.min(t.scrollHeight, 300) + 'px';
+    });
+  });
+}
+
+function saveCurrentPage(){
+  if(!currentPage) return;
+  saveStatus.textContent = 'Menyimpan...';
+  var cards = editorEl.querySelectorAll('.fieldcard');
+  var rows = [];
+  cards.forEach(function(card){
+    var key = card.getAttribute('data-key');
+    var idVal = card.querySelector('[data-lang="id"]').value;
+    var enVal = card.querySelector('[data-lang="en"]').value;
+    rows.push({ key: key, value_id: idVal, value_en: enVal, updated_at: new Date().toISOString() });
+  });
+  sb.from('pz_content').upsert(rows, { onConflict: 'key' }).then(function(res){
+    if(res.error){
+      saveStatus.textContent = 'Gagal: ' + res.error.message;
+    } else {
+      rows.forEach(function(r){ overrides[r.key] = { value_id: r.value_id, value_en: r.value_en }; });
+      saveStatus.textContent = 'Tersimpan ✓';
+      setTimeout(function(){ saveStatus.textContent=''; }, 2500);
+    }
+  });
+}
+
+document.getElementById('saveBtn').addEventListener('click', saveCurrentPage);
+
+function loadManifestAndOverrides(){
+  return Promise.all([
+    fetch('content-manifest.json').then(function(r){ return r.json(); }),
+    fetch('image-manifest.json').then(function(r){ return r.json(); }),
+    sb.from('pz_content').select('key,value_id,value_en'),
+    sb.from('pz_images').select('key,url'),
+  ]).then(function(results){
+    manifest = results[0];
+    imageManifest = results[1];
+    var contentRes = results[2];
+    var imagesRes = results[3];
+
+    overrides = {};
+    (contentRes.data||[]).forEach(function(row){ overrides[row.key] = { value_id: row.value_id, value_en: row.value_en }; });
+
+    imageUrls = {};
+    (imagesRes.data||[]).forEach(function(row){ imageUrls[row.key] = row.url; });
+
+    imagesByPage = {};
+    Object.keys(imageManifest).forEach(function(key){
+      var im = imageManifest[key];
+      var page = im.page;
+      if(!imagesByPage[page]) imagesByPage[page] = [];
+      imagesByPage[page].push({ key: key, label: im.label, kind: im.kind, defaultUrl: im.defaultUrl });
+    });
+
+    renderPageList();
+  });
+}
+
+function showEditor(){
+  loginView.style.display='none';
+  editorView.style.display='flex';
+  loadManifestAndOverrides();
+}
+function showLogin(){
+  editorView.style.display='none';
+  loginView.style.display='flex';
+}
+
+sb.auth.getSession().then(function(res){
+  if(res.data && res.data.session){ showEditor(); } else { showLogin(); }
+});
+
+document.getElementById('loginBtn').addEventListener('click', function(){
+  var email = document.getElementById('loginEmail').value.trim();
+  var pass = document.getElementById('loginPass').value;
+  loginMsg.innerHTML = '';
+  sb.auth.signInWithPassword({ email: email, password: pass }).then(function(res){
+    if(res.error){
+      loginMsg.innerHTML = '<div class="err">Gagal masuk: ' + res.error.message + '</div>';
+    } else {
+      showEditor();
+    }
+  });
+});
+
+document.getElementById('logoutBtn').addEventListener('click', function(){
+  sb.auth.signOut().then(function(){ showLogin(); });
+});
+</script>
+</body>
+</html>
