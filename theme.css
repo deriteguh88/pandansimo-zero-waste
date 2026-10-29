@@ -137,6 +137,20 @@ nav.mainnav .caret{width:9px;height:9px;border-right:2px solid currentColor;bord
 .hero.compact{min-height:220px;}
 .hero.compact .wrap{padding:40px 24px 32px;}
 
+/* ---------- hero background video (beranda saja) ---------- */
+.hero-video{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;
+}
+.hero-overlay{
+  position:absolute;inset:0;z-index:1;
+  background:linear-gradient(180deg,rgba(14,42,71,.4),rgba(10,24,38,.85));
+}
+.hero > .wrap{position:relative;z-index:2;}
+@media (max-width:760px){
+  /* Hemat kuota di HP: video dimatikan, kembali ke gambar diam */
+  .hero-video, .hero-overlay{display:none !important;}
+}
+
 /* ---------- breadcrumb ---------- */
 .crumbs{background:var(--surface);border-bottom:1px solid var(--line);font-size:.85rem;}
 .crumbs .wrap{height:44px;display:flex;align-items:center;gap:8px;color:var(--muted);}
