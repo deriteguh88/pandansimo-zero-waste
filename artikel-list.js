@@ -5,7 +5,7 @@
 (function(){
   function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;'); }
   function strip(s){ return String(s==null?'':s).replace(/[#*]/g,'').replace(/\[foto:[^\]]*\]/g,'').trim(); }
-  var PH = '<svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 13c0-5 4-9 9-9 1 0 1.3.4 1.3 1.3C14.3 9.6 10 13 5.3 13 4.4 13 4 12.6 4 13z"/><path d="M4.5 19 14 9"/></svg>';
+  var PH = '';
   function thumb(img){
     var ph = '<div class="thumbph">'+PH+'</div>';
     if(!img) return ph;
