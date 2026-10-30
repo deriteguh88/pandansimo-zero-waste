@@ -115,6 +115,16 @@
   </div>
 </section>
 
+<section id="latestSection" style="display:none;">
+  <div class="wrap">
+    <div class="section-h">
+      <h2 lang="id">Artikel Terbaru</h2><h2 lang="en" hidden="">Latest Articles</h2>
+    </div>
+    <div class="grid cols-3" id="latestArticles"></div>
+    <p style="margin-top:22px;text-align:center;"><a href="artikel.html" class="btn ghost"><span lang="id">Lihat semua artikel →</span><span lang="en" hidden="">See all articles →</span></a></p>
+  </div>
+</section>
+
 <div id="site-footer"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.117.1/dist/umd/supabase.js"></script>
@@ -123,4 +133,49 @@
 <script src="content.js"></script>
 
 
+<style>
+.article-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);position:relative;transition:box-shadow .15s;}
+.article-card:hover{box-shadow:0 6px 22px rgba(14,42,71,.18);}
+.article-card img{width:100%;height:170px;object-fit:cover;display:block;}
+.article-card .body{padding:20px;}
+.article-card h3{font-size:1.02rem;margin-bottom:6px;}
+.article-card p{font-size:.9rem;margin:0;}
+.article-card .readmore a::after{content:"";position:absolute;inset:0;}
+</style>
+<script>
+(function(){
+  if(!window.supabase || !window.ZW_SUPABASE_URL){ return; }
+  var sbL = window.supabase.createClient(window.ZW_SUPABASE_URL, window.ZW_SUPABASE_KEY);
+  var sec = document.getElementById('latestSection'), grid = document.getElementById('latestArticles');
+  function esc(s){ return String(s==null?'':s).replace(/</g,'&lt;'); }
+  function lang(){
+    var l = document.documentElement.getAttribute('data-lang') || 'id';
+    grid.querySelectorAll('[lang="id"]').forEach(function(e){ e.hidden = (l !== 'id'); });
+    grid.querySelectorAll('[lang="en"]').forEach(function(e){ e.hidden = (l !== 'en'); });
+  }
+  function render(list){
+    if(!list || !list.length){ sec.style.display = 'none'; return; }
+    sec.style.display = '';
+    grid.innerHTML = list.map(function(a){
+      var img = a.image_url || 'https://picsum.photos/seed/'+encodeURIComponent(a.id)+'/500/340';
+      var href = 'artikel-baca.html?id=' + encodeURIComponent(a.id);
+      return '<article class="article-card"><img src="'+esc(img)+'" alt=""><div class="body">' +
+        (a.tag_id ? '<span class="tag" lang="id">'+esc(a.tag_id)+'</span><span class="tag" lang="en" hidden>'+esc(a.tag_en||a.tag_id)+'</span>' : '') +
+        '<h3><span lang="id">'+esc(a.title_id)+'</span><span lang="en" hidden>'+esc(a.title_en||a.title_id)+'</span></h3>' +
+        '<p lang="id">'+esc(a.excerpt_id)+'</p><p lang="en" hidden>'+esc(a.excerpt_en||a.excerpt_id)+'</p>' +
+        '<p class="readmore" style="margin-top:10px;"><a href="'+href+'" style="font-weight:600;"><span lang="id">Baca selengkapnya →</span><span lang="en" hidden>Read more →</span></a></p>' +
+        '</div></article>';
+    }).join('');
+    lang();
+  }
+  function load(){
+    sbL.from('pz_articles').select('*').order('created_at', { ascending: false }).limit(3).then(function(r){
+      if(!r.error) render(r.data || []);
+    });
+  }
+  load();
+  sbL.channel('pz_articles_home').on('postgres_changes', { event: '*', schema: 'public', table: 'pz_articles' }, load).subscribe();
+  document.addEventListener('click', function(e){ if(e.target.closest('.langtoggle button')) setTimeout(lang, 0); });
+})();
+</script>
 </body></html>
