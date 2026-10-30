@@ -2275,8 +2275,8 @@
     {
       "key": "artikel.30",
       "label": "Artikel di atas masih berupa draf ringkasan. Isi lengkap tia",
-      "id": "Artikel di atas masih berupa draf ringkasan. Isi lengkap tiap artikel bisa ditambahkan lewat panel admin tanpa perlu mengubah kode halaman ini.",
-      "en": "The articles above are still summary drafts. Each article's full content can be added via the admin panel without needing to change this page's code."
+      "id": "Setiap kartu membuka halaman materi terkait. Artikel baru yang ditambahkan lewat panel admin otomatis muncul di bagian \"Artikel Terbaru\" di atas dan di Beranda.",
+      "en": "Each card opens the related topic page. New articles added through the admin panel automatically appear in \"Latest Articles\" above and on the Home page."
     }
   ],
   "tentang-kami.html": [
