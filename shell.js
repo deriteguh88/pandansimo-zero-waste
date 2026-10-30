@@ -6,23 +6,8 @@
 
   var MENU = [
     { id:"Beranda", en:"Home", href:"index.html" },
-    { id:"Zero Waste", en:"Zero Waste", href:"zw-tentang.html", children:[
-      { id:"Apa itu Zero Waste", en:"What is Zero Waste", href:"zw-tentang.html" },
-      { id:"Hierarki Zero Waste", en:"Zero Waste Hierarchy", href:"zw-hierarki.html" },
-      { id:"Gerakan Dunia", en:"Global Movement", href:"zw-gerakan-dunia.html" },
-      { id:"Gerakan Indonesia", en:"Indonesian Movement", href:"zw-gerakan-indonesia.html" },
-      { id:"Rekayasa Hijau", en:"Green Engineering", href:"zw-rekayasa-hijau.html" },
-    ]},
-    { id:"Pandansimo", en:"Pandansimo", href:"pandansimo-profil.html", children:[
-      { id:"Profil & Sejarah", en:"Profile & History", href:"pandansimo-profil.html" },
-      { id:"Potensi Kawasan", en:"Area Potential", href:"pandansimo-potensi.html" },
-      { id:"Masterplan / Siteplan", en:"Masterplan / Siteplan", href:"pandansimo-masterplan.html" },
-      { id:"Implementasi & Teknologi", en:"Implementation & Technology", href:"pandansimo-implementasi.html" },
-      { id:"Kegiatan & Dokumentasi", en:"Activities & Documentation", href:"pandansimo-kegiatan.html" },
-      { id:"Capaian Saat Ini", en:"Current Achievements", href:"pandansimo-capaian.html" },
-      { id:"Analisis & Evaluasi", en:"Analysis & Evaluation", href:"pandansimo-analisis.html" },
-      { id:"Tantangan & Solusi Teknis", en:"Challenges & Technical Solutions", href:"pandansimo-solusi.html" },
-    ]},
+    { id:"Zero Waste", en:"Zero Waste", href:"zero-waste.html" },
+    { id:"Pandansimo", en:"Pandansimo", href:"pandansimo.html" },
     { id:"Artikel", en:"Articles", href:"artikel.html" },
     { id:"Tentang Kami", en:"About Us", href:"tentang-kami.html" },
     { id:"Kontak", en:"Contact", href:"kontak.html" },
@@ -192,33 +177,6 @@
     if(f) f.innerHTML = buildFooter();
     initLang();
     initNav();
-    loadMenuArticles();
-  }
-
-  // Artikel yang ditambahkan lewat admin ikut muncul di dropdown menu sesuai kategorinya
-  // (Zero Waste / Rekayasa Hijau -> menu Zero Waste; Pandansimo -> menu Pandansimo).
-  function loadMenuArticles(){
-    try{
-      if(!window.supabase || !window.ZW_SUPABASE_URL) return;
-      window.PZ_SB = window.PZ_SB || window.supabase.createClient(window.ZW_SUPABASE_URL, window.ZW_SUPABASE_KEY);
-      var MAP = { "Zero Waste":["Zero Waste","Rekayasa Hijau"], "Pandansimo":["Pandansimo"] };
-      window.PZ_SB.from('pz_articles').select('id,tag_id,title_id,title_en,created_at').order('created_at', { ascending:false }).then(function(res){
-        var rows = (res && res.data) || [];
-        var lang = document.documentElement.getAttribute('data-lang') || 'id';
-        Object.keys(MAP).forEach(function(menu){
-          var list = rows.filter(function(a){ return MAP[menu].indexOf(a.tag_id) !== -1; }).slice(0, 5);
-          var dd = document.querySelector('.navitem[data-menu="'+menu+'"] .dropdown');
-          if(!dd || !list.length) return;
-          var html = '<div class="dd-label"><span lang="id"'+(lang!=='id'?' hidden':'')+'>Artikel terbaru</span><span lang="en"'+(lang!=='en'?' hidden':'')+'>Latest articles</span></div>';
-          html += list.map(function(a){
-            var t = String(a.title_id||'').replace(/&/g,'&amp;').replace(/</g,'&lt;');
-            var te = String(a.title_en||a.title_id||'').replace(/&/g,'&amp;').replace(/</g,'&lt;');
-            return '<a href="artikel-baca.html?id='+encodeURIComponent(a.id)+'"><span lang="id"'+(lang!=='id'?' hidden':'')+'>'+t+'</span><span lang="en"'+(lang!=='en'?' hidden':'')+'>'+te+'</span></a>';
-          }).join('');
-          dd.insertAdjacentHTML('beforeend', html);
-        });
-      }, function(){});
-    }catch(e){}
   }
 
   if(document.readyState === 'loading'){

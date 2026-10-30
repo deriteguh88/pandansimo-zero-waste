@@ -1,2334 +1,476 @@
 {
-  "index.html": [
-    {
-      "key": "index.1",
-      "label": "Studi Kasus & Edukasi",
-      "id": "Studi Kasus &amp; Edukasi",
-      "en": "Case Study &amp; Education"
-    },
-    {
-      "key": "index.2",
-      "label": "Belajar Zero Waste dari Desa Mandiri Energi Pandansimo",
-      "id": "Belajar Zero Waste dari Desa Mandiri Energi Pandansimo",
-      "en": "Learning Zero Waste from the Energy-Independent Village of Pandansimo"
-    },
-    {
-      "key": "index.3",
-      "label": "Situs ini memadukan edukasi prinsip Zero Waste dengan studi ",
-      "id": "Situs ini memadukan edukasi prinsip Zero Waste dengan studi kasus nyata Pembangkit Listrik Tenaga Hibrid (PLTH) di Pantai Baru Pandansimo, Bantul — mulai dari potensi, implementasi, hingga tantangan teknis dan solusinya.",
-      "en": "This site combines Zero Waste education with a real case study of the Hybrid Power Plant (PLTH) at Pantai Baru Pandansimo, Bantul — covering its potential, implementation, and the technical challenges and solutions involved."
-    },
-    {
-      "key": "index.4",
-      "label": "Kenali Hierarki Zero Waste",
-      "id": "Kenali Hierarki Zero Waste",
-      "en": "Explore the Zero Waste Hierarchy"
-    },
-    {
-      "key": "index.5",
-      "label": "Profil Pandansimo",
-      "id": "Profil Pandansimo",
-      "en": "Pandansimo Profile"
-    },
-    {
-      "key": "index.6",
-      "label": "kapasitas listrik hibrid terpasang",
-      "id": "kapasitas listrik hibrid terpasang",
-      "en": "installed hybrid power capacity"
-    },
-    {
-      "key": "index.7",
-      "label": "turbin angin di kawasan pesisir",
-      "id": "turbin angin di kawasan pesisir",
-      "en": "wind turbines along the coast"
-    },
-    {
-      "key": "index.8",
-      "label": "warung yang terlayani listrik & biogas",
-      "id": "warung yang terlayani listrik &amp; biogas",
-      "en": "food stalls served by power &amp; biogas"
-    },
-    {
-      "key": "index.9",
-      "label": "awal mula program dibangun",
-      "id": "awal mula program dibangun",
-      "en": "the program's founding year"
-    },
-    {
-      "key": "index.10",
-      "label": "Tiga Pilar Situs Ini",
-      "id": "Tiga Pilar Situs Ini",
-      "en": "Three Pillars of This Site"
-    },
-    {
-      "key": "index.11",
-      "label": "Kerangka yang kami gunakan untuk menghubungkan teori Zero Wa",
-      "id": "Kerangka yang kami gunakan untuk menghubungkan teori Zero Waste dengan praktik nyata di lapangan.",
-      "en": "The framework we use to connect Zero Waste theory with real practice in the field."
-    },
-    {
-      "key": "index.12",
-      "label": "Edukasi",
-      "id": "Edukasi",
-      "en": "Education"
-    },
-    {
-      "key": "index.13",
-      "label": "Dasar-Dasar Zero Waste",
-      "id": "Dasar-Dasar Zero Waste",
-      "en": "Zero Waste Fundamentals"
-    },
-    {
-      "key": "index.14",
-      "label": "Prinsip ZWIA, hierarki lima tingkat, serta gerakan Zero Wast",
-      "id": "Prinsip ZWIA, hierarki lima tingkat, serta gerakan Zero Waste dunia dan Indonesia (AZWI dan lainnya).",
-      "en": "ZWIA principles, the five-tier hierarchy, and the global and Indonesian Zero Waste movements (AZWI and others)."
-    },
-    {
-      "key": "index.15",
-      "label": "Selengkapnya →",
-      "id": "Selengkapnya →",
-      "en": "Read more →"
-    },
-    {
-      "key": "index.16",
-      "label": "Studi Kasus",
-      "id": "Studi Kasus",
-      "en": "Case Study"
-    },
-    {
-      "key": "index.17",
-      "label": "Program Pandansimo",
-      "id": "Program Pandansimo",
-      "en": "The Pandansimo Program"
-    },
-    {
-      "key": "index.18",
-      "label": "Potensi kawasan, masterplan, teknologi yang diterapkan (turb",
-      "id": "Potensi kawasan, masterplan, teknologi yang diterapkan (turbin, biogas, surya), hingga kegiatan dan capaiannya.",
-      "en": "Area potential, the masterplan, the technologies applied (turbines, biogas, solar), and its activities and achievements."
-    },
-    {
-      "key": "index.19",
-      "label": "Selengkapnya →",
-      "id": "Selengkapnya →",
-      "en": "Read more →"
-    },
-    {
-      "key": "index.20",
-      "label": "Analisis Teknik",
-      "id": "Analisis Teknik",
-      "en": "Engineering Analysis"
-    },
-    {
-      "key": "index.21",
-      "label": "Tantangan & Solusi Teknis",
-      "id": "Tantangan &amp; Solusi Teknis",
-      "en": "Challenges &amp; Technical Solutions"
-    },
-    {
-      "key": "index.22",
-      "label": "Masalah nyata di lapangan — korosi, baterai, ketidakstabilan",
-      "id": "Masalah nyata di lapangan — korosi, baterai, ketidakstabilan angin — dan usulan solusi dari sudut pandang Teknik Mesin, Elektro, dan Industri.",
-      "en": "Real on-site problems — corrosion, batteries, unstable wind — and proposed solutions from a Mechanical, Electrical, and Industrial Engineering perspective."
-    },
-    {
-      "key": "index.23",
-      "label": "Selengkapnya →",
-      "id": "Selengkapnya →",
-      "en": "Read more →"
-    },
-    {
-      "key": "index.24",
-      "label": "Hierarki Zero Waste",
-      "id": "Hierarki Zero Waste",
-      "en": "The Zero Waste Hierarchy"
-    },
-    {
-      "key": "index.25",
-      "label": "Urutan prioritas dalam mengelola sumber daya dan sampah, dar",
-      "id": "Urutan prioritas dalam mengelola sumber daya dan sampah, dari yang paling disukai hingga pilihan terakhir.",
-      "en": "The order of priority for managing resources and waste, from most preferred to last resort."
-    },
-    {
-      "key": "index.26",
-      "label": "1. Reduce — Kurangi",
-      "id": "1. Reduce — Kurangi",
-      "en": "1. Reduce"
-    },
-    {
-      "key": "index.27",
-      "label": "2. Reuse — Gunakan Kembali",
-      "id": "2. Reuse — Gunakan Kembali",
-      "en": "2. Reuse"
-    },
-    {
-      "key": "index.28",
-      "label": "3. Recycle — Daur Ulang",
-      "id": "3. Recycle — Daur Ulang",
-      "en": "3. Recycle"
-    },
-    {
-      "key": "index.29",
-      "label": "4. Recovery — Pemulihan Energi",
-      "id": "4. Recovery — Pemulihan Energi",
-      "en": "4. Recovery"
-    },
-    {
-      "key": "index.30",
-      "label": "5. Disposal — Pembuangan Akhir",
-      "id": "5. Disposal — Pembuangan Akhir",
-      "en": "5. Disposal"
-    },
-    {
-      "key": "index.31",
-      "label": "Pelajari Tiap Tingkat",
-      "id": "Pelajari Tiap Tingkat",
-      "en": "Learn About Each Tier"
-    },
-    {
-      "key": "index.32",
-      "label": "Jelajahi Kisah Lengkap Pandansimo",
-      "id": "Jelajahi Kisah Lengkap Pandansimo",
-      "en": "Explore the Full Pandansimo Story"
-    },
-    {
-      "key": "index.33",
-      "label": "Dari potensi awal kawasan, masterplan, implementasi teknolog",
-      "id": "Dari potensi awal kawasan, masterplan, implementasi teknologi, hingga evaluasi dan rencana ke depan.",
-      "en": "From the area's initial potential and masterplan, to technology implementation, evaluation, and future plans."
-    },
-    {
-      "key": "index.34",
-      "label": "Mulai Jelajahi",
-      "id": "Mulai Jelajahi",
-      "en": "Start Exploring"
-    }
-  ],
-  "zw-tentang.html": [
-    {
-      "key": "zw-tentang.1",
-      "label": "Beranda",
-      "id": "Beranda",
-      "en": "Home"
-    },
-    {
-      "key": "zw-tentang.2",
-      "label": "Zero Waste",
-      "id": "Zero Waste",
-      "en": "Zero Waste"
-    },
-    {
-      "key": "zw-tentang.3",
-      "label": "Apa itu Zero Waste",
-      "id": "Apa itu Zero Waste",
-      "en": "What is Zero Waste"
-    },
-    {
-      "key": "zw-tentang.4",
-      "label": "Zero Waste",
-      "id": "Zero Waste",
-      "en": "Zero Waste"
-    },
-    {
-      "key": "zw-tentang.5",
-      "label": "Apa itu Zero Waste?",
-      "id": "Apa itu Zero Waste?",
-      "en": "What is Zero Waste?"
-    },
-    {
-      "key": "zw-tentang.6",
-      "label": "Mengenal definisi resmi, prinsip dasar, dan filosofi di bali",
-      "id": "Mengenal definisi resmi, prinsip dasar, dan filosofi di balik gerakan Zero Waste menurut Zero Waste International Alliance (ZWIA).",
-      "en": "Understanding the official definition, core principles, and philosophy behind the Zero Waste movement according to the Zero Waste International Alliance (ZWIA)."
-    },
-    {
-      "key": "zw-tentang.7",
-      "label": "Definisi Resmi (ZWIA, 2018)",
-      "id": "Definisi Resmi (ZWIA, 2018)",
-      "en": "Official Definition (ZWIA, 2018)"
-    },
-    {
-      "key": "zw-tentang.8",
-      "label": "Menurut ZWIA, Zero Waste adalah \"konservasi seluruh sumber d",
-      "id": "Menurut ZWIA, Zero Waste adalah <em>\"konservasi seluruh sumber daya melalui produksi, konsumsi, penggunaan ulang, dan pemulihan produk, kemasan, serta material secara bertanggung jawab — tanpa pembakaran, dan tanpa pembuangan ke darat, air, atau udara yang mengancam lingkungan maupun kesehatan manusia.\"</em>",
-      "en": "According to ZWIA, Zero Waste is <em>\"the conservation of all resources by means of responsible production, consumption, reuse, and recovery of products, packaging, and materials without burning, and with no discharges to land, water, or air that threaten the environment or human health.\"</em>"
-    },
-    {
-      "key": "zw-tentang.9",
-      "label": "Lima Prinsip Utama",
-      "id": "Lima Prinsip Utama",
-      "en": "Five Core Principles"
-    },
-    {
-      "key": "zw-tentang.10",
-      "label": "Konservasi sumber daya — semua sumber daya dijaga agar tidak",
-      "id": "<strong>Konservasi sumber daya</strong> — semua sumber daya dijaga agar tidak terbuang percuma.",
-      "en": "<strong>Resource conservation</strong> — all resources are kept from being wasted."
-    },
-    {
-      "key": "zw-tentang.11",
-      "label": "Produksi & konsumsi bertanggung jawab — barang dirancang dan",
-      "id": "<strong>Produksi &amp; konsumsi bertanggung jawab</strong> — barang dirancang dan digunakan agar menghasilkan limbah seminimal mungkin.",
-      "en": "<strong>Responsible production &amp; consumption</strong> — goods are designed and used to generate as little waste as possible."
-    },
-    {
-      "key": "zw-tentang.12",
-      "label": "Penggunaan ulang & pemulihan — produk, kemasan, dan material",
-      "id": "<strong>Penggunaan ulang &amp; pemulihan</strong> — produk, kemasan, dan material dimanfaatkan kembali, bukan langsung dibuang.",
-      "en": "<strong>Reuse &amp; recovery</strong> — products, packaging, and materials are reused rather than discarded outright."
-    },
-    {
-      "key": "zw-tentang.13",
-      "label": "Tanpa pembakaran & pembuangan berbahaya — limbah tidak dibak",
-      "id": "<strong>Tanpa pembakaran &amp; pembuangan berbahaya</strong> — limbah tidak dibakar (insinerasi) dan tidak dilepas ke lingkungan dalam bentuk berbahaya.",
-      "en": "<strong>No burning or hazardous disposal</strong> — waste is not incinerated or released into the environment in a harmful form."
-    },
-    {
-      "key": "zw-tentang.14",
-      "label": "Tujuan jangka panjang — Zero Waste adalah proses yang terus ",
-      "id": "<strong>Tujuan jangka panjang</strong> — Zero Waste adalah proses yang terus diupayakan, bukan target sesaat yang sekali tercapai lalu selesai.",
-      "en": "<strong>A long-term goal</strong> — Zero Waste is a continuous process, not a one-time target to be reached and then abandoned."
-    },
-    {
-      "key": "zw-tentang.15",
-      "label": "Kenapa \"Zero\"? Bukankah Mustahil 100%?",
-      "id": "Kenapa \"Zero\"? Bukankah Mustahil 100%?",
-      "en": "Why \"Zero\"? Isn't 100% Impossible?"
-    },
-    {
-      "key": "zw-tentang.16",
-      "label": "\"Zero\" di sini adalah arah dan standar yang dituju, bukan kl",
-      "id": "\"Zero\" di sini adalah arah dan standar yang dituju, bukan klaim bahwa suatu sistem harus langsung sempurna tanpa cela. Sama seperti target \"nol kecelakaan kerja\" dalam keselamatan industri — tujuannya adalah terus mendekati titik itu secara sistematis, dengan mengutamakan pencegahan di hulu (lihat <a href=\"zw-hierarki.html\">Hierarki Zero Waste</a>) sebelum mengandalkan solusi di hilir seperti daur ulang atau pembuangan akhir.",
-      "en": "\"Zero\" here is a direction and a standard to aim for, not a claim that a system must be flawless overnight. It's similar to a \"zero workplace accidents\" target in industrial safety — the goal is to systematically approach that point, prioritizing upstream prevention (see the <a href=\"zw-hierarki.html\">Zero Waste Hierarchy</a>) before relying on downstream solutions like recycling or final disposal."
-    },
-    {
-      "key": "zw-tentang.17",
-      "label": "Sumber: Zero Waste International Alliance, \"Zero Waste Defin",
-      "id": "Sumber: Zero Waste International Alliance, <a href=\"https://zwia.org/zero-waste-definition/\" target=\"_blank\" rel=\"noopener\">\"Zero Waste Definition\"</a> (diperbarui Desember 2018).",
-      "en": "Source: Zero Waste International Alliance, <a href=\"https://zwia.org/zero-waste-definition/\" target=\"_blank\" rel=\"noopener\">\"Zero Waste Definition\"</a> (updated December 2018)."
-    },
-    {
-      "key": "zw-tentang.18",
-      "label": "Hierarki Zero Waste",
-      "id": "Hierarki Zero Waste",
-      "en": "The Zero Waste Hierarchy"
-    },
-    {
-      "key": "zw-tentang.19",
-      "label": "Lima tingkat prioritas: Reduce, Reuse, Recycle, Recovery, Di",
-      "id": "Lima tingkat prioritas: Reduce, Reuse, Recycle, Recovery, Disposal.",
-      "en": "Five priority tiers: Reduce, Reuse, Recycle, Recovery, Disposal."
-    },
-    {
-      "key": "zw-tentang.20",
-      "label": "Lihat selengkapnya →",
-      "id": "Lihat selengkapnya →",
-      "en": "See more →"
-    },
-    {
-      "key": "zw-tentang.21",
-      "label": "Gerakan Dunia",
-      "id": "Gerakan Dunia",
-      "en": "Global Movement"
-    },
-    {
-      "key": "zw-tentang.22",
-      "label": "Dari ZWIA hingga Zero Waste Singapore — bagaimana kota-kota ",
-      "id": "Dari ZWIA hingga Zero Waste Singapore — bagaimana kota-kota dunia menerapkannya.",
-      "en": "From ZWIA to Zero Waste Singapore — how cities around the world apply it."
-    },
-    {
-      "key": "zw-tentang.23",
-      "label": "Lihat selengkapnya →",
-      "id": "Lihat selengkapnya →",
-      "en": "See more →"
-    },
-    {
-      "key": "zw-tentang.24",
-      "label": "Gerakan di Indonesia",
-      "id": "Gerakan di Indonesia",
-      "en": "Movement in Indonesia"
-    },
-    {
-      "key": "zw-tentang.25",
-      "label": "AZWI dan komunitas lokal yang mendorong Indonesia bebas samp",
-      "id": "AZWI dan komunitas lokal yang mendorong Indonesia bebas sampah.",
-      "en": "AZWI and local communities pushing for a zero-waste Indonesia."
-    },
-    {
-      "key": "zw-tentang.26",
-      "label": "Lihat selengkapnya →",
-      "id": "Lihat selengkapnya →",
-      "en": "See more →"
-    }
-  ],
-  "zw-hierarki.html": [
-    {
-      "key": "zw-hierarki.1",
-      "label": "Beranda",
-      "id": "Beranda",
-      "en": "Home"
-    },
-    {
-      "key": "zw-hierarki.2",
-      "label": "Zero Waste",
-      "id": "Zero Waste",
-      "en": "Zero Waste"
-    },
-    {
-      "key": "zw-hierarki.3",
-      "label": "Hierarki Zero Waste",
-      "id": "Hierarki Zero Waste",
-      "en": "Zero Waste Hierarchy"
-    },
-    {
-      "key": "zw-hierarki.4",
-      "label": "Zero Waste",
-      "id": "Zero Waste",
-      "en": "Zero Waste"
-    },
-    {
-      "key": "zw-hierarki.5",
-      "label": "Hierarki Zero Waste",
-      "id": "Hierarki Zero Waste",
-      "en": "The Zero Waste Hierarchy"
-    },
-    {
-      "key": "zw-hierarki.6",
-      "label": "Lima tingkat prioritas dalam mengelola sumber daya, dari yan",
-      "id": "Lima tingkat prioritas dalam mengelola sumber daya, dari yang paling dianjurkan hingga pilihan paling akhir.",
-      "en": "Five priority tiers for managing resources, from most preferred to last resort."
-    },
-    {
-      "key": "zw-hierarki.7",
-      "label": "1. Reduce — Kurangi",
-      "id": "1. Reduce — Kurangi",
-      "en": "1. Reduce"
-    },
-    {
-      "key": "zw-hierarki.8",
-      "label": "2. Reuse — Gunakan Kembali",
-      "id": "2. Reuse — Gunakan Kembali",
-      "en": "2. Reuse"
-    },
-    {
-      "key": "zw-hierarki.9",
-      "label": "3. Recycle — Daur Ulang",
-      "id": "3. Recycle — Daur Ulang",
-      "en": "3. Recycle"
-    },
-    {
-      "key": "zw-hierarki.10",
-      "label": "4. Recovery — Pemulihan Energi",
-      "id": "4. Recovery — Pemulihan Energi",
-      "en": "4. Recovery"
-    },
-    {
-      "key": "zw-hierarki.11",
-      "label": "5. Disposal — Pembuangan Akhir",
-      "id": "5. Disposal — Pembuangan Akhir",
-      "en": "5. Disposal"
-    },
-    {
-      "key": "zw-hierarki.12",
-      "label": "1. Reduce (Kurangi)",
-      "id": "1. Reduce (Kurangi)",
-      "en": "1. Reduce"
-    },
-    {
-      "key": "zw-hierarki.13",
-      "label": "Tingkat paling diprioritaskan: mencegah timbulnya sampah sej",
-      "id": "Tingkat paling diprioritaskan: mencegah timbulnya sampah sejak awal dengan mengurangi konsumsi, menolak barang sekali pakai yang tidak perlu, dan memilih produk dengan kemasan minimal. Ini adalah inti dari filosofi Zero Waste — mencegah lebih baik daripada mengolah.",
-      "en": "The top-priority tier: preventing waste from being created in the first place by reducing consumption, refusing unnecessary single-use items, and choosing minimally-packaged products. This is the core of the Zero Waste philosophy — prevention is better than treatment."
-    },
-    {
-      "key": "zw-hierarki.14",
-      "label": "2. Reuse (Gunakan Kembali)",
-      "id": "2. Reuse (Gunakan Kembali)",
-      "en": "2. Reuse"
-    },
-    {
-      "key": "zw-hierarki.15",
-      "label": "Memanfaatkan kembali barang yang masih layak pakai tanpa men",
-      "id": "Memanfaatkan kembali barang yang masih layak pakai tanpa mengubah bentuknya — seperti botol minum isi ulang, wadah makan, atau pakaian bekas layak pakai — sehingga memperpanjang umur pakai suatu barang.",
-      "en": "Using items that are still functional again without changing their form — such as refillable water bottles, food containers, or usable second-hand clothing — extending a product's useful life."
-    },
-    {
-      "key": "zw-hierarki.16",
-      "label": "3. Recycle (Daur Ulang)",
-      "id": "3. Recycle (Daur Ulang)",
-      "en": "3. Recycle"
-    },
-    {
-      "key": "zw-hierarki.17",
-      "label": "Mengolah bahan yang sudah menjadi sampah menjadi bahan baku ",
-      "id": "Mengolah bahan yang sudah menjadi sampah menjadi bahan baku baru melalui proses fisik atau kimia, seperti plastik yang dilebur menjadi biji plastik, atau kertas bekas menjadi kertas daur ulang.",
-      "en": "Processing waste materials into new raw materials through physical or chemical processes, such as melting plastic into plastic pellets, or recycling paper into new paper."
-    },
-    {
-      "key": "zw-hierarki.18",
-      "label": "4. Recovery (Pemulihan Energi)",
-      "id": "4. Recovery (Pemulihan Energi)",
-      "en": "4. Recovery"
-    },
-    {
-      "key": "zw-hierarki.19",
-      "label": "Mengambil nilai dari sampah yang tidak bisa lagi didaur ulan",
-      "id": "Mengambil nilai dari sampah yang tidak bisa lagi didaur ulang, misalnya dengan mengubah sampah organik menjadi biogas atau kompos — seperti yang diterapkan di Pandansimo, di mana kotoran ternak diolah menjadi biogas untuk bahan bakar memasak warung.",
-      "en": "Recovering value from waste that can no longer be recycled, such as converting organic waste into biogas or compost — as practiced in Pandansimo, where livestock manure is processed into biogas for cooking fuel at local food stalls."
-    },
-    {
-      "key": "zw-hierarki.20",
-      "label": "Contoh penerapan recovery di Pandansimo dibahas lebih lanjut",
-      "id": "Contoh penerapan recovery di Pandansimo dibahas lebih lanjut di halaman <a href=\"pandansimo-implementasi.html\">Implementasi &amp; Teknologi</a>.",
-      "en": "An example of recovery in practice at Pandansimo is discussed further on the <a href=\"pandansimo-implementasi.html\">Implementation &amp; Technology</a> page."
-    },
-    {
-      "key": "zw-hierarki.21",
-      "label": "5. Disposal (Pembuangan Akhir)",
-      "id": "5. Disposal (Pembuangan Akhir)",
-      "en": "5. Disposal"
-    },
-    {
-      "key": "zw-hierarki.22",
-      "label": "Pilihan paling terakhir dan paling tidak disukai dalam hiera",
-      "id": "Pilihan paling terakhir dan paling tidak disukai dalam hierarki ini: membuang sampah ke tempat pembuangan akhir (TPA) atau insinerasi tanpa pemulihan energi. Tujuan Zero Waste adalah meminimalkan jumlah sampah yang sampai pada tahap ini.",
-      "en": "The last and least preferred option in this hierarchy: sending waste to a final landfill or incinerating it without energy recovery. The goal of Zero Waste is to minimize the amount of waste that reaches this stage."
-    },
-    {
-      "key": "zw-hierarki.23",
-      "label": "Kerangka hierarki ini mengacu pada prinsip yang dipromosikan",
-      "id": "Kerangka hierarki ini mengacu pada prinsip yang dipromosikan oleh Zero Waste International Alliance (ZWIA) dan berbagai inisiatif Zero Waste global, termasuk Zero Waste Singapore.",
-      "en": "This hierarchy framework follows the principles promoted by the Zero Waste International Alliance (ZWIA) and various global Zero Waste initiatives, including Zero Waste Singapore."
-    },
-    {
-      "key": "zw-hierarki.24",
-      "label": "Lihat Penerapannya di Lapangan",
-      "id": "Lihat Penerapannya di Lapangan",
-      "en": "See It Applied in the Field"
-    },
-    {
-      "key": "zw-hierarki.25",
-      "label": "Bagaimana prinsip Recovery diterapkan nyata di program energ",
-      "id": "Bagaimana prinsip Recovery diterapkan nyata di program energi Pandansimo.",
-      "en": "How the Recovery principle is applied in practice at the Pandansimo energy program."
-    },
-    {
-      "key": "zw-hierarki.26",
-      "label": "Lihat Implementasi",
-      "id": "Lihat Implementasi",
-      "en": "See the Implementation"
-    }
-  ],
-  "zw-gerakan-dunia.html": [
-    {
-      "key": "zw-gerakan-dunia.1",
-      "label": "Beranda",
-      "id": "Beranda",
-      "en": "Home"
-    },
-    {
-      "key": "zw-gerakan-dunia.2",
-      "label": "Zero Waste",
-      "id": "Zero Waste",
-      "en": "Zero Waste"
-    },
-    {
-      "key": "zw-gerakan-dunia.3",
-      "label": "Gerakan Dunia",
-      "id": "Gerakan Dunia",
-      "en": "Global Movement"
-    },
-    {
-      "key": "zw-gerakan-dunia.4",
-      "label": "Zero Waste",
-      "id": "Zero Waste",
-      "en": "Zero Waste"
-    },
-    {
-      "key": "zw-gerakan-dunia.5",
-      "label": "Gerakan Zero Waste di Dunia",
-      "id": "Gerakan Zero Waste di Dunia",
-      "en": "The Zero Waste Movement Around the World"
-    },
-    {
-      "key": "zw-gerakan-dunia.6",
-      "label": "Dari aliansi internasional hingga kebijakan satu negara kota",
-      "id": "Dari aliansi internasional hingga kebijakan satu negara kota — berbagai pendekatan menuju minim sampah.",
-      "en": "From international alliances to one city-state's policy — various approaches toward a zero-waste future."
-    },
-    {
-      "key": "zw-gerakan-dunia.7",
-      "label": "Zero Waste International Alliance (ZWIA)",
-      "id": "Zero Waste International Alliance (ZWIA)",
-      "en": "Zero Waste International Alliance (ZWIA)"
-    },
-    {
-      "key": "zw-gerakan-dunia.8",
-      "label": "ZWIA adalah organisasi nirlaba yang menyusun definisi dan st",
-      "id": "ZWIA adalah organisasi nirlaba yang menyusun definisi dan standar Zero Waste yang kini dipakai luas secara global, termasuk Zero Waste Hierarchy dan prinsip-prinsip untuk komunitas serta bisnis. ZWIA juga menyelenggarakan proses sertifikasi \"Zero Waste Community\" bagi kota/wilayah yang berhasil menerapkan prinsip-prinsipnya secara terukur.",
-      "en": "ZWIA is a nonprofit organization that developed the Zero Waste definition and standards now widely used worldwide, including the Zero Waste Hierarchy and principles for communities and businesses. ZWIA also runs a \"Zero Waste Community\" certification process for cities/regions that measurably apply its principles."
-    },
-    {
-      "key": "zw-gerakan-dunia.9",
-      "label": "Zero Waste Singapore & Zero Waste Masterplan",
-      "id": "Zero Waste Singapore &amp; Zero Waste Masterplan",
-      "en": "Zero Waste Singapore &amp; the Zero Waste Masterplan"
-    },
-    {
-      "key": "zw-gerakan-dunia.10",
-      "label": "Singapura, melalui National Environment Agency (NEA), menerb",
-      "id": "Singapura, melalui National Environment Agency (NEA), menerbitkan <em>Zero Waste Masterplan</em> dengan visi menjadi \"Zero Waste Nation\" pada 2030. Fokusnya ada pada tiga arus utama: sampah elektronik, kemasan (termasuk plastik), dan sisa makanan — dipadukan dengan rekayasa infrastruktur daur ulang dan edukasi publik berkelanjutan.",
-      "en": "Singapore, through the National Environment Agency (NEA), published a <em>Zero Waste Masterplan</em> with a vision of becoming a \"Zero Waste Nation\" by 2030. It focuses on three main waste streams: electronic waste, packaging (including plastics), and food waste — paired with recycling-infrastructure engineering and ongoing public education."
-    },
-    {
-      "key": "zw-gerakan-dunia.11",
-      "label": "Pendekatan Singapura relevan untuk kawasan Pandansimo karena",
-      "id": "Pendekatan Singapura relevan untuk kawasan Pandansimo karena sama-sama menekankan <strong>rekayasa hijau</strong> — infrastruktur teknis (fasilitas pengolahan, energi terbarukan) yang dirancang agar sumber daya terus berputar, bukan terbuang begitu saja.",
-      "en": "Singapore's approach is relevant to the Pandansimo area because both emphasize <strong>green engineering</strong> — technical infrastructure (processing facilities, renewable energy) designed to keep resources circulating rather than simply discarded."
-    },
-    {
-      "key": "zw-gerakan-dunia.12",
-      "label": "Pola Umum di Berbagai Negara",
-      "id": "Pola Umum di Berbagai Negara",
-      "en": "Common Patterns Across Countries"
-    },
-    {
-      "key": "zw-gerakan-dunia.13",
-      "label": "Kebijakan larangan/pembatasan plastik sekali pakai di banyak",
-      "id": "Kebijakan larangan/pembatasan plastik sekali pakai di banyak kota besar dunia.",
-      "en": "Bans or restrictions on single-use plastics in many major cities worldwide."
-    },
-    {
-      "key": "zw-gerakan-dunia.14",
-      "label": "Sistem pemilahan sampah dari sumber (rumah tangga) sebagai s",
-      "id": "Sistem pemilahan sampah dari sumber (rumah tangga) sebagai syarat dasar sebelum daur ulang efektif.",
-      "en": "Source-segregation of waste at the household level as a basic prerequisite for effective recycling."
-    },
-    {
-      "key": "zw-gerakan-dunia.15",
-      "label": "Target kota/negara \"Zero Waste\" dengan tenggat waktu terukur",
-      "id": "Target kota/negara \"Zero Waste\" dengan tenggat waktu terukur, bukan sekadar slogan.",
-      "en": "Measurable \"Zero Waste\" targets with concrete deadlines, not just slogans."
-    },
-    {
-      "key": "zw-gerakan-dunia.16",
-      "label": "Kombinasi kebijakan pemerintah, insentif bisnis, dan edukasi",
-      "id": "Kombinasi kebijakan pemerintah, insentif bisnis, dan edukasi masyarakat agar perubahan perilaku bertahan jangka panjang.",
-      "en": "A combination of government policy, business incentives, and public education so behavior change lasts long-term."
-    },
-    {
-      "key": "zw-gerakan-dunia.17",
-      "label": "Sumber: Zero Waste International Alliance (zwia.org); Nation",
-      "id": "Sumber: Zero Waste International Alliance (zwia.org); National Environment Agency Singapura, <em>Zero Waste Masterplan</em>; U.S. Department of Commerce, <a href=\"https://www.trade.gov/market-intelligence/singapore-zero-waste-nation-2030\" target=\"_blank\" rel=\"noopener\">\"Singapore: Zero Waste Nation by 2030\"</a>.",
-      "en": "Sources: Zero Waste International Alliance (zwia.org); Singapore's National Environment Agency, <em>Zero Waste Masterplan</em>; U.S. Department of Commerce, <a href=\"https://www.trade.gov/market-intelligence/singapore-zero-waste-nation-2030\" target=\"_blank\" rel=\"noopener\">\"Singapore: Zero Waste Nation by 2030\"</a>."
-    },
-    {
-      "key": "zw-gerakan-dunia.18",
-      "label": "Bagaimana dengan Indonesia?",
-      "id": "Bagaimana dengan Indonesia?",
-      "en": "What About Indonesia?"
-    },
-    {
-      "key": "zw-gerakan-dunia.19",
-      "label": "Lihat gerakan dan aliansi Zero Waste yang berkembang di dala",
-      "id": "Lihat gerakan dan aliansi Zero Waste yang berkembang di dalam negeri.",
-      "en": "See the Zero Waste movements and alliances developing domestically."
-    },
-    {
-      "key": "zw-gerakan-dunia.20",
-      "label": "Gerakan di Indonesia",
-      "id": "Gerakan di Indonesia",
-      "en": "Movement in Indonesia"
-    }
-  ],
-  "zw-gerakan-indonesia.html": [
-    {
-      "key": "zw-gerakan-indonesia.1",
-      "label": "Beranda",
-      "id": "Beranda",
-      "en": "Home"
-    },
-    {
-      "key": "zw-gerakan-indonesia.2",
-      "label": "Zero Waste",
-      "id": "Zero Waste",
-      "en": "Zero Waste"
-    },
-    {
-      "key": "zw-gerakan-indonesia.3",
-      "label": "Gerakan Indonesia",
-      "id": "Gerakan Indonesia",
-      "en": "Movement in Indonesia"
-    },
-    {
-      "key": "zw-gerakan-indonesia.4",
-      "label": "Zero Waste",
-      "id": "Zero Waste",
-      "en": "Zero Waste"
-    },
-    {
-      "key": "zw-gerakan-indonesia.5",
-      "label": "Gerakan Zero Waste di Indonesia",
-      "id": "Gerakan Zero Waste di Indonesia",
-      "en": "The Zero Waste Movement in Indonesia"
-    },
-    {
-      "key": "zw-gerakan-indonesia.6",
-      "label": "Aliansi, komunitas, dan kebijakan yang mendorong Indonesia m",
-      "id": "Aliansi, komunitas, dan kebijakan yang mendorong Indonesia menuju bebas sampah.",
-      "en": "Alliances, communities, and policies pushing Indonesia toward a zero-waste future."
-    },
-    {
-      "key": "zw-gerakan-indonesia.7",
-      "label": "Aliansi Zero Waste Indonesia (AZWI)",
-      "id": "Aliansi Zero Waste Indonesia (AZWI)",
-      "en": "Aliansi Zero Waste Indonesia (AZWI)"
-    },
-    {
-      "key": "zw-gerakan-indonesia.8",
-      "label": "AZWI adalah aliansi organisasi masyarakat sipil Indonesia ya",
-      "id": "AZWI adalah aliansi organisasi masyarakat sipil Indonesia yang mendorong penerapan konsep Zero Waste secara nasional. Aliansi ini lahir dari gerakan global <em>Break Free From Plastic</em> dan semakin menguat setelah berhasil mengajukan judicial review atas kebijakan yang mendukung fasilitas pembangkit listrik berbasis sampah (waste-to-energy). AZWI kini beranggotakan sepuluh organisasi dengan keahlian berbeda-beda, dan memiliki visi menjadikan \"Indonesia bebas sampah\" (<em>a zero waste Indonesia</em>).",
-      "en": "AZWI is an alliance of Indonesian civil-society organizations advocating for the nationwide application of Zero Waste principles. It emerged from the global <em>Break Free From Plastic</em> movement and gained strength after successfully filing a judicial review against a policy supporting waste-to-energy power facilities. AZWI now has ten member organizations with varied expertise, united by a vision of \"a zero waste Indonesia\"."
-    },
-    {
-      "key": "zw-gerakan-indonesia.9",
-      "label": "Fokus Advokasi",
-      "id": "Fokus Advokasi",
-      "en": "Advocacy Focus"
-    },
-    {
-      "key": "zw-gerakan-indonesia.10",
-      "label": "Menolak solusi sampah yang justru berisiko bagi lingkungan d",
-      "id": "Menolak solusi sampah yang justru berisiko bagi lingkungan dan kesehatan, seperti insinerasi skala besar.",
-      "en": "Opposing waste solutions that pose environmental and health risks, such as large-scale incineration."
-    },
-    {
-      "key": "zw-gerakan-indonesia.11",
-      "label": "Mendorong pengurangan sampah plastik sekali pakai dan penghe",
-      "id": "Mendorong pengurangan sampah plastik sekali pakai dan penghentian impor sampah plastik dari luar negeri.",
-      "en": "Pushing for reduced single-use plastic waste and an end to plastic-waste imports from abroad."
-    },
-    {
-      "key": "zw-gerakan-indonesia.12",
-      "label": "Memperkuat sistem pemilahan sampah dari sumber, termasuk mel",
-      "id": "Memperkuat sistem pemilahan sampah dari sumber, termasuk melalui jaringan bank sampah di berbagai daerah.",
-      "en": "Strengthening source-segregation systems, including through waste-bank (bank sampah) networks across regions."
-    },
-    {
-      "key": "zw-gerakan-indonesia.13",
-      "label": "Komunitas & Gerakan Lokal Lainnya",
-      "id": "Komunitas &amp; Gerakan Lokal Lainnya",
-      "en": "Other Local Communities &amp; Movements"
-    },
-    {
-      "key": "zw-gerakan-indonesia.14",
-      "label": "Di luar AZWI, berbagai kota di Indonesia mengembangkan progr",
-      "id": "Di luar AZWI, berbagai kota di Indonesia mengembangkan programnya sendiri — misalnya program \"Bebas Sampah\" di sejumlah kota yang mendorong pemilahan sampah tingkat rumah tangga, serta jaringan bank sampah yang tersebar di banyak kelurahan/desa sebagai simpul pengumpulan dan penukaran sampah bernilai ekonomi.",
-      "en": "Beyond AZWI, various Indonesian cities run their own programs — for example \"Waste-Free\" programs in several cities encouraging household-level waste sorting, and bank sampah (waste bank) networks spread across many neighborhoods and villages as collection and exchange points for recyclable waste."
-    },
-    {
-      "key": "zw-gerakan-indonesia.15",
-      "label": "Sumber: no-burn.org, \"AZWI: Bridging Differences for a Commo",
-      "id": "Sumber: no-burn.org, <a href=\"https://www.no-burn.org/resources/azwi-bridging-differences-for-a-common-zero-waste-goal/\" target=\"_blank\" rel=\"noopener\">\"AZWI: Bridging Differences for a Common Zero Waste Goal\"</a>; liputan media nasional tentang kebijakan bebas sampah. Daftar ini masih berupa draf dan akan dilengkapi dengan data terbaru.",
-      "en": "Sources: no-burn.org, <a href=\"https://www.no-burn.org/resources/azwi-bridging-differences-for-a-common-zero-waste-goal/\" target=\"_blank\" rel=\"noopener\">\"AZWI: Bridging Differences for a Common Zero Waste Goal\"</a>; national media coverage of zero-waste policy. This list is still a draft and will be expanded with more current data."
-    },
-    {
-      "key": "zw-gerakan-indonesia.16",
-      "label": "Dari Teori ke Praktik Nyata",
-      "id": "Dari Teori ke Praktik Nyata",
-      "en": "From Theory to Real Practice"
-    },
-    {
-      "key": "zw-gerakan-indonesia.17",
-      "label": "Lihat bagaimana sebagian prinsip ini sudah dipraktikkan di P",
-      "id": "Lihat bagaimana sebagian prinsip ini sudah dipraktikkan di Pandansimo, Bantul.",
-      "en": "See how some of these principles are already being practiced in Pandansimo, Bantul."
-    },
-    {
-      "key": "zw-gerakan-indonesia.18",
-      "label": "Profil Pandansimo",
-      "id": "Profil Pandansimo",
-      "en": "Pandansimo Profile"
-    }
-  ],
-  "zw-rekayasa-hijau.html": [
-    {
-      "key": "zw-rekayasa-hijau.1",
-      "label": "Beranda",
-      "id": "Beranda",
-      "en": "Home"
-    },
-    {
-      "key": "zw-rekayasa-hijau.2",
-      "label": "Zero Waste",
-      "id": "Zero Waste",
-      "en": "Zero Waste"
-    },
-    {
-      "key": "zw-rekayasa-hijau.3",
-      "label": "Rekayasa Hijau",
-      "id": "Rekayasa Hijau",
-      "en": "Green Engineering"
-    },
-    {
-      "key": "zw-rekayasa-hijau.4",
-      "label": "Zero Waste",
-      "id": "Zero Waste",
-      "en": "Zero Waste"
-    },
-    {
-      "key": "zw-rekayasa-hijau.5",
-      "label": "Rekayasa Hijau (Green Engineering)",
-      "id": "Rekayasa Hijau (Green Engineering)",
-      "en": "Green Engineering"
-    },
-    {
-      "key": "zw-rekayasa-hijau.6",
-      "label": "Bagaimana ilmu teknik — mesin, elektro, dan industri — menja",
-      "id": "Bagaimana ilmu teknik — mesin, elektro, dan industri — menjadi alat nyata untuk mewujudkan Zero Waste, bukan sekadar slogan lingkungan.",
-      "en": "How engineering — mechanical, electrical, and industrial — becomes a real tool for achieving Zero Waste, not just an environmental slogan."
-    },
-    {
-      "key": "zw-rekayasa-hijau.7",
-      "label": "Apa itu Rekayasa Hijau?",
-      "id": "Apa itu Rekayasa Hijau?",
-      "en": "What is Green Engineering?"
-    },
-    {
-      "key": "zw-rekayasa-hijau.8",
-      "label": "Rekayasa hijau adalah pendekatan merancang produk, proses, d",
-      "id": "Rekayasa hijau adalah pendekatan merancang produk, proses, dan sistem yang meminimalkan dampak negatif terhadap lingkungan sejak tahap perancangan — bukan menambal masalah setelah produk jadi. Prinsip ini sejalan dengan hierarki Zero Waste: mencegah dampak (reduce) jauh lebih efisien daripada mengatasinya setelah terjadi (recycle/disposal).",
-      "en": "Green engineering is an approach to designing products, processes, and systems that minimizes negative environmental impact from the design stage onward — rather than patching problems after the fact. This principle aligns with the Zero Waste hierarchy: preventing impact (reduce) is far more efficient than dealing with it afterward (recycle/disposal)."
-    },
-    {
-      "key": "zw-rekayasa-hijau.9",
-      "label": "Relevansi untuk Tiga Bidang Teknik",
-      "id": "Relevansi untuk Tiga Bidang Teknik",
-      "en": "Relevance to Three Engineering Fields"
-    },
-    {
-      "key": "zw-rekayasa-hijau.10",
-      "label": "Teknik Mesin",
-      "id": "Teknik Mesin",
-      "en": "Mechanical Engineering"
-    },
-    {
-      "key": "zw-rekayasa-hijau.11",
-      "label": "Merancang struktur turbin yang tahan korosi udara laut, sist",
-      "id": "Merancang struktur turbin yang tahan korosi udara laut, sistem mekanis pemrosesan sampah organik menjadi pelet pakan, dan efisiensi energi pada mesin pendingin (ice maker).",
-      "en": "Designing turbine structures resistant to sea-air corrosion, mechanical systems for processing organic waste into feed pellets, and energy efficiency in ice-making machines."
-    },
-    {
-      "key": "zw-rekayasa-hijau.12",
-      "label": "Teknik Elektro",
-      "id": "Teknik Elektro",
-      "en": "Electrical Engineering"
-    },
-    {
-      "key": "zw-rekayasa-hijau.13",
-      "label": "Mengoptimalkan sistem hibrid angin–surya, manajemen baterai ",
-      "id": "Mengoptimalkan sistem hibrid angin–surya, manajemen baterai penyimpanan, dan inverter agar pasokan listrik tetap stabil walau cuaca berubah-ubah.",
-      "en": "Optimizing the wind–solar hybrid system, battery storage management, and inverters to keep power supply stable despite changing weather."
-    },
-    {
-      "key": "zw-rekayasa-hijau.14",
-      "label": "Teknik Industri",
-      "id": "Teknik Industri",
-      "en": "Industrial Engineering"
-    },
-    {
-      "key": "zw-rekayasa-hijau.15",
-      "label": "Merancang alur kerja (sistem) pengelolaan sampah warung hing",
-      "id": "Merancang alur kerja (sistem) pengelolaan sampah warung hingga biogas, tata letak kawasan yang efisien, dan evaluasi kelayakan ekonomi program energi.",
-      "en": "Designing the workflow (system) for processing food-stall waste into biogas, efficient area layout, and economic-feasibility evaluation of the energy program."
-    },
-    {
-      "key": "zw-rekayasa-hijau.16",
-      "label": "Konsep ini menjadi kerangka analisis kami pada halaman Tanta",
-      "id": "Konsep ini menjadi kerangka analisis kami pada halaman <a href=\"pandansimo-solusi.html\">Tantangan &amp; Solusi Teknis</a>, di mana setiap masalah teknis di Pandansimo diberikan usulan solusi dari sudut pandang bidang keilmuan masing-masing.",
-      "en": "This concept forms our analytical framework on the <a href=\"pandansimo-solusi.html\">Challenges &amp; Technical Solutions</a> page, where each technical problem at Pandansimo is given a proposed solution from each field's perspective."
-    }
-  ],
-  "pandansimo-profil.html": [
-    {
-      "key": "pandansimo-profil.1",
-      "label": "Beranda",
-      "id": "Beranda",
-      "en": "Home"
-    },
-    {
-      "key": "pandansimo-profil.2",
-      "label": "Pandansimo",
-      "id": "Pandansimo",
-      "en": "Pandansimo"
-    },
-    {
-      "key": "pandansimo-profil.3",
-      "label": "Profil & Sejarah",
-      "id": "Profil &amp; Sejarah",
-      "en": "Profile &amp; History"
-    },
-    {
-      "key": "pandansimo-profil.4",
-      "label": "Pandansimo",
-      "id": "Pandansimo",
-      "en": "Pandansimo"
-    },
-    {
-      "key": "pandansimo-profil.5",
-      "label": "Profil & Sejarah Pantai Baru Pandansimo",
-      "id": "Profil &amp; Sejarah Pantai Baru Pandansimo",
-      "en": "Profile &amp; History of Pantai Baru Pandansimo"
-    },
-    {
-      "key": "pandansimo-profil.6",
-      "label": "Mengenal lokasi, latar belakang kerja sama, dan perjalanan p",
-      "id": "Mengenal lokasi, latar belakang kerja sama, dan perjalanan program energi terbarukan di pesisir selatan Bantul.",
-      "en": "Getting to know the location, the background of the collaboration, and the journey of the renewable energy program on Bantul's south coast."
-    },
-    {
-      "key": "pandansimo-profil.7",
-      "label": "Lokasi",
-      "id": "Lokasi",
-      "en": "Location"
-    },
-    {
-      "key": "pandansimo-profil.8",
-      "label": "Pantai Baru Pandansimo terletak di Dusun Ngentak, Desa Ponco",
-      "id": "Pantai Baru Pandansimo terletak di Dusun Ngentak, Desa Poncosari, Kecamatan Srandakan, Kabupaten Bantul, Daerah Istimewa Yogyakarta — sekitar 33 km dari pusat Kota Yogyakarta. Kawasan ini berada di muara Sungai Progo, menjadikannya lokasi strategis untuk kombinasi energi angin, surya, dan potensi perikanan.",
-      "en": "Pantai Baru Pandansimo is located in Ngentak Hamlet, Poncosari Village, Srandakan District, Bantul Regency, Yogyakarta Special Region — about 33 km from central Yogyakarta City. The area sits at the mouth of the Progo River, making it a strategic location for combining wind, solar, and fisheries potential."
-    },
-    {
-      "key": "pandansimo-profil.9",
-      "label": "Latar Belakang Program",
-      "id": "Latar Belakang Program",
-      "en": "Program Background"
-    },
-    {
-      "key": "pandansimo-profil.10",
-      "label": "Pembangunan Pembangkit Listrik Tenaga Hibrid (PLTH) di kawas",
-      "id": "Pembangunan Pembangkit Listrik Tenaga Hibrid (PLTH) di kawasan ini dimulai pada 27 Juni 2010 dan diresmikan setahun kemudian. Program ini lahir dari kebutuhan nyata masyarakat pesisir — terutama nelayan dan pelaku usaha warung — akan sumber listrik yang stabil dan terjangkau, sekaligus menjadi proyek percontohan energi terbarukan yang memadukan tenaga angin dan surya di satu kawasan.",
-      "en": "Construction of the Hybrid Power Plant (PLTH) in this area began on 27 June 2010 and was inaugurated the following year. The program arose from the real needs of coastal communities — especially fishermen and food-stall operators — for a stable, affordable power source, while also serving as a pilot renewable-energy project combining wind and solar power in one location."
-    },
-    {
-      "key": "pandansimo-profil.11",
-      "label": "Para Pemangku Kepentingan",
-      "id": "Para Pemangku Kepentingan",
-      "en": "Stakeholders"
-    },
-    {
-      "key": "pandansimo-profil.12",
-      "label": "Program ini melibatkan kerja sama lintas lembaga, yang penge",
-      "id": "Program ini melibatkan kerja sama lintas lembaga, yang pengelolaannya berganti tangan seiring waktu:",
-      "en": "The program involves cross-institutional collaboration, with management changing hands over time:"
-    },
-    {
-      "key": "pandansimo-profil.13",
-      "label": "Kementerian Riset & Teknologi (Kemenristek) — inisiator dan ",
-      "id": "<strong>Kementerian Riset &amp; Teknologi (Kemenristek)</strong> — inisiator dan pengelola awal (2010–2014), bersama <strong>LAPAN</strong> dan <strong>Kementerian Kelautan &amp; Perikanan</strong>.",
-      "en": "<strong>Ministry of Research &amp; Technology (Kemenristek)</strong> — initiator and early manager (2010–2014), together with <strong>LAPAN</strong> (the national aerospace agency) and the <strong>Ministry of Marine Affairs &amp; Fisheries</strong>."
-    },
-    {
-      "key": "pandansimo-profil.14",
-      "label": "Universitas Gadjah Mada (UGM) — mitra riset dan pengembangan",
-      "id": "<strong>Universitas Gadjah Mada (UGM)</strong> — mitra riset dan pengembangan teknologi, melalui berbagai pusat studi dan fakultas teknik.",
-      "en": "<strong>Universitas Gadjah Mada (UGM)</strong> — research and technology-development partner, through various study centers and engineering faculties."
-    },
-    {
-      "key": "pandansimo-profil.15",
-      "label": "Bappeda Kabupaten Bantul dan dinas-dinas terkait (pengairan,",
-      "id": "<strong>Bappeda Kabupaten Bantul</strong> dan dinas-dinas terkait (pengairan, pekerjaan umum, pertanian, perikanan, perindustrian &amp; perdagangan, pariwisata) — pengelola pada periode 2014–2016.",
-      "en": "<strong>Bantul Regency Planning Agency (Bappeda)</strong> and related agencies (water resources, public works, agriculture, fisheries, industry &amp; trade, tourism) — managers during 2014–2016."
-    },
-    {
-      "key": "pandansimo-profil.16",
-      "label": "Kementerian Energi & Sumber Daya Mineral (ESDM) — pengelola ",
-      "id": "<strong>Kementerian Energi &amp; Sumber Daya Mineral (ESDM)</strong> — pengelola sejak 2016 hingga sekarang.",
-      "en": "<strong>Ministry of Energy &amp; Mineral Resources (ESDM)</strong> — manager from 2016 to the present."
-    },
-    {
-      "key": "pandansimo-profil.17",
-      "label": "Pemerintah Desa Poncosari dan masyarakat setempat — pelaku u",
-      "id": "Pemerintah Desa Poncosari dan masyarakat setempat — pelaku utama yang menjalankan dan merawat fasilitas sehari-hari.",
-      "en": "Poncosari Village government and local residents — the primary actors who operate and maintain the facilities day to day."
-    },
-    {
-      "key": "pandansimo-profil.18",
-      "label": "Catatan: sebagian sumber menyebut kerja sama ini sebagai kem",
-      "id": "Catatan: sebagian sumber menyebut kerja sama ini sebagai kemitraan UGM–Pemkab Bantul–Kementerian ESDM. Catatan lapangan di atas menunjukkan pengelolaannya sebenarnya bertahap/estafet antar-lembaga, bukan kemitraan tiga pihak sejak awal — poin ini bisa menjadi bahan analisis menarik untuk bagian Evaluasi.",
-      "en": "Note: some sources describe this as a UGM–Bantul Regency–Ministry of ESDM partnership. The timeline above shows management actually passed between institutions in stages rather than being a three-way partnership from the start — a point worth exploring further in the Analysis &amp; Evaluation section."
-    },
-    {
-      "key": "pandansimo-profil.19",
-      "label": "Garis Waktu Singkat",
-      "id": "Garis Waktu Singkat",
-      "en": "Brief Timeline"
-    },
-    {
-      "key": "pandansimo-profil.20",
-      "label": "Pembangunan PLTH dimulai (27 Juni), diinisiasi Kemenristek b",
-      "id": "Pembangunan PLTH dimulai (27 Juni), diinisiasi Kemenristek bersama UGM, LAPAN, dan Kementerian Kelautan &amp; Perikanan.",
-      "en": "Construction of the PLTH begins (27 June), initiated by Kemenristek together with UGM, LAPAN, and the Ministry of Marine Affairs &amp; Fisheries."
-    },
-    {
-      "key": "pandansimo-profil.21",
-      "label": "Fasilitas PLTH diresmikan dan mulai beroperasi melayani kawa",
-      "id": "Fasilitas PLTH diresmikan dan mulai beroperasi melayani kawasan pesisir.",
-      "en": "The PLTH facility is inaugurated and begins operating to serve the coastal area."
-    },
-    {
-      "key": "pandansimo-profil.22",
-      "label": "Sambaran petir menyebabkan gangguan pasokan listrik, membata",
-      "id": "Sambaran petir menyebabkan gangguan pasokan listrik, membatasi kapasitas yang bisa digunakan pedagang.",
-      "en": "A lightning strike disrupts the power supply, limiting the capacity available to vendors."
-    },
-    {
-      "key": "pandansimo-profil.23",
-      "label": "Pengelolaan beralih ke Pemerintah Kabupaten Bantul.",
-      "id": "Pengelolaan beralih ke Pemerintah Kabupaten Bantul.",
-      "en": "Management transfers to the Bantul Regency Government."
-    },
-    {
-      "key": "pandansimo-profil.24",
-      "label": "Pengelolaan berada di bawah Kementerian ESDM, dengan tantang",
-      "id": "Pengelolaan berada di bawah Kementerian ESDM, dengan tantangan korosi dan efisiensi turbin yang terus dievaluasi.",
-      "en": "Management comes under the Ministry of ESDM, with corrosion and turbine-efficiency challenges continuing to be evaluated."
-    },
-    {
-      "key": "pandansimo-profil.25",
-      "label": "Sumber: Mongabay Indonesia (2013), situs resmi ESDM, dan lip",
-      "id": "Sumber: Mongabay Indonesia (2013), situs resmi ESDM, dan liputan UGM. Lihat daftar lengkap di halaman <a href=\"pandansimo-analisis.html\">Analisis &amp; Evaluasi</a>. Data ini masih berupa draf dari sumber publik — akan diperbarui dengan dokumentasi dan survei lapangan kelompok.",
-      "en": "Sources: Mongabay Indonesia (2013), the official ESDM website, and UGM coverage. See the full list on the <a href=\"pandansimo-analisis.html\">Analysis &amp; Evaluation</a> page. This data is still a draft from public sources — it will be updated with the group's own documentation and field survey."
-    },
-    {
-      "key": "pandansimo-profil.26",
-      "label": "Lanjut ke Potensi Kawasan",
-      "id": "Lanjut ke Potensi Kawasan",
-      "en": "Continue to Area Potential"
-    },
-    {
-      "key": "pandansimo-profil.27",
-      "label": "Akses, wisata, alam, energi, panorama, hingga aktivitas unik",
-      "id": "Akses, wisata, alam, energi, panorama, hingga aktivitas unik di kawasan Pandansimo.",
-      "en": "Access, tourism, nature, energy, scenery, and unique activities in the Pandansimo area."
-    },
-    {
-      "key": "pandansimo-profil.28",
-      "label": "Lihat Potensi Kawasan",
-      "id": "Lihat Potensi Kawasan",
-      "en": "See Area Potential"
-    }
-  ],
-  "pandansimo-potensi.html": [
-    {
-      "key": "pandansimo-potensi.1",
-      "label": "Beranda",
-      "id": "Beranda",
-      "en": "Home"
-    },
-    {
-      "key": "pandansimo-potensi.2",
-      "label": "Pandansimo",
-      "id": "Pandansimo",
-      "en": "Pandansimo"
-    },
-    {
-      "key": "pandansimo-potensi.3",
-      "label": "Potensi Kawasan",
-      "id": "Potensi Kawasan",
-      "en": "Area Potential"
-    },
-    {
-      "key": "pandansimo-potensi.4",
-      "label": "Pandansimo",
-      "id": "Pandansimo",
-      "en": "Pandansimo"
-    },
-    {
-      "key": "pandansimo-potensi.5",
-      "label": "Potensi Kawasan Pandansimo",
-      "id": "Potensi Kawasan Pandansimo",
-      "en": "Pandansimo Area Potential"
-    },
-    {
-      "key": "pandansimo-potensi.6",
-      "label": "Tujuh aspek potensi yang menjadi dasar pengembangan kawasan ",
-      "id": "Tujuh aspek potensi yang menjadi dasar pengembangan kawasan ini menuju desa mandiri energi.",
-      "en": "Seven potential aspects that form the basis for developing this area into an energy-independent village."
-    },
-    {
-      "key": "pandansimo-potensi.7",
-      "label": "1",
-      "id": "1",
-      "en": "1"
-    },
-    {
-      "key": "pandansimo-potensi.8",
-      "label": "Akses",
-      "id": "Akses",
-      "en": "Access"
-    },
-    {
-      "key": "pandansimo-potensi.9",
-      "label": "Jarak sekitar 33 km dari pusat Kota Yogyakarta dengan akses ",
-      "id": "Jarak sekitar 33 km dari pusat Kota Yogyakarta dengan akses jalan yang relatif baik, menjadikannya terjangkau untuk kunjungan wisata maupun studi edukasi.",
-      "en": "About 33 km from central Yogyakarta City with relatively good road access, making it reachable for both tourism and educational visits."
-    },
-    {
-      "key": "pandansimo-potensi.10",
-      "label": "2",
-      "id": "2",
-      "en": "2"
-    },
-    {
-      "key": "pandansimo-potensi.11",
-      "label": "Wisata",
-      "id": "Wisata",
-      "en": "Tourism"
-    },
-    {
-      "key": "pandansimo-potensi.12",
-      "label": "Kombinasi pantai, kincir angin, dan wisata edukasi energi te",
-      "id": "Kombinasi pantai, kincir angin, dan wisata edukasi energi terbarukan menjadikan Pandansimo daya tarik yang unik dibanding pantai selatan Jawa lainnya.",
-      "en": "The combination of beach, wind turbines, and renewable-energy education tourism makes Pandansimo a unique draw compared to other south-Java beaches."
-    },
-    {
-      "key": "pandansimo-potensi.13",
-      "label": "3",
-      "id": "3",
-      "en": "3"
-    },
-    {
-      "key": "pandansimo-potensi.14",
-      "label": "Alam",
-      "id": "Alam",
-      "en": "Nature"
-    },
-    {
-      "key": "pandansimo-potensi.15",
-      "label": "Berada di muara Sungai Progo dengan ekosistem pesisir yang k",
-      "id": "Berada di muara Sungai Progo dengan ekosistem pesisir yang kaya, termasuk vegetasi cemara udang yang menahan abrasi dan angin pantai.",
-      "en": "Located at the mouth of the Progo River with a rich coastal ecosystem, including casuarina trees that help prevent abrasion and buffer coastal winds."
-    },
-    {
-      "key": "pandansimo-potensi.16",
-      "label": "4",
-      "id": "4",
-      "en": "4"
-    },
-    {
-      "key": "pandansimo-potensi.17",
-      "label": "Energi",
-      "id": "Energi",
-      "en": "Energy"
-    },
-    {
-      "key": "pandansimo-potensi.18",
-      "label": "Potensi angin pantai yang konsisten dan paparan sinar mataha",
-      "id": "Potensi angin pantai yang konsisten dan paparan sinar matahari tinggi menjadikan kawasan ini cocok untuk sistem hibrid angin–surya.",
-      "en": "Consistent coastal wind and high solar exposure make this area well-suited to a hybrid wind–solar system."
-    },
-    {
-      "key": "pandansimo-potensi.19",
-      "label": "5",
-      "id": "5",
-      "en": "5"
-    },
-    {
-      "key": "pandansimo-potensi.20",
-      "label": "Panorama / View",
-      "id": "Panorama / View",
-      "en": "Panorama / View"
-    },
-    {
-      "key": "pandansimo-potensi.21",
-      "label": "Pemandangan matahari terbenam dan deretan turbin angin menja",
-      "id": "Pemandangan matahari terbenam dan deretan turbin angin menjadi latar yang khas dan fotogenik di sepanjang garis pantai.",
-      "en": "Sunset views and rows of wind turbines form a distinctive, photogenic backdrop along the coastline."
-    },
-    {
-      "key": "pandansimo-potensi.22",
-      "label": "6",
-      "id": "6",
-      "en": "6"
-    },
-    {
-      "key": "pandansimo-potensi.23",
-      "label": "Rakyat (Hasil Bumi)",
-      "id": "Rakyat (Hasil Bumi)",
-      "en": "Community Harvest"
-    },
-    {
-      "key": "pandansimo-potensi.24",
-      "label": "Hasil tangkapan nelayan, hasil tambak udang, dan produk waru",
-      "id": "Hasil tangkapan nelayan, hasil tambak udang, dan produk warung lokal menjadi sumber ekonomi masyarakat yang didukung infrastruktur energi kawasan.",
-      "en": "Fishermen's catches, shrimp-pond harvests, and local food-stall products are community income sources supported by the area's energy infrastructure."
-    },
-    {
-      "key": "pandansimo-potensi.25",
-      "label": "7",
-      "id": "7",
-      "en": "7"
-    },
-    {
-      "key": "pandansimo-potensi.26",
-      "label": "Aktivitas Unik",
-      "id": "Aktivitas Unik",
-      "en": "Unique Activities"
-    },
-    {
-      "key": "pandansimo-potensi.27",
-      "label": "Kompetisi roket air/edukasi, serta penanganan penyu, hiu, at",
-      "id": "Kompetisi roket air/edukasi, serta penanganan penyu, hiu, atau paus yang sesekali terdampar dan dikembalikan ke laut — menjadikan Pandansimo juga pusat kesadaran konservasi.",
-      "en": "Water-rocket/education competitions, and the handling of turtles, sharks, or whales that occasionally strand and are returned to the sea — making Pandansimo also a conservation-awareness hub."
-    },
-    {
-      "key": "pandansimo-potensi.28",
-      "label": "Arah Pengembangan: Desa Mandiri Energi",
-      "id": "Arah Pengembangan: Desa Mandiri Energi",
-      "en": "Development Direction: Energy-Independent Village"
-    },
-    {
-      "key": "pandansimo-potensi.29",
-      "label": "Ketujuh potensi di atas diarahkan pada satu visi besar: menj",
-      "id": "Ketujuh potensi di atas diarahkan pada satu visi besar: menjadikan Pandansimo sebagai <strong>desa mandiri energi</strong> — kawasan yang mampu memenuhi kebutuhan listrik dan sumber dayanya sendiri secara berkelanjutan, sekaligus menjadi contoh penerapan prinsip Zero Waste di tingkat komunitas pesisir.",
-      "en": "These seven potentials are directed toward one overarching vision: making Pandansimo an <strong>energy-independent village</strong> — an area able to sustainably meet its own electricity and resource needs, while also serving as a model for applying Zero Waste principles at the coastal-community level."
-    },
-    {
-      "key": "pandansimo-potensi.30",
-      "label": "Kategori potensi di atas disusun berdasarkan dokumen rencana",
-      "id": "Kategori potensi di atas disusun berdasarkan dokumen rencana awal kelompok kami. Data kuantitatif (jumlah pengunjung, hasil tangkapan, dll.) akan dilengkapi lewat panel admin setelah tersedia.",
-      "en": "The potential categories above are organized based on our group's initial planning documents. Quantitative data (visitor numbers, catch volumes, etc.) will be added via the admin panel once available."
-    },
-    {
-      "key": "pandansimo-potensi.31",
-      "label": "Bagaimana Rencana Pengembangannya?",
-      "id": "Bagaimana Rencana Pengembangannya?",
-      "en": "What's the Development Plan?"
-    },
-    {
-      "key": "pandansimo-potensi.32",
-      "label": "Lihat masterplan kawasan: taman pintar, waterboom, olahraga ",
-      "id": "Lihat masterplan kawasan: taman pintar, waterboom, olahraga pantai, dan jogging track.",
-      "en": "See the area masterplan: smart park, waterboom, beach sports, and jogging track."
-    },
-    {
-      "key": "pandansimo-potensi.33",
-      "label": "Lihat Masterplan",
-      "id": "Lihat Masterplan",
-      "en": "See Masterplan"
-    }
-  ],
-  "pandansimo-masterplan.html": [
-    {
-      "key": "pandansimo-masterplan.1",
-      "label": "Beranda",
-      "id": "Beranda",
-      "en": "Home"
-    },
-    {
-      "key": "pandansimo-masterplan.2",
-      "label": "Pandansimo",
-      "id": "Pandansimo",
-      "en": "Pandansimo"
-    },
-    {
-      "key": "pandansimo-masterplan.3",
-      "label": "Masterplan / Siteplan",
-      "id": "Masterplan / Siteplan",
-      "en": "Masterplan / Siteplan"
-    },
-    {
-      "key": "pandansimo-masterplan.4",
-      "label": "Pandansimo",
-      "id": "Pandansimo",
-      "en": "Pandansimo"
-    },
-    {
-      "key": "pandansimo-masterplan.5",
-      "label": "Masterplan & Rencana Kawasan",
-      "id": "Masterplan &amp; Rencana Kawasan",
-      "en": "Area Masterplan &amp; Plans"
-    },
-    {
-      "key": "pandansimo-masterplan.6",
-      "label": "Rencana pengembangan fasilitas yang pernah dirancang untuk m",
-      "id": "Rencana pengembangan fasilitas yang pernah dirancang untuk melengkapi kawasan energi Pandansimo menjadi destinasi wisata terpadu.",
-      "en": "Facility-development plans once designed to complement the Pandansimo energy area into an integrated tourism destination."
-    },
-    {
-      "key": "pandansimo-masterplan.7",
-      "label": "Elemen Siteplan yang Direncanakan",
-      "id": "Elemen Siteplan yang Direncanakan",
-      "en": "Planned Siteplan Elements"
-    },
-    {
-      "key": "pandansimo-masterplan.8",
-      "label": "Selain fasilitas energi yang sudah berjalan, kawasan Pandans",
-      "id": "Selain fasilitas energi yang sudah berjalan, kawasan Pandansimo pernah memiliki rencana induk (siteplan) untuk melengkapi fungsi wisata dan rekreasi kawasan, meliputi:",
-      "en": "Beyond the energy facilities already in operation, the Pandansimo area once had a masterplan (siteplan) to complement its tourism and recreation functions, including:"
-    },
-    {
-      "key": "pandansimo-masterplan.9",
-      "label": "Taman Pintar",
-      "id": "Taman Pintar",
-      "en": "Smart Park"
-    },
-    {
-      "key": "pandansimo-masterplan.10",
-      "label": "Ruang edukasi terbuka tentang energi terbarukan dan lingkung",
-      "id": "Ruang edukasi terbuka tentang energi terbarukan dan lingkungan, dirancang untuk kunjungan pelajar dan wisatawan.",
-      "en": "An open educational space about renewable energy and the environment, designed for student and tourist visits."
-    },
-    {
-      "key": "pandansimo-masterplan.11",
-      "label": "Waterboom",
-      "id": "Waterboom",
-      "en": "Waterboom"
-    },
-    {
-      "key": "pandansimo-masterplan.12",
-      "label": "Wahana air sebagai daya tarik rekreasi keluarga, memanfaatka",
-      "id": "Wahana air sebagai daya tarik rekreasi keluarga, memanfaatkan pasokan air dan listrik dari sistem hibrid setempat.",
-      "en": "A water-recreation attraction for families, drawing on water and electricity supplied by the local hybrid system."
-    },
-    {
-      "key": "pandansimo-masterplan.13",
-      "label": "Olahraga Pantai",
-      "id": "Olahraga Pantai",
-      "en": "Beach Sports"
-    },
-    {
-      "key": "pandansimo-masterplan.14",
-      "label": "Area untuk voli pantai dan olahraga pesisir lain, memanfaatk",
-      "id": "Area untuk voli pantai dan olahraga pesisir lain, memanfaatkan ruang terbuka di sepanjang garis pantai.",
-      "en": "An area for beach volleyball and other coastal sports, making use of open space along the shoreline."
-    },
-    {
-      "key": "pandansimo-masterplan.15",
-      "label": "Jogging Track",
-      "id": "Jogging Track",
-      "en": "Jogging Track"
-    },
-    {
-      "key": "pandansimo-masterplan.16",
-      "label": "Jalur lari/jalan santai di sepanjang kawasan pesisir, melint",
-      "id": "Jalur lari/jalan santai di sepanjang kawasan pesisir, melintasi area turbin angin dan taman edukasi.",
-      "en": "A running/walking path along the coastal area, passing through the wind-turbine zone and the education park."
-    },
-    {
-      "key": "pandansimo-masterplan.17",
-      "label": "Status Implementasi",
-      "id": "Status Implementasi",
-      "en": "Implementation Status"
-    },
-    {
-      "key": "pandansimo-masterplan.18",
-      "label": "Dari fasilitas yang direncanakan dalam siteplan tersebut, el",
-      "id": "Dari fasilitas yang direncanakan dalam siteplan tersebut, elemen yang sudah terlihat berjalan paling konsisten adalah infrastruktur energi (turbin, solar panel, biogas) dan fasilitas pendukung dasar (warung, penerangan). Fasilitas rekreasi tambahan seperti waterboom dan taman pintar statusnya perlu konfirmasi lapangan terbaru — ini jadi salah satu bagian penting untuk bagian <a href=\"pandansimo-analisis.html\">Analisis &amp; Evaluasi</a> kami.",
-      "en": "Of the facilities planned in the siteplan, the elements that appear to be running most consistently are the energy infrastructure (turbines, solar panels, biogas) and basic support facilities (food stalls, lighting). The status of additional recreational facilities like the waterboom and smart park needs on-site confirmation — this is one important part of our <a href=\"pandansimo-analisis.html\">Analysis &amp; Evaluation</a> section."
-    },
-    {
-      "key": "pandansimo-masterplan.19",
-      "label": "Catatan: daftar elemen siteplan ini berdasarkan rencana awal",
-      "id": "Catatan: daftar elemen siteplan ini berdasarkan rencana awal yang disebutkan kelompok kami. Peta/gambar siteplan resmi akan ditambahkan di sini begitu tersedia (lewat panel admin, tanpa perlu ubah kode halaman).",
-      "en": "Note: this siteplan element list is based on the initial plan mentioned by our group. An official siteplan map/image will be added here once available (via the admin panel, without needing to change the page's code)."
-    },
-    {
-      "key": "pandansimo-masterplan.20",
-      "label": "Apa Saja yang Sudah Terbangun?",
-      "id": "Apa Saja yang Sudah Terbangun?",
-      "en": "What's Already Been Built?"
-    },
-    {
-      "key": "pandansimo-masterplan.21",
-      "label": "Lihat teknologi energi yang benar-benar sudah diimplementasi",
-      "id": "Lihat teknologi energi yang benar-benar sudah diimplementasikan di lapangan.",
-      "en": "See the energy technology that has actually been implemented on site."
-    },
-    {
-      "key": "pandansimo-masterplan.22",
-      "label": "Implementasi & Teknologi",
-      "id": "Implementasi &amp; Teknologi",
-      "en": "Implementation &amp; Technology"
-    }
-  ],
-  "pandansimo-implementasi.html": [
-    {
-      "key": "pandansimo-implementasi.1",
-      "label": "Beranda",
-      "id": "Beranda",
-      "en": "Home"
-    },
-    {
-      "key": "pandansimo-implementasi.2",
-      "label": "Pandansimo",
-      "id": "Pandansimo",
-      "en": "Pandansimo"
-    },
-    {
-      "key": "pandansimo-implementasi.3",
-      "label": "Implementasi & Teknologi",
-      "id": "Implementasi &amp; Teknologi",
-      "en": "Implementation &amp; Technology"
-    },
-    {
-      "key": "pandansimo-implementasi.4",
-      "label": "Pandansimo",
-      "id": "Pandansimo",
-      "en": "Pandansimo"
-    },
-    {
-      "key": "pandansimo-implementasi.5",
-      "label": "Implementasi & Teknologi",
-      "id": "Implementasi &amp; Teknologi",
-      "en": "Implementation &amp; Technology"
-    },
-    {
-      "key": "pandansimo-implementasi.6",
-      "label": "Teknologi nyata yang sudah terpasang dan beroperasi di Pemba",
-      "id": "Teknologi nyata yang sudah terpasang dan beroperasi di Pembangkit Listrik Tenaga Hibrid (PLTH) Pandansimo.",
-      "en": "Real technology already installed and operating at the Pandansimo Hybrid Power Plant (PLTH)."
-    },
-    {
-      "key": "pandansimo-implementasi.7",
-      "label": "kapasitas total (angin + surya)",
-      "id": "kapasitas total (angin + surya)",
-      "en": "total capacity (wind + solar)"
-    },
-    {
-      "key": "pandansimo-implementasi.8",
-      "label": "turbin angin, 4–10 kW per unit",
-      "id": "turbin angin, 4–10 kW per unit",
-      "en": "wind turbines, 4–10 kW each"
-    },
-    {
-      "key": "pandansimo-implementasi.9",
-      "label": "modul panel surya, 100–200 W",
-      "id": "modul panel surya, 100–200 W",
-      "en": "solar panel modules, 100–200 W"
-    },
-    {
-      "key": "pandansimo-implementasi.10",
-      "label": "digester biogas dari kotoran ternak",
-      "id": "digester biogas dari kotoran ternak",
-      "en": "biogas digesters from livestock manure"
-    },
-    {
-      "key": "pandansimo-implementasi.11",
-      "label": "Turbin Angin",
-      "id": "Turbin Angin",
-      "en": "Wind Turbines"
-    },
-    {
-      "key": "pandansimo-implementasi.12",
-      "label": "Sekitar 34 unit turbin angin berkapasitas 4–10 kW per unit t",
-      "id": "Sekitar 34 unit turbin angin berkapasitas 4–10 kW per unit terpasang di sepanjang kawasan pesisir, menghasilkan sekitar 56 kW dari sisi energi angin. Turbin-turbin ini dirancang untuk memanfaatkan angin laut yang relatif konsisten di kawasan pesisir selatan.",
-      "en": "About 34 wind turbines rated 4–10 kW each are installed along the coastal area, producing roughly 56 kW from the wind side. These turbines are designed to harness the relatively consistent sea breeze along the south coast."
-    },
-    {
-      "key": "pandansimo-implementasi.13",
-      "label": "Panel Surya",
-      "id": "Panel Surya",
-      "en": "Solar Panels"
-    },
-    {
-      "key": "pandansimo-implementasi.14",
-      "label": "238 modul panel surya berkapasitas 100–200 W melengkapi paso",
-      "id": "238 modul panel surya berkapasitas 100–200 W melengkapi pasokan energi dari sisi tenaga matahari, disimpan dalam 160 unit baterai 12V dengan total beban sekitar 22,5 kW.",
-      "en": "238 solar panel modules rated 100–200 W complement the energy supply from the solar side, stored in 160 12V batteries with a total load of about 22.5 kW."
-    },
-    {
-      "key": "pandansimo-implementasi.15",
-      "label": "Biogas dari Kotoran Ternak",
-      "id": "Biogas dari Kotoran Ternak",
-      "en": "Biogas from Livestock Manure"
-    },
-    {
-      "key": "pandansimo-implementasi.16",
-      "label": "Tiga digester biogas berdiameter sekitar 7 meter mengolah ko",
-      "id": "Tiga digester biogas berdiameter sekitar 7 meter mengolah kotoran sapi dari peternak setempat menjadi gas yang disalurkan langsung ke warung-warung makan untuk kebutuhan memasak — penerapan nyata dari prinsip <strong>Recovery</strong> dalam Hierarki Zero Waste.",
-      "en": "Three biogas digesters about 7 meters in diameter process cattle manure from local farmers into gas piped directly to food stalls for cooking — a real-world application of the <strong>Recovery</strong> principle in the Zero Waste Hierarchy."
-    },
-    {
-      "key": "pandansimo-implementasi.17",
-      "label": "Pemanfaatan untuk Nelayan & Warung",
-      "id": "Pemanfaatan untuk Nelayan &amp; Warung",
-      "en": "Use for Fishermen &amp; Food Stalls"
-    },
-    {
-      "key": "pandansimo-implementasi.18",
-      "label": "Listrik yang dihasilkan memasok sekitar 70% kebutuhan kawasa",
-      "id": "Listrik yang dihasilkan memasok sekitar 70% kebutuhan kawasan pesisir (sisanya dari PLN), menghidupkan 40–50 warung makan, penerangan jalan, pompa air untuk tambak/akuaponik, serta mesin es balok berkapasitas sekitar 1.000 kg/hari untuk mengawetkan hasil tangkapan nelayan.",
-      "en": "The electricity generated supplies about 70% of the coastal area's needs (the rest from the state grid PLN), powering 40–50 food stalls, street lighting, water pumps for ponds/aquaponics, and an ice-block machine with a capacity of about 1,000 kg/day for preserving fishermen's catches."
-    },
-    {
-      "key": "pandansimo-implementasi.19",
-      "label": "Sumber: Mongabay Indonesia (2013); situs resmi Kementerian E",
-      "id": "Sumber: Mongabay Indonesia (2013); situs resmi Kementerian ESDM; UMY Repository, \"Analisis Optimalisasi Pembangkit Listrik Tenaga Hybrid Berbasis Pada Beban di PLTH Bayu Baru Pandansimo\". Angka bisa berubah seiring waktu — akan diperbarui lewat admin begitu ada data survei lapangan terbaru.",
-      "en": "Sources: Mongabay Indonesia (2013); the official Ministry of ESDM website; UMY Repository, \"Load-Based Optimization Analysis of the Bayu Baru Pandansimo Hybrid Power Plant\". Figures may change over time — will be updated via the admin panel once newer field-survey data is available."
-    },
-    {
-      "key": "pandansimo-implementasi.20",
-      "label": "Seperti Apa Kegiatannya di Lapangan?",
-      "id": "Seperti Apa Kegiatannya di Lapangan?",
-      "en": "What Do Activities on Site Look Like?"
-    },
-    {
-      "key": "pandansimo-implementasi.21",
-      "label": "Study tour, pelatihan, dan dokumentasi kegiatan di kawasan P",
-      "id": "Study tour, pelatihan, dan dokumentasi kegiatan di kawasan Pandansimo.",
-      "en": "Study tours, training, and activity documentation in the Pandansimo area."
-    },
-    {
-      "key": "pandansimo-implementasi.22",
-      "label": "Kegiatan & Dokumentasi",
-      "id": "Kegiatan &amp; Dokumentasi",
-      "en": "Activities &amp; Documentation"
-    }
-  ],
-  "pandansimo-kegiatan.html": [
-    {
-      "key": "pandansimo-kegiatan.1",
-      "label": "Beranda",
-      "id": "Beranda",
-      "en": "Home"
-    },
-    {
-      "key": "pandansimo-kegiatan.2",
-      "label": "Pandansimo",
-      "id": "Pandansimo",
-      "en": "Pandansimo"
-    },
-    {
-      "key": "pandansimo-kegiatan.3",
-      "label": "Kegiatan & Dokumentasi",
-      "id": "Kegiatan &amp; Dokumentasi",
-      "en": "Activities &amp; Documentation"
-    },
-    {
-      "key": "pandansimo-kegiatan.4",
-      "label": "Pandansimo",
-      "id": "Pandansimo",
-      "en": "Pandansimo"
-    },
-    {
-      "key": "pandansimo-kegiatan.5",
-      "label": "Kegiatan & Dokumentasi",
-      "id": "Kegiatan &amp; Dokumentasi",
-      "en": "Activities &amp; Documentation"
-    },
-    {
-      "key": "pandansimo-kegiatan.6",
-      "label": "Galeri kegiatan di kawasan Pandansimo — study tour, pelatiha",
-      "id": "Galeri kegiatan di kawasan Pandansimo — study tour, pelatihan, dan aktivitas komunitas.",
-      "en": "A gallery of activities in the Pandansimo area — study tours, training, and community activities."
-    },
-    {
-      "key": "pandansimo-kegiatan.7",
-      "label": "Jenis Kegiatan",
-      "id": "Jenis Kegiatan",
-      "en": "Types of Activities"
-    },
-    {
-      "key": "pandansimo-kegiatan.8",
-      "label": "Study Tour Bulanan",
-      "id": "Study Tour Bulanan",
-      "en": "Monthly Study Tours"
-    },
-    {
-      "key": "pandansimo-kegiatan.9",
-      "label": "Kunjungan rutin pelajar, mahasiswa, dan instansi untuk belaj",
-      "id": "Kunjungan rutin pelajar, mahasiswa, dan instansi untuk belajar langsung sistem energi hibrid.",
-      "en": "Regular visits by students and institutions to learn directly about the hybrid energy system."
-    },
-    {
-      "key": "pandansimo-kegiatan.10",
-      "label": "Pelatihan Instalasi & Perawatan",
-      "id": "Pelatihan Instalasi &amp; Perawatan",
-      "en": "Installation &amp; Maintenance Training"
-    },
-    {
-      "key": "pandansimo-kegiatan.11",
-      "label": "Workshop bagi warga dan pengelola tentang cara merawat turbi",
-      "id": "Workshop bagi warga dan pengelola tentang cara merawat turbin, panel surya, dan sistem baterai.",
-      "en": "Workshops for residents and managers on maintaining turbines, solar panels, and battery systems."
-    },
-    {
-      "key": "pandansimo-kegiatan.12",
-      "label": "Konservasi Biota Laut",
-      "id": "Konservasi Biota Laut",
-      "en": "Marine Conservation"
-    },
-    {
-      "key": "pandansimo-kegiatan.13",
-      "label": "Penanganan penyu, hiu, atau paus yang terdampar oleh warga d",
-      "id": "Penanganan penyu, hiu, atau paus yang terdampar oleh warga dan relawan setempat.",
-      "en": "Handling of stranded turtles, sharks, or whales by local residents and volunteers."
-    },
-    {
-      "key": "pandansimo-kegiatan.14",
-      "label": "Galeri (Contoh Sementara)",
-      "id": "Galeri (Contoh Sementara)",
-      "en": "Gallery (Temporary Example)"
-    },
-    {
-      "key": "pandansimo-kegiatan.15",
-      "label": "Foto di bawah ini adalah gambar ilustrasi sementara — akan d",
-      "id": "Foto di bawah ini adalah gambar ilustrasi sementara — akan diganti dengan dokumentasi asli kegiatan kelompok kami lewat panel admin.",
-      "en": "The photos below are temporary placeholder images — they will be replaced with our group's own activity documentation via the admin panel."
-    },
-    {
-      "key": "pandansimo-kegiatan.16",
-      "label": "Study tour pelajar ke kawasan PLTH",
-      "id": "Study tour pelajar ke kawasan PLTH",
-      "en": "Student study tour to the PLTH area"
-    },
-    {
-      "key": "pandansimo-kegiatan.17",
-      "label": "Pelatihan perawatan turbin angin",
-      "id": "Pelatihan perawatan turbin angin",
-      "en": "Wind turbine maintenance training"
-    },
-    {
-      "key": "pandansimo-kegiatan.18",
-      "label": "Aktivitas nelayan di pesisir Pandansimo",
-      "id": "Aktivitas nelayan di pesisir Pandansimo",
-      "en": "Fishermen's activity on the Pandansimo coast"
-    },
-    {
-      "key": "pandansimo-kegiatan.19",
-      "label": "Digester biogas untuk warung makan",
-      "id": "Digester biogas untuk warung makan",
-      "en": "Biogas digester for food stalls"
-    },
-    {
-      "key": "pandansimo-kegiatan.20",
-      "label": "Kompetisi roket air edukasi",
-      "id": "Kompetisi roket air edukasi",
-      "en": "Educational water-rocket competition"
-    },
-    {
-      "key": "pandansimo-kegiatan.21",
-      "label": "Panel surya di sepanjang pesisir",
-      "id": "Panel surya di sepanjang pesisir",
-      "en": "Solar panels along the coastline"
-    },
-    {
-      "key": "pandansimo-kegiatan.22",
-      "label": "Apa Hasilnya Sejauh Ini?",
-      "id": "Apa Hasilnya Sejauh Ini?",
-      "en": "What Are the Results So Far?"
-    },
-    {
-      "key": "pandansimo-kegiatan.23",
-      "label": "Lihat capaian terukur dari program ini sampai saat ini.",
-      "id": "Lihat capaian terukur dari program ini sampai saat ini.",
-      "en": "See the measurable achievements of this program to date."
-    },
-    {
-      "key": "pandansimo-kegiatan.24",
-      "label": "Capaian Saat Ini",
-      "id": "Capaian Saat Ini",
-      "en": "Current Achievements"
-    }
-  ],
-  "pandansimo-capaian.html": [
-    {
-      "key": "pandansimo-capaian.1",
-      "label": "Beranda",
-      "id": "Beranda",
-      "en": "Home"
-    },
-    {
-      "key": "pandansimo-capaian.2",
-      "label": "Pandansimo",
-      "id": "Pandansimo",
-      "en": "Pandansimo"
-    },
-    {
-      "key": "pandansimo-capaian.3",
-      "label": "Capaian Saat Ini",
-      "id": "Capaian Saat Ini",
-      "en": "Current Achievements"
-    },
-    {
-      "key": "pandansimo-capaian.4",
-      "label": "Pandansimo",
-      "id": "Pandansimo",
-      "en": "Pandansimo"
-    },
-    {
-      "key": "pandansimo-capaian.5",
-      "label": "Capaian Saat Ini",
-      "id": "Capaian Saat Ini",
-      "en": "Current Achievements"
-    },
-    {
-      "key": "pandansimo-capaian.6",
-      "label": "Manfaat terukur yang sudah dirasakan masyarakat sekitar dari",
-      "id": "Manfaat terukur yang sudah dirasakan masyarakat sekitar dari program energi terbarukan Pandansimo.",
-      "en": "Measurable benefits already felt by the surrounding community from Pandansimo's renewable energy program."
-    },
-    {
-      "key": "pandansimo-capaian.7",
-      "label": "listrik kawasan dari PLTH (30% dari PLN)",
-      "id": "listrik kawasan dari PLTH (30% dari PLN)",
-      "en": "area power from PLTH (30% from PLN grid)"
-    },
-    {
-      "key": "pandansimo-capaian.8",
-      "label": "warung makan terlayani listrik & biogas",
-      "id": "warung makan terlayani listrik &amp; biogas",
-      "en": "food stalls served by power &amp; biogas"
-    },
-    {
-      "key": "pandansimo-capaian.9",
-      "label": "es balok diproduksi per hari untuk nelayan",
-      "id": "es balok diproduksi per hari untuk nelayan",
-      "en": "ice blocks produced daily for fishermen"
-    },
-    {
-      "key": "pandansimo-capaian.10",
-      "label": "kisaran tarif listrik warung per minggu/bulan",
-      "id": "kisaran tarif listrik warung per minggu/bulan",
-      "en": "range of stall electricity tariffs per week/month"
-    },
-    {
-      "key": "pandansimo-capaian.11",
-      "label": "Manfaat Ekonomi",
-      "id": "Manfaat Ekonomi",
-      "en": "Economic Benefits"
-    },
-    {
-      "key": "pandansimo-capaian.12",
-      "label": "Pelaku usaha warung melaporkan biaya listrik dari PLTH jauh ",
-      "id": "Pelaku usaha warung melaporkan biaya listrik dari PLTH jauh lebih murah dibanding PLN, dengan penagihan berdasarkan pemakaian aktual. Salah satu pedagang melaporkan hanya membayar sekitar Rp4.000 per minggu untuk listrik dan Rp5.000 untuk air. Mesin es balok turut membantu nelayan mengawetkan hasil tangkapan tanpa bergantung sepenuhnya pada es dari luar kawasan.",
-      "en": "Stall owners report that PLTH electricity costs are far cheaper than PLN, with billing based on actual usage. One vendor reported paying only about Rp4,000 per week for electricity and Rp5,000 for water. The ice-block machine also helps fishermen preserve their catch without fully relying on ice brought in from outside the area."
-    },
-    {
-      "key": "pandansimo-capaian.13",
-      "label": "Manfaat Edukasi & Wisata",
-      "id": "Manfaat Edukasi &amp; Wisata",
-      "en": "Education &amp; Tourism Benefits"
-    },
-    {
-      "key": "pandansimo-capaian.14",
-      "label": "Kawasan ini menjadi tujuan wisata edukasi energi terbarukan,",
-      "id": "Kawasan ini menjadi tujuan wisata edukasi energi terbarukan, dengan kunjungan studi yang berlangsung rutin setiap bulan, dilengkapi tur sepeda keliling kawasan dan lokakarya instalasi/perawatan sistem hibrid bagi pengunjung maupun warga.",
-      "en": "The area has become a renewable-energy education tourism destination, with study visits happening regularly every month, complemented by bicycle tours of the area and installation/maintenance workshops for both visitors and residents."
-    },
-    {
-      "key": "pandansimo-capaian.15",
-      "label": "Manfaat Lingkungan",
-      "id": "Manfaat Lingkungan",
-      "en": "Environmental Benefits"
-    },
-    {
-      "key": "pandansimo-capaian.16",
-      "label": "Penggunaan biogas dari kotoran ternak mengurangi ketergantun",
-      "id": "Penggunaan biogas dari kotoran ternak mengurangi ketergantungan warung pada gas LPG, sekaligus mengelola limbah ternak yang sebelumnya dibuang begitu saja — penerapan konkret prinsip <strong>Recovery</strong> dalam hierarki Zero Waste di tingkat komunitas pesisir.",
-      "en": "Using biogas from livestock manure reduces food stalls' reliance on LPG gas, while also managing livestock waste that was previously discarded — a concrete application of the <strong>Recovery</strong> principle in the Zero Waste hierarchy at the coastal-community level."
-    },
-    {
-      "key": "pandansimo-capaian.17",
-      "label": "Sumber: Mongabay Indonesia (2013); situs resmi ESDM (2017). ",
-      "id": "Sumber: Mongabay Indonesia (2013); situs resmi ESDM (2017). Sebagian data bisa jadi sudah berubah mengingat rentang waktu publikasi — perlu validasi lapangan oleh kelompok kami sebagai bagian dari Analisis &amp; Evaluasi.",
-      "en": "Sources: Mongabay Indonesia (2013); official ESDM website (2017). Some data may have changed given the publication timeframe — field validation by our group is needed as part of the Analysis &amp; Evaluation."
-    },
-    {
-      "key": "pandansimo-capaian.18",
-      "label": "Tapi Apakah Semua Berjalan Mulus?",
-      "id": "Tapi Apakah Semua Berjalan Mulus?",
-      "en": "But Has Everything Gone Smoothly?"
-    },
-    {
-      "key": "pandansimo-capaian.19",
-      "label": "Lihat analisis kami tentang keberhasilan maupun kendala prog",
-      "id": "Lihat analisis kami tentang keberhasilan maupun kendala program ini.",
-      "en": "See our analysis of both the successes and the setbacks in this program."
-    },
-    {
-      "key": "pandansimo-capaian.20",
-      "label": "Analisis & Evaluasi",
-      "id": "Analisis &amp; Evaluasi",
-      "en": "Analysis &amp; Evaluation"
-    }
-  ],
-  "pandansimo-analisis.html": [
-    {
-      "key": "pandansimo-analisis.1",
-      "label": "Beranda",
-      "id": "Beranda",
-      "en": "Home"
-    },
-    {
-      "key": "pandansimo-analisis.2",
-      "label": "Pandansimo",
-      "id": "Pandansimo",
-      "en": "Pandansimo"
-    },
-    {
-      "key": "pandansimo-analisis.3",
-      "label": "Analisis & Evaluasi",
-      "id": "Analisis &amp; Evaluasi",
-      "en": "Analysis &amp; Evaluation"
-    },
-    {
-      "key": "pandansimo-analisis.4",
-      "label": "Pandansimo",
-      "id": "Pandansimo",
-      "en": "Pandansimo"
-    },
-    {
-      "key": "pandansimo-analisis.5",
-      "label": "Analisis & Evaluasi",
-      "id": "Analisis &amp; Evaluasi",
-      "en": "Analysis &amp; Evaluation"
-    },
-    {
-      "key": "pandansimo-analisis.6",
-      "label": "Menilai program ini secara jujur — apa yang berhasil, apa ya",
-      "id": "Menilai program ini secara jujur — apa yang berhasil, apa yang belum, dan kenapa.",
-      "en": "An honest assessment of this program — what has worked, what hasn't, and why."
-    },
-    {
-      "key": "pandansimo-analisis.7",
-      "label": "Apa yang Berhasil",
-      "id": "Apa yang Berhasil",
-      "en": "What Has Worked"
-    },
-    {
-      "key": "pandansimo-analisis.8",
-      "label": "Pasokan listrik nyata dan terjangkau bagi puluhan warung dan",
-      "id": "Pasokan listrik nyata dan terjangkau bagi puluhan warung dan rumah tangga pesisir selama lebih dari satu dekade.",
-      "en": "Real, affordable electricity supply for dozens of coastal stalls and households for over a decade."
-    },
-    {
-      "key": "pandansimo-analisis.9",
-      "label": "Model edukasi energi terbarukan yang menarik kunjungan rutin",
-      "id": "Model edukasi energi terbarukan yang menarik kunjungan rutin, memperkenalkan teknologi hibrid ke masyarakat luas.",
-      "en": "A renewable-energy education model that attracts regular visits, introducing hybrid technology to the wider public."
-    },
-    {
-      "key": "pandansimo-analisis.10",
-      "label": "Praktik recovery (biogas dari kotoran ternak) yang benar-ben",
-      "id": "Praktik recovery (biogas dari kotoran ternak) yang benar-benar berjalan dan bermanfaat langsung bagi warung sekitar.",
-      "en": "A working recovery practice (biogas from livestock manure) that directly benefits nearby food stalls."
-    },
-    {
-      "key": "pandansimo-analisis.11",
-      "label": "Apa yang Belum Berjalan Baik",
-      "id": "Apa yang Belum Berjalan Baik",
-      "en": "What Hasn't Worked Well"
-    },
-    {
-      "key": "pandansimo-analisis.12",
-      "label": "Korosi udara laut — komponen turbin, terutama bilah dan bagi",
-      "id": "<strong>Korosi udara laut</strong> — komponen turbin, terutama bilah dan bagian logam, mengalami kerusakan akibat paparan udara laut yang mengandung garam.",
-      "en": "<strong>Sea-air corrosion</strong> — turbine components, especially blades and metal parts, have degraded due to exposure to salt-laden sea air."
-    },
-    {
-      "key": "pandansimo-analisis.13",
-      "label": "Efisiensi turbin rendah — turbin hanya beroperasi sekitar 30",
-      "id": "<strong>Efisiensi turbin rendah</strong> — turbin hanya beroperasi sekitar 30% dari potensi maksimalnya, dengan hanya sekitar dua pertiga unit yang benar-benar berfungsi pada satu periode pengamatan.",
-      "en": "<strong>Low turbine efficiency</strong> — turbines operate at only about 30% of their maximum potential, with only about two-thirds of units actually functioning during one observed period."
-    },
-    {
-      "key": "pandansimo-analisis.14",
-      "label": "Masalah baterai & inverter — menjadi kendala teknis utama ya",
-      "id": "<strong>Masalah baterai &amp; inverter</strong> — menjadi kendala teknis utama yang dilaporkan operator lapangan, memengaruhi stabilitas pasokan listrik.",
-      "en": "<strong>Battery &amp; inverter issues</strong> — reported by field operators as the main technical bottleneck, affecting power supply stability."
-    },
-    {
-      "key": "pandansimo-analisis.15",
-      "label": "Ketergantungan cuaca — produksi energi menurun signifikan pa",
-      "id": "<strong>Ketergantungan cuaca</strong> — produksi energi menurun signifikan pada musim hujan dibanding musim kemarau.",
-      "en": "<strong>Weather dependency</strong> — energy production drops significantly during the rainy season compared to the dry season."
-    },
-    {
-      "key": "pandansimo-analisis.16",
-      "label": "Insiden sambaran petir (2012) — sempat membatasi kapasitas y",
-      "id": "<strong>Insiden sambaran petir (2012)</strong> — sempat membatasi kapasitas yang bisa dipakai pedagang hingga hanya peralatan kecil (blender, rice cooker, lampu).",
-      "en": "<strong>2012 lightning strike incident</strong> — temporarily limited vendors' usable capacity to only small appliances (blenders, rice cookers, lights)."
-    },
-    {
-      "key": "pandansimo-analisis.17",
-      "label": "Catatan Pengelolaan",
-      "id": "Catatan Pengelolaan",
-      "en": "Management Notes"
-    },
-    {
-      "key": "pandansimo-analisis.18",
-      "label": "Pengelolaan program berpindah tangan beberapa kali (Kemenris",
-      "id": "Pengelolaan program berpindah tangan beberapa kali (Kemenristek → Pemkab Bantul → Kementerian ESDM). Pergantian ini berpotensi menimbulkan celah kontinuitas perawatan dan pendanaan — sesuatu yang layak ditelusuri lebih jauh sebagai bagian dari evaluasi keberlanjutan proyek jangka panjang.",
-      "en": "Program management has changed hands several times (Kemenristek → Bantul Regency → Ministry of ESDM). These transitions could create gaps in maintenance and funding continuity — something worth investigating further as part of a long-term sustainability evaluation."
-    },
-    {
-      "key": "pandansimo-analisis.19",
-      "label": "Daftar Sumber",
-      "id": "Daftar Sumber",
-      "en": "Source List"
-    },
-    {
-      "key": "pandansimo-analisis.20",
-      "label": "Analisis di atas masih berbasis sumber publik. Kelompok kami",
-      "id": "Analisis di atas masih berbasis sumber publik. Kelompok kami akan menambahkan temuan survei/wawancara lapangan sendiri begitu tersedia, untuk memperkuat validitas evaluasi ini.",
-      "en": "The analysis above is still based on public sources. Our group will add our own field survey/interview findings once available, to strengthen the validity of this evaluation."
-    },
-    {
-      "key": "pandansimo-analisis.21",
-      "label": "Apa Solusinya dari Sisi Teknik?",
-      "id": "Apa Solusinya dari Sisi Teknik?",
-      "en": "What's the Engineering Solution?"
-    },
-    {
-      "key": "pandansimo-analisis.22",
-      "label": "Usulan solusi teknis untuk setiap masalah di atas, dari sudu",
-      "id": "Usulan solusi teknis untuk setiap masalah di atas, dari sudut pandang Mesin, Elektro, dan Industri.",
-      "en": "Proposed technical solutions for each problem above, from a Mechanical, Electrical, and Industrial perspective."
-    },
-    {
-      "key": "pandansimo-analisis.23",
-      "label": "Tantangan & Solusi Teknis",
-      "id": "Tantangan &amp; Solusi Teknis",
-      "en": "Challenges &amp; Technical Solutions"
-    }
-  ],
-  "pandansimo-solusi.html": [
-    {
-      "key": "pandansimo-solusi.1",
-      "label": "Beranda",
-      "id": "Beranda",
-      "en": "Home"
-    },
-    {
-      "key": "pandansimo-solusi.2",
-      "label": "Pandansimo",
-      "id": "Pandansimo",
-      "en": "Pandansimo"
-    },
-    {
-      "key": "pandansimo-solusi.3",
-      "label": "Tantangan & Solusi Teknis",
-      "id": "Tantangan &amp; Solusi Teknis",
-      "en": "Challenges &amp; Technical Solutions"
-    },
-    {
-      "key": "pandansimo-solusi.4",
-      "label": "Pandansimo",
-      "id": "Pandansimo",
-      "en": "Pandansimo"
-    },
-    {
-      "key": "pandansimo-solusi.5",
-      "label": "Tantangan & Solusi Teknis",
-      "id": "Tantangan &amp; Solusi Teknis",
-      "en": "Challenges &amp; Technical Solutions"
-    },
-    {
-      "key": "pandansimo-solusi.6",
-      "label": "Usulan solusi dari sudut pandang Teknik Mesin, Elektro, dan ",
-      "id": "Usulan solusi dari sudut pandang Teknik Mesin, Elektro, dan Industri untuk setiap masalah nyata di lapangan.",
-      "en": "Proposed solutions from a Mechanical, Electrical, and Industrial Engineering perspective for each real problem on site."
-    },
-    {
-      "key": "pandansimo-solusi.7",
-      "label": "Teknik Mesin — Korosi & Keandalan Struktur",
-      "id": "Teknik Mesin — Korosi &amp; Keandalan Struktur",
-      "en": "Mechanical Engineering — Corrosion &amp; Structural Reliability"
-    },
-    {
-      "key": "pandansimo-solusi.8",
-      "label": "Masalah",
-      "id": "Masalah",
-      "en": "Problem"
-    },
-    {
-      "key": "pandansimo-solusi.9",
-      "label": "Udara laut yang mengandung garam mempercepat korosi pada bil",
-      "id": "Udara laut yang mengandung garam mempercepat korosi pada bilah dan komponen logam turbin angin, menurunkan umur pakai dan performa.",
-      "en": "Salt-laden sea air accelerates corrosion on wind-turbine blades and metal components, reducing lifespan and performance."
-    },
-    {
-      "key": "pandansimo-solusi.10",
-      "label": "Usulan Solusi",
-      "id": "Usulan Solusi",
-      "en": "Proposed Solution"
-    },
-    {
-      "key": "pandansimo-solusi.11",
-      "label": "Pelapisan anti-korosi (coating epoxy/galvanis) pada komponen",
-      "id": "Pelapisan anti-korosi (coating epoxy/galvanis) pada komponen logam, pemilihan material komposit tahan garam untuk bilah, serta jadwal inspeksi &amp; perawatan preventif berkala, bukan reaktif setelah rusak.",
-      "en": "Anti-corrosion coating (epoxy/galvanizing) on metal parts, salt-resistant composite material for blades, and a scheduled preventive inspection &amp; maintenance routine rather than reactive repair after failure."
-    },
-    {
-      "key": "pandansimo-solusi.12",
-      "label": "Teknik Elektro — Stabilitas Daya & Penyimpanan",
-      "id": "Teknik Elektro — Stabilitas Daya &amp; Penyimpanan",
-      "en": "Electrical Engineering — Power Stability &amp; Storage"
-    },
-    {
-      "key": "pandansimo-solusi.13",
-      "label": "Masalah",
-      "id": "Masalah",
-      "en": "Problem"
-    },
-    {
-      "key": "pandansimo-solusi.14",
-      "label": "Turbin hanya beroperasi ~30% dari potensi, ditambah masalah ",
-      "id": "Turbin hanya beroperasi ~30% dari potensi, ditambah masalah baterai dan inverter yang memengaruhi stabilitas pasokan listrik.",
-      "en": "Turbines operate at only ~30% of potential, compounded by battery and inverter issues affecting power supply stability."
-    },
-    {
-      "key": "pandansimo-solusi.15",
-      "label": "Usulan Solusi",
-      "id": "Usulan Solusi",
-      "en": "Proposed Solution"
-    },
-    {
-      "key": "pandansimo-solusi.16",
-      "label": "Sistem manajemen baterai (BMS) yang lebih baik untuk memperp",
-      "id": "Sistem manajemen baterai (BMS) yang lebih baik untuk memperpanjang umur baterai, inverter hybrid dengan kontrol MPPT (Maximum Power Point Tracking) agar efisiensi konversi daya meningkat, serta pemantauan performa turbin secara real-time (SCADA sederhana) untuk deteksi dini kerusakan.",
-      "en": "A better battery management system (BMS) to extend battery life, a hybrid inverter with MPPT (Maximum Power Point Tracking) control to improve power-conversion efficiency, and real-time turbine performance monitoring (a simple SCADA system) for early fault detection."
-    },
-    {
-      "key": "pandansimo-solusi.17",
-      "label": "Masalah",
-      "id": "Masalah",
-      "en": "Problem"
-    },
-    {
-      "key": "pandansimo-solusi.18",
-      "label": "Produksi energi sangat bergantung cuaca — turun signifikan d",
-      "id": "Produksi energi sangat bergantung cuaca — turun signifikan di musim hujan, dan rentan terhadap gangguan ekstrem seperti sambaran petir.",
-      "en": "Energy production is highly weather-dependent — dropping significantly in the rainy season and vulnerable to extreme events like lightning strikes."
-    },
-    {
-      "key": "pandansimo-solusi.19",
-      "label": "Usulan Solusi",
-      "id": "Usulan Solusi",
-      "en": "Proposed Solution"
-    },
-    {
-      "key": "pandansimo-solusi.20",
-      "label": "Penambahan kapasitas penyimpanan baterai untuk menyeimbangka",
-      "id": "Penambahan kapasitas penyimpanan baterai untuk menyeimbangkan musim, sistem proteksi petir (lightning arrester &amp; grounding yang lebih baik) pada setiap unit turbin dan panel, serta kemungkinan penambahan sumber cadangan (micro-hydro dari aliran sungai Progo terdekat) sebagai pelengkap.",
-      "en": "Additional battery storage capacity to balance seasonal variation, better lightning protection systems (lightning arresters &amp; grounding) on each turbine and panel unit, and potentially a supplementary backup source (micro-hydro from the nearby Progo River flow)."
-    },
-    {
-      "key": "pandansimo-solusi.21",
-      "label": "Teknik Industri — Sistem & Keberlanjutan Pengelolaan",
-      "id": "Teknik Industri — Sistem &amp; Keberlanjutan Pengelolaan",
-      "en": "Industrial Engineering — Systems &amp; Management Sustainability"
-    },
-    {
-      "key": "pandansimo-solusi.22",
-      "label": "Masalah",
-      "id": "Masalah",
-      "en": "Problem"
-    },
-    {
-      "key": "pandansimo-solusi.23",
-      "label": "Pengelolaan program berpindah tangan beberapa kali antar-lem",
-      "id": "Pengelolaan program berpindah tangan beberapa kali antar-lembaga, berpotensi menimbulkan celah kontinuitas perawatan, pendanaan, dan data kinerja.",
-      "en": "Program management has changed hands between institutions several times, risking gaps in maintenance continuity, funding, and performance data."
-    },
-    {
-      "key": "pandansimo-solusi.24",
-      "label": "Usulan Solusi",
-      "id": "Usulan Solusi",
-      "en": "Proposed Solution"
-    },
-    {
-      "key": "pandansimo-solusi.25",
-      "label": "Standard Operating Procedure (SOP) perawatan terdokumentasi ",
-      "id": "Standard Operating Procedure (SOP) perawatan terdokumentasi yang tidak bergantung pada satu lembaga pengelola, sistem pencatatan kinerja digital (dashboard produksi energi) yang bisa diwariskan antar-pengelola, serta skema pelibatan BUMDes/koperasi warga agar keberlanjutan operasional tidak sepenuhnya bergantung kebijakan pusat.",
-      "en": "A documented maintenance SOP that doesn't depend on a single managing institution, a digital performance-logging system (an energy-production dashboard) that can be handed over between managers, and a scheme involving village-owned enterprises (BUMDes) or resident cooperatives so operational sustainability doesn't fully depend on central policy."
-    },
-    {
-      "key": "pandansimo-solusi.26",
-      "label": "Masalah",
-      "id": "Masalah",
-      "en": "Problem"
-    },
-    {
-      "key": "pandansimo-solusi.27",
-      "label": "Status fasilitas rekreasi tambahan dalam masterplan (taman p",
-      "id": "Status fasilitas rekreasi tambahan dalam masterplan (taman pintar, waterboom, dll.) belum jelas keberlanjutannya.",
-      "en": "The status of additional recreational facilities in the masterplan (smart park, waterboom, etc.) has unclear continuity."
-    },
-    {
-      "key": "pandansimo-solusi.28",
-      "label": "Usulan Solusi",
-      "id": "Usulan Solusi",
-      "en": "Proposed Solution"
-    },
-    {
-      "key": "pandansimo-solusi.29",
-      "label": "Studi kelayakan ekonomi (cost-benefit analysis) bertahap per",
-      "id": "Studi kelayakan ekonomi (cost-benefit analysis) bertahap per fasilitas sebelum pembangunan, serta prioritisasi berbasis dampak terhadap pendapatan masyarakat lokal, bukan sekadar daya tarik wisata semata.",
-      "en": "A phased economic feasibility (cost-benefit) study per facility before construction, with prioritization based on impact on local community income rather than tourism appeal alone."
-    },
-    {
-      "key": "pandansimo-solusi.30",
-      "label": "Usulan solusi di atas disusun berdasarkan analisis kelompok ",
-      "id": "Usulan solusi di atas disusun berdasarkan analisis kelompok kami terhadap kendala yang terdokumentasi di halaman <a href=\"pandansimo-analisis.html\">Analisis &amp; Evaluasi</a>, dan akan disempurnakan setelah ada kunjungan/survei lapangan langsung.",
-      "en": "The proposed solutions above are based on our group's analysis of the issues documented on the <a href=\"pandansimo-analisis.html\">Analysis &amp; Evaluation</a> page, and will be refined after a direct field visit/survey."
-    },
-    {
-      "key": "pandansimo-solusi.31",
-      "label": "Baca Artikel Terkait",
-      "id": "Baca Artikel Terkait",
-      "en": "Read Related Articles"
-    },
-    {
-      "key": "pandansimo-solusi.32",
-      "label": "Ulasan lebih santai seputar Zero Waste dan Pandansimo.",
-      "id": "Ulasan lebih santai seputar Zero Waste dan Pandansimo.",
-      "en": "More casual reads about Zero Waste and Pandansimo."
-    },
-    {
-      "key": "pandansimo-solusi.33",
-      "label": "Lihat Artikel",
-      "id": "Lihat Artikel",
-      "en": "See Articles"
-    }
-  ],
-  "artikel.html": [
-    {
-      "key": "artikel.1",
-      "label": "Beranda",
-      "id": "Beranda",
-      "en": "Home"
-    },
-    {
-      "key": "artikel.2",
-      "label": "Artikel",
-      "id": "Artikel",
-      "en": "Articles"
-    },
-    {
-      "key": "artikel.3",
-      "label": "Baca & Pelajari",
-      "id": "Baca &amp; Pelajari",
-      "en": "Read &amp; Learn"
-    },
-    {
-      "key": "artikel.4",
-      "label": "Artikel",
-      "id": "Artikel",
-      "en": "Articles"
-    },
-    {
-      "key": "artikel.5",
-      "label": "Bacaan seputar prinsip Zero Waste dan perkembangan program e",
-      "id": "Bacaan seputar prinsip Zero Waste dan perkembangan program energi Pandansimo.",
-      "en": "Reads on Zero Waste principles and updates from the Pandansimo energy program."
-    },
-    {
-      "key": "artikel.30",
-      "label": "Artikel di atas masih berupa draf ringkasan. Isi lengkap tia",
-      "id": "Kartu materi di atas diambil otomatis dari halaman Zero Waste dan Pandansimo, jadi ikut berubah saat halaman itu diedit. Artikel baru yang ditambahkan lewat panel admin muncul di bagian \"Artikel Terbaru\".",
-      "en": "The topic cards above are pulled automatically from the Zero Waste and Pandansimo pages, so they update whenever those pages are edited. New articles added through the admin panel appear under \"Latest Articles\"."
-    }
-  ],
-  "tentang-kami.html": [
-    {
-      "key": "tentang-kami.d1",
-      "label": "Dosen — label kecil",
-      "id": "Dosen Pengampu",
-      "en": "Course Lecturer"
-    },
-    {
-      "key": "tentang-kami.d2",
-      "label": "Dosen — nama & gelar",
-      "id": "[Nama Dosen, Gelar]",
-      "en": "[Lecturer Name, Title]"
-    },
-    {
-      "key": "tentang-kami.d3",
-      "label": "Dosen — jabatan/mata kuliah",
-      "id": "Dosen Mata Kuliah Zero Waste",
-      "en": "Zero Waste Course Lecturer"
-    },
-    {
-      "key": "tentang-kami.d4",
-      "label": "Dosen — profil singkat",
-      "id": "Profil singkat dosen (bidang keahlian, riwayat pendidikan, penelitian) akan diisi lewat panel admin.",
-      "en": "A short lecturer profile (field of expertise, education, research) will be filled in via the admin panel."
-    },
-    {
-      "key": "tentang-kami.1",
-      "label": "Beranda",
-      "id": "Beranda",
-      "en": "Home"
-    },
-    {
-      "key": "tentang-kami.2",
-      "label": "Tentang Kami",
-      "id": "Tentang Kami",
-      "en": "About Us"
-    },
-    {
-      "key": "tentang-kami.3",
-      "label": "Tim Kami",
-      "id": "Tim Kami",
-      "en": "Our Team"
-    },
-    {
-      "key": "tentang-kami.4",
-      "label": "Tentang Kami",
-      "id": "Tentang Kami",
-      "en": "About Us"
-    },
-    {
-      "key": "tentang-kami.5",
-      "label": "Situs ini dikerjakan oleh empat mahasiswa lintas disiplin te",
-      "id": "Situs ini dikerjakan oleh empat mahasiswa lintas disiplin teknik, sebagai bagian dari tugas mata kuliah Zero Waste.",
-      "en": "This site was built by four students from across engineering disciplines, as part of a Zero Waste coursework assignment."
-    },
-    {
-      "key": "tentang-kami.6",
-      "label": "Anggota Tim",
-      "id": "Anggota Tim",
-      "en": "Team Member"
-    },
-    {
-      "key": "tentang-kami.7",
-      "label": "Anggota Tim",
-      "id": "Anggota Tim",
-      "en": "Team Member"
-    },
-    {
-      "key": "tentang-kami.8",
-      "label": "Anggota Tim",
-      "id": "Anggota Tim",
-      "en": "Team Member"
-    },
-    {
-      "key": "tentang-kami.9",
-      "label": "Anggota Tim",
-      "id": "Anggota Tim",
-      "en": "Team Member"
-    },
-    {
-      "key": "tentang-kami.10",
-      "label": "Foto dan peran masing-masing anggota masih berupa draf (inis",
-      "id": "Foto dan peran masing-masing anggota masih berupa draf (inisial sebagai avatar sementara). Setelah panel admin aktif, foto asli dan deskripsi peran tiap anggota (misalnya bidang Teknik Mesin, Elektro, atau Industri) bisa diunggah dan diedit langsung dari sana.",
-      "en": "Each member's photo and role are still a draft (initials used as a temporary avatar). Once the admin panel is active, real photos and each member's role description (e.g. Mechanical, Electrical, or Industrial Engineering) can be uploaded and edited directly from there."
-    },
-    {
-      "key": "tentang-kami.11",
-      "label": "Tentang Proyek Ini",
-      "id": "Tentang Proyek Ini",
-      "en": "About This Project"
-    },
-    {
-      "key": "tentang-kami.12",
-      "label": "Situs ini dibuat untuk memenuhi tugas mata kuliah Zero Waste",
-      "id": "Situs ini dibuat untuk memenuhi tugas mata kuliah Zero Waste, memadukan edukasi prinsip Zero Waste dengan studi kasus nyata program energi terbarukan di Pantai Baru Pandansimo, Bantul. Sebagai mahasiswa Teknik Mesin, Teknik Elektro, dan Teknik Industri, kami berfokus pada analisis teknis di balik keberhasilan dan tantangan program ini.",
-      "en": "This site was created to fulfill a Zero Waste coursework assignment, combining Zero Waste education with a real case study of the renewable energy program at Pantai Baru Pandansimo, Bantul. As students of Mechanical, Electrical, and Industrial Engineering, we focus on the technical analysis behind this program's successes and challenges."
-    }
-  ],
-  "kontak.html": [
-    {
-      "key": "kontak.1",
-      "label": "Beranda",
-      "id": "Beranda",
-      "en": "Home"
-    },
-    {
-      "key": "kontak.2",
-      "label": "Kontak",
-      "id": "Kontak",
-      "en": "Contact"
-    },
-    {
-      "key": "kontak.3",
-      "label": "Hubungi Kami",
-      "id": "Hubungi Kami",
-      "en": "Contact Us"
-    },
-    {
-      "key": "kontak.4",
-      "label": "Ada Pertanyaan atau Masukan?",
-      "id": "Ada Pertanyaan atau Masukan?",
-      "en": "Have a Question or Feedback?"
-    },
-    {
-      "key": "kontak.5",
-      "label": "Kami terbuka untuk diskusi seputar Zero Waste maupun studi k",
-      "id": "Kami terbuka untuk diskusi seputar Zero Waste maupun studi kasus Pandansimo.",
-      "en": "We welcome discussion about Zero Waste or the Pandansimo case study."
-    },
-    {
-      "key": "kontak.6",
-      "label": "Email",
-      "id": "Email",
-      "en": "Email"
-    },
-    {
-      "key": "kontak.7",
-      "label": "Lokasi Studi Kasus",
-      "id": "Lokasi Studi Kasus",
-      "en": "Case Study Location"
-    },
-    {
-      "key": "kontak.8",
-      "label": "Pantai Baru Pandansimo, Poncosari, Srandakan, Bantul, DIY",
-      "id": "Pantai Baru Pandansimo, Poncosari, Srandakan, Bantul, DIY",
-      "en": "Pantai Baru Pandansimo, Poncosari, Srandakan, Bantul, Yogyakarta"
-    },
-    {
-      "key": "kontak.9",
-      "label": "Tim",
-      "id": "Tim",
-      "en": "Team"
-    },
-    {
-      "key": "kontak.10",
-      "label": "4 mahasiswa — Teknik Mesin, Elektro & Industri",
-      "id": "4 mahasiswa — Teknik Mesin, Elektro &amp; Industri",
-      "en": "4 students — Mechanical, Electrical &amp; Industrial Engineering"
-    },
-    {
-      "key": "kontak.11",
-      "label": "Lihat profil tim lengkap →",
-      "id": "Lihat profil tim lengkap →",
-      "en": "See full team profile →"
-    },
-    {
-      "key": "kontak.12",
-      "label": "Nama",
-      "id": "Nama",
-      "en": "Name"
-    },
-    {
-      "key": "kontak.13",
-      "label": "Email",
-      "id": "Email",
-      "en": "Email"
-    },
-    {
-      "key": "kontak.14",
-      "label": "Pesan",
-      "id": "Pesan",
-      "en": "Message"
-    },
-    {
-      "key": "kontak.15",
-      "label": "Kirim Pesan",
-      "id": "Kirim Pesan",
-      "en": "Send Message"
-    },
-    {
-      "key": "kontak.16",
-      "label": "Terima kasih! Pesanmu sudah tercatat (demo tampilan, belum t",
-      "id": "Terima kasih! Pesanmu sudah tercatat (demo tampilan, belum terhubung ke sistem pengiriman).",
-      "en": "Thank you! Your message has been noted (display demo, not yet connected to a sending system)."
-    }
-  ]
+ "index.html": [
+  {
+   "key": "index.1",
+   "label": "Studi Kasus & Edukasi",
+   "id": "Studi Kasus &amp; Edukasi",
+   "en": "Case Study &amp; Education"
+  },
+  {
+   "key": "index.2",
+   "label": "Belajar Zero Waste dari Desa Mandiri Energi Pandansimo",
+   "id": "Belajar Zero Waste dari Desa Mandiri Energi Pandansimo",
+   "en": "Learning Zero Waste from the Energy-Independent Village of Pandansimo"
+  },
+  {
+   "key": "index.3",
+   "label": "Situs ini memadukan edukasi prinsip Zero Waste dengan studi ",
+   "id": "Situs ini memadukan edukasi prinsip Zero Waste dengan studi kasus nyata Pembangkit Listrik Tenaga Hibrid (PLTH) di Pantai Baru Pandansimo, Bantul — mulai dari potensi, implementasi, hingga tantangan teknis dan solusinya.",
+   "en": "This site combines Zero Waste education with a real case study of the Hybrid Power Plant (PLTH) at Pantai Baru Pandansimo, Bantul — covering its potential, implementation, and the technical challenges and solutions involved."
+  },
+  {
+   "key": "index.4",
+   "label": "Kenali Hierarki Zero Waste",
+   "id": "Kenali Hierarki Zero Waste",
+   "en": "Explore the Zero Waste Hierarchy"
+  },
+  {
+   "key": "index.5",
+   "label": "Profil Pandansimo",
+   "id": "Profil Pandansimo",
+   "en": "Pandansimo Profile"
+  },
+  {
+   "key": "index.6",
+   "label": "kapasitas listrik hibrid terpasang",
+   "id": "kapasitas listrik hibrid terpasang",
+   "en": "installed hybrid power capacity"
+  },
+  {
+   "key": "index.7",
+   "label": "turbin angin di kawasan pesisir",
+   "id": "turbin angin di kawasan pesisir",
+   "en": "wind turbines along the coast"
+  },
+  {
+   "key": "index.8",
+   "label": "warung yang terlayani listrik & biogas",
+   "id": "warung yang terlayani listrik &amp; biogas",
+   "en": "food stalls served by power &amp; biogas"
+  },
+  {
+   "key": "index.9",
+   "label": "awal mula program dibangun",
+   "id": "awal mula program dibangun",
+   "en": "the program's founding year"
+  },
+  {
+   "key": "index.10",
+   "label": "Tiga Pilar Situs Ini",
+   "id": "Tiga Pilar Situs Ini",
+   "en": "Three Pillars of This Site"
+  },
+  {
+   "key": "index.11",
+   "label": "Kerangka yang kami gunakan untuk menghubungkan teori Zero Wa",
+   "id": "Kerangka yang kami gunakan untuk menghubungkan teori Zero Waste dengan praktik nyata di lapangan.",
+   "en": "The framework we use to connect Zero Waste theory with real practice in the field."
+  },
+  {
+   "key": "index.12",
+   "label": "Edukasi",
+   "id": "Edukasi",
+   "en": "Education"
+  },
+  {
+   "key": "index.13",
+   "label": "Dasar-Dasar Zero Waste",
+   "id": "Dasar-Dasar Zero Waste",
+   "en": "Zero Waste Fundamentals"
+  },
+  {
+   "key": "index.14",
+   "label": "Prinsip ZWIA, hierarki lima tingkat, serta gerakan Zero Wast",
+   "id": "Prinsip ZWIA, hierarki lima tingkat, serta gerakan Zero Waste dunia dan Indonesia (AZWI dan lainnya).",
+   "en": "ZWIA principles, the five-tier hierarchy, and the global and Indonesian Zero Waste movements (AZWI and others)."
+  },
+  {
+   "key": "index.15",
+   "label": "Selengkapnya →",
+   "id": "Selengkapnya →",
+   "en": "Read more →"
+  },
+  {
+   "key": "index.16",
+   "label": "Studi Kasus",
+   "id": "Studi Kasus",
+   "en": "Case Study"
+  },
+  {
+   "key": "index.17",
+   "label": "Program Pandansimo",
+   "id": "Program Pandansimo",
+   "en": "The Pandansimo Program"
+  },
+  {
+   "key": "index.18",
+   "label": "Potensi kawasan, masterplan, teknologi yang diterapkan (turb",
+   "id": "Potensi kawasan, masterplan, teknologi yang diterapkan (turbin, biogas, surya), hingga kegiatan dan capaiannya.",
+   "en": "Area potential, the masterplan, the technologies applied (turbines, biogas, solar), and its activities and achievements."
+  },
+  {
+   "key": "index.19",
+   "label": "Selengkapnya →",
+   "id": "Selengkapnya →",
+   "en": "Read more →"
+  },
+  {
+   "key": "index.20",
+   "label": "Analisis Teknik",
+   "id": "Analisis Teknik",
+   "en": "Engineering Analysis"
+  },
+  {
+   "key": "index.21",
+   "label": "Tantangan & Solusi Teknis",
+   "id": "Tantangan &amp; Solusi Teknis",
+   "en": "Challenges &amp; Technical Solutions"
+  },
+  {
+   "key": "index.22",
+   "label": "Masalah nyata di lapangan — korosi, baterai, ketidakstabilan",
+   "id": "Masalah nyata di lapangan — korosi, baterai, ketidakstabilan angin — dan usulan solusi dari sudut pandang Teknik Mesin, Elektro, dan Industri.",
+   "en": "Real on-site problems — corrosion, batteries, unstable wind — and proposed solutions from a Mechanical, Electrical, and Industrial Engineering perspective."
+  },
+  {
+   "key": "index.23",
+   "label": "Selengkapnya →",
+   "id": "Selengkapnya →",
+   "en": "Read more →"
+  },
+  {
+   "key": "index.24",
+   "label": "Hierarki Zero Waste",
+   "id": "Hierarki Zero Waste",
+   "en": "The Zero Waste Hierarchy"
+  },
+  {
+   "key": "index.25",
+   "label": "Urutan prioritas dalam mengelola sumber daya dan sampah, dar",
+   "id": "Urutan prioritas dalam mengelola sumber daya dan sampah, dari yang paling disukai hingga pilihan terakhir.",
+   "en": "The order of priority for managing resources and waste, from most preferred to last resort."
+  },
+  {
+   "key": "index.26",
+   "label": "1. Reduce — Kurangi",
+   "id": "1. Reduce — Kurangi",
+   "en": "1. Reduce"
+  },
+  {
+   "key": "index.27",
+   "label": "2. Reuse — Gunakan Kembali",
+   "id": "2. Reuse — Gunakan Kembali",
+   "en": "2. Reuse"
+  },
+  {
+   "key": "index.28",
+   "label": "3. Recycle — Daur Ulang",
+   "id": "3. Recycle — Daur Ulang",
+   "en": "3. Recycle"
+  },
+  {
+   "key": "index.29",
+   "label": "4. Recovery — Pemulihan Energi",
+   "id": "4. Recovery — Pemulihan Energi",
+   "en": "4. Recovery"
+  },
+  {
+   "key": "index.30",
+   "label": "5. Disposal — Pembuangan Akhir",
+   "id": "5. Disposal — Pembuangan Akhir",
+   "en": "5. Disposal"
+  },
+  {
+   "key": "index.31",
+   "label": "Pelajari Tiap Tingkat",
+   "id": "Pelajari Tiap Tingkat",
+   "en": "Learn About Each Tier"
+  },
+  {
+   "key": "index.32",
+   "label": "Jelajahi Kisah Lengkap Pandansimo",
+   "id": "Jelajahi Kisah Lengkap Pandansimo",
+   "en": "Explore the Full Pandansimo Story"
+  },
+  {
+   "key": "index.33",
+   "label": "Dari potensi awal kawasan, masterplan, implementasi teknolog",
+   "id": "Dari potensi awal kawasan, masterplan, implementasi teknologi, hingga evaluasi dan rencana ke depan.",
+   "en": "From the area's initial potential and masterplan, to technology implementation, evaluation, and future plans."
+  },
+  {
+   "key": "index.34",
+   "label": "Mulai Jelajahi",
+   "id": "Mulai Jelajahi",
+   "en": "Start Exploring"
+  }
+ ],
+ "artikel.html": [
+  {
+   "key": "artikel.1",
+   "label": "Beranda",
+   "id": "Beranda",
+   "en": "Home"
+  },
+  {
+   "key": "artikel.2",
+   "label": "Artikel",
+   "id": "Artikel",
+   "en": "Articles"
+  },
+  {
+   "key": "artikel.3",
+   "label": "Baca & Pelajari",
+   "id": "Baca &amp; Pelajari",
+   "en": "Read &amp; Learn"
+  },
+  {
+   "key": "artikel.4",
+   "label": "Artikel",
+   "id": "Artikel",
+   "en": "Articles"
+  },
+  {
+   "key": "artikel.5",
+   "label": "Bacaan seputar prinsip Zero Waste dan perkembangan program e",
+   "id": "Bacaan seputar prinsip Zero Waste dan perkembangan program energi Pandansimo.",
+   "en": "Reads on Zero Waste principles and updates from the Pandansimo energy program."
+  }
+ ],
+ "tentang-kami.html": [
+  {
+   "key": "tentang-kami.d1",
+   "label": "Dosen — label kecil",
+   "id": "Dosen Pengampu",
+   "en": "Course Lecturer"
+  },
+  {
+   "key": "tentang-kami.d2",
+   "label": "Dosen — nama & gelar",
+   "id": "[Nama Dosen, Gelar]",
+   "en": "[Lecturer Name, Title]"
+  },
+  {
+   "key": "tentang-kami.d3",
+   "label": "Dosen — jabatan/mata kuliah",
+   "id": "Dosen Mata Kuliah Zero Waste",
+   "en": "Zero Waste Course Lecturer"
+  },
+  {
+   "key": "tentang-kami.d4",
+   "label": "Dosen — profil singkat",
+   "id": "Profil singkat dosen (bidang keahlian, riwayat pendidikan, penelitian) akan diisi lewat panel admin.",
+   "en": "A short lecturer profile (field of expertise, education, research) will be filled in via the admin panel."
+  },
+  {
+   "key": "tentang-kami.1",
+   "label": "Beranda",
+   "id": "Beranda",
+   "en": "Home"
+  },
+  {
+   "key": "tentang-kami.2",
+   "label": "Tentang Kami",
+   "id": "Tentang Kami",
+   "en": "About Us"
+  },
+  {
+   "key": "tentang-kami.3",
+   "label": "Tim Kami",
+   "id": "Tim Kami",
+   "en": "Our Team"
+  },
+  {
+   "key": "tentang-kami.4",
+   "label": "Tentang Kami",
+   "id": "Tentang Kami",
+   "en": "About Us"
+  },
+  {
+   "key": "tentang-kami.5",
+   "label": "Situs ini dikerjakan oleh empat mahasiswa lintas disiplin te",
+   "id": "Situs ini dikerjakan oleh empat mahasiswa lintas disiplin teknik, sebagai bagian dari tugas mata kuliah Zero Waste.",
+   "en": "This site was built by four students from across engineering disciplines, as part of a Zero Waste coursework assignment."
+  },
+  {
+   "key": "tentang-kami.6",
+   "label": "Anggota Tim",
+   "id": "Anggota Tim",
+   "en": "Team Member"
+  },
+  {
+   "key": "tentang-kami.7",
+   "label": "Anggota Tim",
+   "id": "Anggota Tim",
+   "en": "Team Member"
+  },
+  {
+   "key": "tentang-kami.8",
+   "label": "Anggota Tim",
+   "id": "Anggota Tim",
+   "en": "Team Member"
+  },
+  {
+   "key": "tentang-kami.9",
+   "label": "Anggota Tim",
+   "id": "Anggota Tim",
+   "en": "Team Member"
+  },
+  {
+   "key": "tentang-kami.10",
+   "label": "Foto dan peran masing-masing anggota masih berupa draf (inis",
+   "id": "Foto dan peran masing-masing anggota masih berupa draf (inisial sebagai avatar sementara). Setelah panel admin aktif, foto asli dan deskripsi peran tiap anggota (misalnya bidang Teknik Mesin, Elektro, atau Industri) bisa diunggah dan diedit langsung dari sana.",
+   "en": "Each member's photo and role are still a draft (initials used as a temporary avatar). Once the admin panel is active, real photos and each member's role description (e.g. Mechanical, Electrical, or Industrial Engineering) can be uploaded and edited directly from there."
+  },
+  {
+   "key": "tentang-kami.11",
+   "label": "Tentang Proyek Ini",
+   "id": "Tentang Proyek Ini",
+   "en": "About This Project"
+  },
+  {
+   "key": "tentang-kami.12",
+   "label": "Situs ini dibuat untuk memenuhi tugas mata kuliah Zero Waste",
+   "id": "Situs ini dibuat untuk memenuhi tugas mata kuliah Zero Waste, memadukan edukasi prinsip Zero Waste dengan studi kasus nyata program energi terbarukan di Pantai Baru Pandansimo, Bantul. Sebagai mahasiswa Teknik Mesin, Teknik Elektro, dan Teknik Industri, kami berfokus pada analisis teknis di balik keberhasilan dan tantangan program ini.",
+   "en": "This site was created to fulfill a Zero Waste coursework assignment, combining Zero Waste education with a real case study of the renewable energy program at Pantai Baru Pandansimo, Bantul. As students of Mechanical, Electrical, and Industrial Engineering, we focus on the technical analysis behind this program's successes and challenges."
+  }
+ ],
+ "kontak.html": [
+  {
+   "key": "kontak.1",
+   "label": "Beranda",
+   "id": "Beranda",
+   "en": "Home"
+  },
+  {
+   "key": "kontak.2",
+   "label": "Kontak",
+   "id": "Kontak",
+   "en": "Contact"
+  },
+  {
+   "key": "kontak.3",
+   "label": "Hubungi Kami",
+   "id": "Hubungi Kami",
+   "en": "Contact Us"
+  },
+  {
+   "key": "kontak.4",
+   "label": "Ada Pertanyaan atau Masukan?",
+   "id": "Ada Pertanyaan atau Masukan?",
+   "en": "Have a Question or Feedback?"
+  },
+  {
+   "key": "kontak.5",
+   "label": "Kami terbuka untuk diskusi seputar Zero Waste maupun studi k",
+   "id": "Kami terbuka untuk diskusi seputar Zero Waste maupun studi kasus Pandansimo.",
+   "en": "We welcome discussion about Zero Waste or the Pandansimo case study."
+  },
+  {
+   "key": "kontak.6",
+   "label": "Email",
+   "id": "Email",
+   "en": "Email"
+  },
+  {
+   "key": "kontak.7",
+   "label": "Lokasi Studi Kasus",
+   "id": "Lokasi Studi Kasus",
+   "en": "Case Study Location"
+  },
+  {
+   "key": "kontak.8",
+   "label": "Pantai Baru Pandansimo, Poncosari, Srandakan, Bantul, DIY",
+   "id": "Pantai Baru Pandansimo, Poncosari, Srandakan, Bantul, DIY",
+   "en": "Pantai Baru Pandansimo, Poncosari, Srandakan, Bantul, Yogyakarta"
+  },
+  {
+   "key": "kontak.9",
+   "label": "Tim",
+   "id": "Tim",
+   "en": "Team"
+  },
+  {
+   "key": "kontak.10",
+   "label": "4 mahasiswa — Teknik Mesin, Elektro & Industri",
+   "id": "4 mahasiswa — Teknik Mesin, Elektro &amp; Industri",
+   "en": "4 students — Mechanical, Electrical &amp; Industrial Engineering"
+  },
+  {
+   "key": "kontak.11",
+   "label": "Lihat profil tim lengkap →",
+   "id": "Lihat profil tim lengkap →",
+   "en": "See full team profile →"
+  },
+  {
+   "key": "kontak.12",
+   "label": "Nama",
+   "id": "Nama",
+   "en": "Name"
+  },
+  {
+   "key": "kontak.13",
+   "label": "Email",
+   "id": "Email",
+   "en": "Email"
+  },
+  {
+   "key": "kontak.14",
+   "label": "Pesan",
+   "id": "Pesan",
+   "en": "Message"
+  },
+  {
+   "key": "kontak.15",
+   "label": "Kirim Pesan",
+   "id": "Kirim Pesan",
+   "en": "Send Message"
+  },
+  {
+   "key": "kontak.16",
+   "label": "Terima kasih! Pesanmu sudah tercatat (demo tampilan, belum t",
+   "id": "Terima kasih! Pesanmu sudah tercatat (demo tampilan, belum terhubung ke sistem pengiriman).",
+   "en": "Thank you! Your message has been noted (display demo, not yet connected to a sending system)."
+  }
+ ],
+ "zero-waste.html": [
+  {
+   "key": "zero-waste.1",
+   "label": "Label kecil di atas judul",
+   "id": "Zero Waste",
+   "en": "Zero Waste"
+  },
+  {
+   "key": "zero-waste.2",
+   "label": "Judul halaman menu Zero Waste",
+   "id": "Zero Waste",
+   "en": "Zero Waste"
+  },
+  {
+   "key": "zero-waste.3",
+   "label": "Kalimat pembuka",
+   "id": "Dasar-dasar, hierarki, gerakan dunia dan Indonesia, serta rekayasa hijau.",
+   "en": "The fundamentals, hierarchy, global and Indonesian movements, and green engineering."
+  }
+ ],
+ "pandansimo.html": [
+  {
+   "key": "pandansimo.1",
+   "label": "Label kecil di atas judul",
+   "id": "Pandansimo",
+   "en": "Pandansimo"
+  },
+  {
+   "key": "pandansimo.2",
+   "label": "Judul halaman menu Pandansimo",
+   "id": "Studi Kasus Pandansimo",
+   "en": "Pandansimo Case Study"
+  },
+  {
+   "key": "pandansimo.3",
+   "label": "Kalimat pembuka",
+   "id": "Profil, potensi, masterplan, implementasi teknologi, kegiatan, capaian, dan analisis kawasan Pantai Baru Pandansimo.",
+   "en": "Profile, potential, masterplan, technology implementation, activities, achievements, and analysis of the Pantai Baru Pandansimo area."
+  }
+ ]
 }

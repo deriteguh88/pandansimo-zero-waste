@@ -1,176 +1,74 @@
 {
-  "hero.index": {
-    "label": "Foto hero — index",
-    "kind": "hero",
-    "defaultUrl": "https://picsum.photos/seed/pandansimo-beach/1600/700",
-    "page": "index.html"
-  },
-  "hero.zw-tentang": {
-    "label": "Foto hero — zw-tentang",
-    "kind": "hero",
-    "defaultUrl": null,
-    "page": "zw-tentang.html"
-  },
-  "hero.zw-hierarki": {
-    "label": "Foto hero — zw-hierarki",
-    "kind": "hero",
-    "defaultUrl": null,
-    "page": "zw-hierarki.html"
-  },
-  "hero.zw-gerakan-dunia": {
-    "label": "Foto hero — zw-gerakan-dunia",
-    "kind": "hero",
-    "defaultUrl": null,
-    "page": "zw-gerakan-dunia.html"
-  },
-  "hero.zw-gerakan-indonesia": {
-    "label": "Foto hero — zw-gerakan-indonesia",
-    "kind": "hero",
-    "defaultUrl": null,
-    "page": "zw-gerakan-indonesia.html"
-  },
-  "hero.zw-rekayasa-hijau": {
-    "label": "Foto hero — zw-rekayasa-hijau",
-    "kind": "hero",
-    "defaultUrl": null,
-    "page": "zw-rekayasa-hijau.html"
-  },
-  "hero.pandansimo-profil": {
-    "label": "Foto hero — pandansimo-profil",
-    "kind": "hero",
-    "defaultUrl": "https://picsum.photos/seed/pandansimo-profil/1600/600",
-    "page": "pandansimo-profil.html"
-  },
-  "hero.pandansimo-potensi": {
-    "label": "Foto hero — pandansimo-potensi",
-    "kind": "hero",
-    "defaultUrl": "https://picsum.photos/seed/pandansimo-potensi/1600/600",
-    "page": "pandansimo-potensi.html"
-  },
-  "hero.pandansimo-masterplan": {
-    "label": "Foto hero — pandansimo-masterplan",
-    "kind": "hero",
-    "defaultUrl": null,
-    "page": "pandansimo-masterplan.html"
-  },
-  "hero.pandansimo-implementasi": {
-    "label": "Foto hero — pandansimo-implementasi",
-    "kind": "hero",
-    "defaultUrl": "https://picsum.photos/seed/pandansimo-turbin/1600/600",
-    "page": "pandansimo-implementasi.html"
-  },
-  "hero.pandansimo-kegiatan": {
-    "label": "Foto hero — pandansimo-kegiatan",
-    "kind": "hero",
-    "defaultUrl": null,
-    "page": "pandansimo-kegiatan.html"
-  },
-  "gallery.1": {
-    "label": "Galeri kegiatan foto 1",
-    "kind": "image",
-    "defaultUrl": "https://picsum.photos/seed/kegiatan1/500/360",
-    "page": "pandansimo-kegiatan.html"
-  },
-  "gallery.2": {
-    "label": "Galeri kegiatan foto 2",
-    "kind": "image",
-    "defaultUrl": "https://picsum.photos/seed/kegiatan2/500/360",
-    "page": "pandansimo-kegiatan.html"
-  },
-  "gallery.3": {
-    "label": "Galeri kegiatan foto 3",
-    "kind": "image",
-    "defaultUrl": "https://picsum.photos/seed/kegiatan3/500/360",
-    "page": "pandansimo-kegiatan.html"
-  },
-  "gallery.4": {
-    "label": "Galeri kegiatan foto 4",
-    "kind": "image",
-    "defaultUrl": "https://picsum.photos/seed/kegiatan4/500/360",
-    "page": "pandansimo-kegiatan.html"
-  },
-  "gallery.5": {
-    "label": "Galeri kegiatan foto 5",
-    "kind": "image",
-    "defaultUrl": "https://picsum.photos/seed/kegiatan5/500/360",
-    "page": "pandansimo-kegiatan.html"
-  },
-  "gallery.6": {
-    "label": "Galeri kegiatan foto 6",
-    "kind": "image",
-    "defaultUrl": "https://picsum.photos/seed/kegiatan6/500/360",
-    "page": "pandansimo-kegiatan.html"
-  },
-  "hero.pandansimo-capaian": {
-    "label": "Foto hero — pandansimo-capaian",
-    "kind": "hero",
-    "defaultUrl": null,
-    "page": "pandansimo-capaian.html"
-  },
-  "hero.pandansimo-analisis": {
-    "label": "Foto hero — pandansimo-analisis",
-    "kind": "hero",
-    "defaultUrl": null,
-    "page": "pandansimo-analisis.html"
-  },
-  "hero.pandansimo-solusi": {
-    "label": "Foto hero — pandansimo-solusi",
-    "kind": "hero",
-    "defaultUrl": null,
-    "page": "pandansimo-solusi.html"
-  },
-  "hero.artikel": {
-    "label": "Foto hero — artikel",
-    "kind": "hero",
-    "defaultUrl": null,
-    "page": "artikel.html"
-  },
-  "hero.tentang-kami": {
-    "label": "Foto hero — tentang-kami",
-    "kind": "hero",
-    "defaultUrl": null,
-    "page": "tentang-kami.html"
-  },
-  "dosen.1": {
-    "label": "Foto dosen pengampu",
-    "kind": "avatar",
-    "defaultUrl": null,
-    "page": "tentang-kami.html"
-  },
-  "team.1": {
-    "label": "Foto anggota tim 1 (DT)",
-    "kind": "avatar",
-    "defaultUrl": null,
-    "page": "tentang-kami.html"
-  },
-  "team.2": {
-    "label": "Foto anggota tim 2 (RP)",
-    "kind": "avatar",
-    "defaultUrl": null,
-    "page": "tentang-kami.html"
-  },
-  "team.3": {
-    "label": "Foto anggota tim 3 (RB)",
-    "kind": "avatar",
-    "defaultUrl": null,
-    "page": "tentang-kami.html"
-  },
-  "team.4": {
-    "label": "Foto anggota tim 4 (MR)",
-    "kind": "avatar",
-    "defaultUrl": null,
-    "page": "tentang-kami.html"
-  },
-  "hero.kontak": {
-    "label": "Foto hero — kontak",
-    "kind": "hero",
-    "defaultUrl": null,
-    "page": "kontak.html"
-  },
-  "hero.index.video": {
-    "label": "Video Banner Beranda (MP4, opsional — kosongkan untuk pakai foto saja)",
-    "kind": "video",
-    "defaultUrl": null,
-    "page": "index.html"
-  }
+ "hero.index": {
+  "label": "Foto hero — index",
+  "kind": "hero",
+  "defaultUrl": "https://picsum.photos/seed/pandansimo-beach/1600/700",
+  "page": "index.html"
+ },
+ "hero.artikel": {
+  "label": "Foto hero — artikel",
+  "kind": "hero",
+  "defaultUrl": null,
+  "page": "artikel.html"
+ },
+ "hero.tentang-kami": {
+  "label": "Foto hero — tentang-kami",
+  "kind": "hero",
+  "defaultUrl": null,
+  "page": "tentang-kami.html"
+ },
+ "dosen.1": {
+  "label": "Foto dosen pengampu",
+  "kind": "avatar",
+  "defaultUrl": null,
+  "page": "tentang-kami.html"
+ },
+ "team.1": {
+  "label": "Foto anggota tim 1 (DT)",
+  "kind": "avatar",
+  "defaultUrl": null,
+  "page": "tentang-kami.html"
+ },
+ "team.2": {
+  "label": "Foto anggota tim 2 (RP)",
+  "kind": "avatar",
+  "defaultUrl": null,
+  "page": "tentang-kami.html"
+ },
+ "team.3": {
+  "label": "Foto anggota tim 3 (RB)",
+  "kind": "avatar",
+  "defaultUrl": null,
+  "page": "tentang-kami.html"
+ },
+ "team.4": {
+  "label": "Foto anggota tim 4 (MR)",
+  "kind": "avatar",
+  "defaultUrl": null,
+  "page": "tentang-kami.html"
+ },
+ "hero.kontak": {
+  "label": "Foto hero — kontak",
+  "kind": "hero",
+  "defaultUrl": null,
+  "page": "kontak.html"
+ },
+ "hero.index.video": {
+  "label": "Video Banner Beranda (MP4, opsional — kosongkan untuk pakai foto saja)",
+  "kind": "video",
+  "defaultUrl": null,
+  "page": "index.html"
+ },
+ "hero.zero-waste": {
+  "label": "Foto banner — menu Zero Waste",
+  "kind": "hero",
+  "defaultUrl": null,
+  "page": "zero-waste.html"
+ },
+ "hero.pandansimo": {
+  "label": "Foto banner — menu Pandansimo",
+  "kind": "hero",
+  "defaultUrl": "https://picsum.photos/seed/pandansimo-profil/1600/600",
+  "page": "pandansimo.html"
+ }
 }
