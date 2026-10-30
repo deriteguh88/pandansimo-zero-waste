@@ -12,6 +12,19 @@
   border:4px solid var(--green);overflow:hidden;
 }
 .member .avatar img{width:100%;height:100%;object-fit:cover;}
+.lecturer{display:flex;gap:28px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);margin-bottom:40px;}
+.lecturer .avatar{
+  width:150px;height:150px;border-radius:50%;flex:0 0 auto;
+  background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;
+  font-family:'Fraunces',serif;font-weight:700;font-size:2.4rem;
+  border:4px solid var(--green);overflow:hidden;
+}
+.lecturer .avatar img{width:100%;height:100%;object-fit:cover;}
+.lecturer .ltag{display:inline-block;background:var(--green);color:#fff;font-size:.74rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;padding:4px 12px;border-radius:4px;margin-bottom:10px;}
+.lecturer h2{margin:0 0 4px;font-size:1.4rem;}
+.lecturer .lrole{font-size:.9rem;color:var(--green-dark);font-weight:600;margin-bottom:10px;}
+.lecturer p{margin:0;font-size:.95rem;}
+@media (max-width:640px){.lecturer{flex-direction:column;text-align:center;}}
 .member h3{margin-bottom:2px;}
 .member .role{font-size:.85rem;color:var(--green-dark);font-weight:600;}
 </style>
@@ -38,6 +51,19 @@
 
 <section>
   <div class="wrap">
+    <div class="lecturer">
+      <div class="avatar"><span class="initials">DS</span><img data-img="dosen.1" alt="" style="display:none;"></div>
+      <div>
+        <span class="ltag" lang="id" data-k="tentang-kami.d1">Dosen Pengampu</span><span class="ltag" lang="en" hidden="" data-k="tentang-kami.d1">Course Lecturer</span>
+        <h2 lang="id" data-k="tentang-kami.d2">[Nama Dosen, Gelar]</h2>
+        <h2 lang="en" hidden="" data-k="tentang-kami.d2">[Lecturer Name, Title]</h2>
+        <div class="lrole" lang="id" data-k="tentang-kami.d3">Dosen Mata Kuliah Zero Waste</div>
+        <div class="lrole" lang="en" hidden="" data-k="tentang-kami.d3">Zero Waste Course Lecturer</div>
+        <p lang="id" data-k="tentang-kami.d4">Profil singkat dosen (bidang keahlian, riwayat pendidikan, penelitian) akan diisi lewat panel admin.</p>
+        <p lang="en" hidden="" data-k="tentang-kami.d4">A short lecturer profile (field of expertise, education, research) will be filled in via the admin panel.</p>
+      </div>
+    </div>
+
     <div class="grid cols-4">
       <div class="card member">
         <div class="avatar"><span class="initials">DT</span><img data-img="team.1" alt="" style="display:none;"></div>
