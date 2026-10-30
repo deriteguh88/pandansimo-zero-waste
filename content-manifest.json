@@ -2281,6 +2281,30 @@
   ],
   "tentang-kami.html": [
     {
+      "key": "tentang-kami.d1",
+      "label": "Dosen — label kecil",
+      "id": "Dosen Pengampu",
+      "en": "Course Lecturer"
+    },
+    {
+      "key": "tentang-kami.d2",
+      "label": "Dosen — nama & gelar",
+      "id": "[Nama Dosen, Gelar]",
+      "en": "[Lecturer Name, Title]"
+    },
+    {
+      "key": "tentang-kami.d3",
+      "label": "Dosen — jabatan/mata kuliah",
+      "id": "Dosen Mata Kuliah Zero Waste",
+      "en": "Zero Waste Course Lecturer"
+    },
+    {
+      "key": "tentang-kami.d4",
+      "label": "Dosen — profil singkat",
+      "id": "Profil singkat dosen (bidang keahlian, riwayat pendidikan, penelitian) akan diisi lewat panel admin.",
+      "en": "A short lecturer profile (field of expertise, education, research) will be filled in via the admin panel."
+    },
+    {
       "key": "tentang-kami.1",
       "label": "Beranda",
       "id": "Beranda",
