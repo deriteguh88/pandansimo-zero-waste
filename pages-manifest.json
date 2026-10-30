@@ -1,0 +1,210 @@
+[
+ {
+  "file": "zw-tentang.html",
+  "group": "zw",
+  "titleKey": "zw-tentang.5",
+  "leadKey": "zw-tentang.6",
+  "heroKey": "hero.zw-tentang",
+  "title": {
+   "id": "Apa itu Zero Waste?",
+   "en": "What is Zero Waste?"
+  },
+  "lead": {
+   "id": "Mengenal definisi resmi, prinsip dasar, dan filosofi di balik gerakan Zero Waste menurut Zero Waste International Alliance (ZWIA).",
+   "en": "Understanding the official definition, core principles, and philosophy behind the Zero Waste movement according to the Zero Waste International Alliance (ZWIA)."
+  },
+  "heroUrl": null
+ },
+ {
+  "file": "zw-hierarki.html",
+  "group": "zw",
+  "titleKey": "zw-hierarki.5",
+  "leadKey": "zw-hierarki.6",
+  "heroKey": "hero.zw-hierarki",
+  "title": {
+   "id": "Hierarki Zero Waste",
+   "en": "The Zero Waste Hierarchy"
+  },
+  "lead": {
+   "id": "Lima tingkat prioritas dalam mengelola sumber daya, dari yang paling dianjurkan hingga pilihan paling akhir.",
+   "en": "Five priority tiers for managing resources, from most preferred to last resort."
+  },
+  "heroUrl": null
+ },
+ {
+  "file": "zw-gerakan-dunia.html",
+  "group": "zw",
+  "titleKey": "zw-gerakan-dunia.5",
+  "leadKey": "zw-gerakan-dunia.6",
+  "heroKey": "hero.zw-gerakan-dunia",
+  "title": {
+   "id": "Gerakan Zero Waste di Dunia",
+   "en": "The Zero Waste Movement Around the World"
+  },
+  "lead": {
+   "id": "Dari aliansi internasional hingga kebijakan satu negara kota — berbagai pendekatan menuju minim sampah.",
+   "en": "From international alliances to one city-state's policy — various approaches toward a zero-waste future."
+  },
+  "heroUrl": null
+ },
+ {
+  "file": "zw-gerakan-indonesia.html",
+  "group": "zw",
+  "titleKey": "zw-gerakan-indonesia.5",
+  "leadKey": "zw-gerakan-indonesia.6",
+  "heroKey": "hero.zw-gerakan-indonesia",
+  "title": {
+   "id": "Gerakan Zero Waste di Indonesia",
+   "en": "The Zero Waste Movement in Indonesia"
+  },
+  "lead": {
+   "id": "Aliansi, komunitas, dan kebijakan yang mendorong Indonesia menuju bebas sampah.",
+   "en": "Alliances, communities, and policies pushing Indonesia toward a zero-waste future."
+  },
+  "heroUrl": null
+ },
+ {
+  "file": "zw-rekayasa-hijau.html",
+  "group": "zw",
+  "titleKey": "zw-rekayasa-hijau.5",
+  "leadKey": "zw-rekayasa-hijau.6",
+  "heroKey": "hero.zw-rekayasa-hijau",
+  "title": {
+   "id": "Rekayasa Hijau (Green Engineering)",
+   "en": "Green Engineering"
+  },
+  "lead": {
+   "id": "Bagaimana ilmu teknik — mesin, elektro, dan industri — menjadi alat nyata untuk mewujudkan Zero Waste, bukan sekadar slogan lingkungan.",
+   "en": "How engineering — mechanical, electrical, and industrial — becomes a real tool for achieving Zero Waste, not just an environmental slogan."
+  },
+  "heroUrl": null
+ },
+ {
+  "file": "pandansimo-profil.html",
+  "group": "pandansimo",
+  "titleKey": "pandansimo-profil.5",
+  "leadKey": "pandansimo-profil.6",
+  "heroKey": "hero.pandansimo-profil",
+  "title": {
+   "id": "Profil &amp; Sejarah Pantai Baru Pandansimo",
+   "en": "Profile &amp; History of Pantai Baru Pandansimo"
+  },
+  "lead": {
+   "id": "Mengenal lokasi, latar belakang kerja sama, dan perjalanan program energi terbarukan di pesisir selatan Bantul.",
+   "en": "Getting to know the location, the background of the collaboration, and the journey of the renewable energy program on Bantul's south coast."
+  },
+  "heroUrl": "https://picsum.photos/seed/pandansimo-profil/1600/600"
+ },
+ {
+  "file": "pandansimo-potensi.html",
+  "group": "pandansimo",
+  "titleKey": "pandansimo-potensi.5",
+  "leadKey": "pandansimo-potensi.6",
+  "heroKey": "hero.pandansimo-potensi",
+  "title": {
+   "id": "Potensi Kawasan Pandansimo",
+   "en": "Pandansimo Area Potential"
+  },
+  "lead": {
+   "id": "Tujuh aspek potensi yang menjadi dasar pengembangan kawasan ini menuju desa mandiri energi.",
+   "en": "Seven potential aspects that form the basis for developing this area into an energy-independent village."
+  },
+  "heroUrl": "https://picsum.photos/seed/pandansimo-potensi/1600/600"
+ },
+ {
+  "file": "pandansimo-masterplan.html",
+  "group": "pandansimo",
+  "titleKey": "pandansimo-masterplan.5",
+  "leadKey": "pandansimo-masterplan.6",
+  "heroKey": "hero.pandansimo-masterplan",
+  "title": {
+   "id": "Masterplan &amp; Rencana Kawasan",
+   "en": "Area Masterplan &amp; Plans"
+  },
+  "lead": {
+   "id": "Rencana pengembangan fasilitas yang pernah dirancang untuk melengkapi kawasan energi Pandansimo menjadi destinasi wisata terpadu.",
+   "en": "Facility-development plans once designed to complement the Pandansimo energy area into an integrated tourism destination."
+  },
+  "heroUrl": null
+ },
+ {
+  "file": "pandansimo-implementasi.html",
+  "group": "pandansimo",
+  "titleKey": "pandansimo-implementasi.5",
+  "leadKey": "pandansimo-implementasi.6",
+  "heroKey": "hero.pandansimo-implementasi",
+  "title": {
+   "id": "Implementasi &amp; Teknologi",
+   "en": "Implementation &amp; Technology"
+  },
+  "lead": {
+   "id": "Teknologi nyata yang sudah terpasang dan beroperasi di Pembangkit Listrik Tenaga Hibrid (PLTH) Pandansimo.",
+   "en": "Real technology already installed and operating at the Pandansimo Hybrid Power Plant (PLTH)."
+  },
+  "heroUrl": "https://picsum.photos/seed/pandansimo-turbin/1600/600"
+ },
+ {
+  "file": "pandansimo-kegiatan.html",
+  "group": "pandansimo",
+  "titleKey": "pandansimo-kegiatan.5",
+  "leadKey": "pandansimo-kegiatan.6",
+  "heroKey": "hero.pandansimo-kegiatan",
+  "title": {
+   "id": "Kegiatan &amp; Dokumentasi",
+   "en": "Activities &amp; Documentation"
+  },
+  "lead": {
+   "id": "Galeri kegiatan di kawasan Pandansimo — study tour, pelatihan, dan aktivitas komunitas.",
+   "en": "A gallery of activities in the Pandansimo area — study tours, training, and community activities."
+  },
+  "heroUrl": null
+ },
+ {
+  "file": "pandansimo-capaian.html",
+  "group": "pandansimo",
+  "titleKey": "pandansimo-capaian.5",
+  "leadKey": "pandansimo-capaian.6",
+  "heroKey": "hero.pandansimo-capaian",
+  "title": {
+   "id": "Capaian Saat Ini",
+   "en": "Current Achievements"
+  },
+  "lead": {
+   "id": "Manfaat terukur yang sudah dirasakan masyarakat sekitar dari program energi terbarukan Pandansimo.",
+   "en": "Measurable benefits already felt by the surrounding community from Pandansimo's renewable energy program."
+  },
+  "heroUrl": null
+ },
+ {
+  "file": "pandansimo-analisis.html",
+  "group": "pandansimo",
+  "titleKey": "pandansimo-analisis.5",
+  "leadKey": "pandansimo-analisis.6",
+  "heroKey": "hero.pandansimo-analisis",
+  "title": {
+   "id": "Analisis &amp; Evaluasi",
+   "en": "Analysis &amp; Evaluation"
+  },
+  "lead": {
+   "id": "Menilai program ini secara jujur — apa yang berhasil, apa yang belum, dan kenapa.",
+   "en": "An honest assessment of this program — what has worked, what hasn't, and why."
+  },
+  "heroUrl": null
+ },
+ {
+  "file": "pandansimo-solusi.html",
+  "group": "pandansimo",
+  "titleKey": "pandansimo-solusi.5",
+  "leadKey": "pandansimo-solusi.6",
+  "heroKey": "hero.pandansimo-solusi",
+  "title": {
+   "id": "Tantangan &amp; Solusi Teknis",
+   "en": "Challenges &amp; Technical Solutions"
+  },
+  "lead": {
+   "id": "Usulan solusi dari sudut pandang Teknik Mesin, Elektro, dan Industri untuk setiap masalah nyata di lapangan.",
+   "en": "Proposed solutions from a Mechanical, Electrical, and Industrial Engineering perspective for each real problem on site."
+  },
+  "heroUrl": null
+ }
+]

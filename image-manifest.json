@@ -125,42 +125,6 @@
     "defaultUrl": null,
     "page": "artikel.html"
   },
-  "artikel.1": {
-    "label": "Foto artikel 1",
-    "kind": "image",
-    "defaultUrl": "https://picsum.photos/seed/artikel1/500/340",
-    "page": "artikel.html"
-  },
-  "artikel.2": {
-    "label": "Foto artikel 2",
-    "kind": "image",
-    "defaultUrl": "https://picsum.photos/seed/artikel2/500/340",
-    "page": "artikel.html"
-  },
-  "artikel.3": {
-    "label": "Foto artikel 3",
-    "kind": "image",
-    "defaultUrl": "https://picsum.photos/seed/artikel3/500/340",
-    "page": "artikel.html"
-  },
-  "artikel.4": {
-    "label": "Foto artikel 4",
-    "kind": "image",
-    "defaultUrl": "https://picsum.photos/seed/artikel4/500/340",
-    "page": "artikel.html"
-  },
-  "artikel.5": {
-    "label": "Foto artikel 5",
-    "kind": "image",
-    "defaultUrl": "https://picsum.photos/seed/artikel5/500/340",
-    "page": "artikel.html"
-  },
-  "artikel.6": {
-    "label": "Foto artikel 6",
-    "kind": "image",
-    "defaultUrl": "https://picsum.photos/seed/artikel6/500/340",
-    "page": "artikel.html"
-  },
   "hero.tentang-kami": {
     "label": "Foto hero — tentang-kami",
     "kind": "hero",

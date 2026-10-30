@@ -269,3 +269,27 @@ footer.site .bottom{
   .grid.cols-4,.grid.cols-3,.grid.cols-2{grid-template-columns:1fr;}
   footer.site .grid{grid-template-columns:1fr;}
 }
+
+/* ---------- kartu artikel/materi (dipakai bersama) ---------- */
+.article-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);position:relative;transition:box-shadow .15s;}
+.article-card:hover{box-shadow:0 6px 22px rgba(14,42,71,.18);}
+.article-card img{width:100%;height:170px;object-fit:cover;display:block;}
+.article-card .body{padding:20px;}
+.article-card h3{font-size:1.02rem;margin-bottom:6px;}
+.article-card p{font-size:.9rem;margin:0;}
+.article-card .readmore a::after{content:"";position:absolute;inset:0;}
+.article-card p.clamp{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;}
+.grid.compact .article-card img{height:110px;}
+.grid.compact .article-card .body{padding:14px;}
+.grid.compact .article-card h3{font-size:.92rem;}
+.grid.compact .article-card p.clamp{-webkit-line-clamp:2;font-size:.82rem;}
+.pc-group{margin:30px 0 14px;font-size:1.05rem;color:var(--navy);}
+.pc-group small{color:var(--muted);font-weight:500;}
+.pc-group:first-child{margin-top:0;}
+.dropdown .dd-label{padding:8px 16px 4px;font-size:.7rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--line);margin-top:4px;}
+
+.article-card .tag{display:inline-block;background:#e8f3fc;color:var(--green-dark);font-size:.72rem;font-weight:800;letter-spacing:.03em;text-transform:uppercase;padding:3px 10px;border-radius:4px;margin-bottom:10px;}
+.article-card .thumbph{width:100%;height:170px;background:linear-gradient(135deg,var(--navy),var(--green-dark));display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.55);}
+.grid.compact .article-card .thumbph{height:110px;}
+.article-card{display:flex;flex-direction:column;}
+.article-card .body{flex:1;}

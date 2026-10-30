@@ -86,7 +86,7 @@
               '<span lang="id">'+c.id+'</span><span lang="en" hidden>'+c.en+'</span></a>';
           }).join('') + '</div>'
         : '';
-      return '<div class="navitem'+(isActive?' current':'')+'">' + head + kids + '</div>';
+      return '<div class="navitem'+(isActive?' current':'')+'" data-menu="'+item.id+'">' + head + kids + '</div>';
     }).join('');
 
     var nav =
@@ -192,6 +192,33 @@
     if(f) f.innerHTML = buildFooter();
     initLang();
     initNav();
+    loadMenuArticles();
+  }
+
+  // Artikel yang ditambahkan lewat admin ikut muncul di dropdown menu sesuai kategorinya
+  // (Zero Waste / Rekayasa Hijau -> menu Zero Waste; Pandansimo -> menu Pandansimo).
+  function loadMenuArticles(){
+    try{
+      if(!window.supabase || !window.ZW_SUPABASE_URL) return;
+      window.PZ_SB = window.PZ_SB || window.supabase.createClient(window.ZW_SUPABASE_URL, window.ZW_SUPABASE_KEY);
+      var MAP = { "Zero Waste":["Zero Waste","Rekayasa Hijau"], "Pandansimo":["Pandansimo"] };
+      window.PZ_SB.from('pz_articles').select('id,tag_id,title_id,title_en,created_at').order('created_at', { ascending:false }).then(function(res){
+        var rows = (res && res.data) || [];
+        var lang = document.documentElement.getAttribute('data-lang') || 'id';
+        Object.keys(MAP).forEach(function(menu){
+          var list = rows.filter(function(a){ return MAP[menu].indexOf(a.tag_id) !== -1; }).slice(0, 5);
+          var dd = document.querySelector('.navitem[data-menu="'+menu+'"] .dropdown');
+          if(!dd || !list.length) return;
+          var html = '<div class="dd-label"><span lang="id"'+(lang!=='id'?' hidden':'')+'>Artikel terbaru</span><span lang="en"'+(lang!=='en'?' hidden':'')+'>Latest articles</span></div>';
+          html += list.map(function(a){
+            var t = String(a.title_id||'').replace(/&/g,'&amp;').replace(/</g,'&lt;');
+            var te = String(a.title_en||a.title_id||'').replace(/&/g,'&amp;').replace(/</g,'&lt;');
+            return '<a href="artikel-baca.html?id='+encodeURIComponent(a.id)+'"><span lang="id"'+(lang!=='id'?' hidden':'')+'>'+t+'</span><span lang="en"'+(lang!=='en'?' hidden':'')+'>'+te+'</span></a>';
+          }).join('');
+          dd.insertAdjacentHTML('beforeend', html);
+        });
+      }, function(){});
+    }catch(e){}
   }
 
   if(document.readyState === 'loading'){
