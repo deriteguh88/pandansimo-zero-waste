@@ -167,6 +167,12 @@
     "defaultUrl": null,
     "page": "tentang-kami.html"
   },
+  "dosen.1": {
+    "label": "Foto dosen pengampu",
+    "kind": "avatar",
+    "defaultUrl": null,
+    "page": "tentang-kami.html"
+  },
   "team.1": {
     "label": "Foto anggota tim 1 (DT)",
     "kind": "avatar",
