@@ -420,6 +420,14 @@ function renderArticleForm(){
       '<textarea id="artExcId" rows="4" placeholder="Isi (ID)">'+esc(editing?editing.excerpt_id:'')+'</textarea>' +
       '<textarea id="artExcEn" rows="4" placeholder="Content (EN)">'+esc(editing?editing.excerpt_en:'')+'</textarea>' +
     '</div></div>' +
+    '<div class="field"><label>Isi Lengkap Artikel (dibuka lewat tombol &quot;Baca selengkapnya&quot;; pisahkan paragraf dengan baris kosong)</label>' +
+    '<div class="row2">' +
+      '<textarea id="artBodyId" rows="8" placeholder="Isi lengkap (ID)">'+esc(editing?editing.body_id:'')+'</textarea>' +
+      '<textarea id="artBodyEn" rows="8" placeholder="Full content (EN)">'+esc(editing?editing.body_en:'')+'</textarea>' +
+    '</div></div>' +
+    '<div class="field"><label>Link Video YouTube (opsional)</label>' +
+    '<input type="text" id="artYoutube" placeholder="Tempel link YouTube, contoh: https://www.youtube.com/watch?v=xxxx" value="'+esc(editing?editing.youtube_url:'')+'">' +
+    '</div>' +
     '<div class="field"><label>Gambar Artikel</label>' +
     '<div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;">' +
       (editing && editing.image_url ? '<img src="'+esc(editing.image_url)+'" style="width:100px;height:72px;object-fit:cover;border-radius:8px;border:1px solid var(--line);">' : '') +
@@ -474,7 +482,7 @@ function renderArticleForm(){
     var excId = document.getElementById('artExcId').value.trim();
     var isCustomSel = document.getElementById('artTagSelect').value === 'custom';
     var tagId = isCustomSel ? document.getElementById('artTagId').value.trim() : '';
-    if(!titleId && !excId && !tagId) return;
+    if(!titleId && !excId && !tagId && !document.getElementById('artBodyId').value.trim()) return;
     btn.disabled = true; btn.textContent = 'Menerjemahkan...';
     var translateOne = function(text){
       if(!text) return Promise.resolve('');
@@ -483,10 +491,34 @@ function renderArticleForm(){
         .then(function(d){ return (d && d.responseData && d.responseData.translatedText) || ''; })
         .catch(function(){ return ''; });
     };
-    Promise.all([translateOne(tagId), translateOne(titleId), translateOne(excId)]).then(function(res){
+    // Teks panjang dipecah per paragraf/kalimat (batas layanan gratis ±500 karakter) lalu digabung lagi.
+    var translateLong = function(text){
+      if(!text) return Promise.resolve('');
+      var chunks = [];
+      text.split(/\n\s*\n/).forEach(function(par, pi){
+        var cur = '';
+        (par.match(/[^.!?]+[.!?]*\s*/g) || [par]).forEach(function(sent){
+          if((cur + sent).length > 450 && cur){ chunks.push({t:cur.trim(), p:pi}); cur = ''; }
+          cur += sent;
+        });
+        if(cur.trim()) chunks.push({t:cur.trim(), p:pi});
+      });
+      var out = [], chain = Promise.resolve();
+      chunks.forEach(function(c){
+        chain = chain.then(function(){ return translateOne(c.t).then(function(r){ out.push({t:r||c.t, p:c.p}); }); });
+      });
+      return chain.then(function(){
+        var pars = [];
+        out.forEach(function(o){ pars[o.p] = (pars[o.p] ? pars[o.p] + ' ' : '') + o.t; });
+        return pars.filter(Boolean).join('\n\n');
+      });
+    };
+    var bodyId = document.getElementById('artBodyId').value.trim();
+    Promise.all([translateOne(tagId), translateOne(titleId), translateOne(excId), translateLong(bodyId)]).then(function(res){
       if(res[0]) document.getElementById('artTagEn').value = res[0];
       if(res[1]) document.getElementById('artTitleEn').value = res[1];
       if(res[2]) document.getElementById('artExcEn').value = res[2];
+      if(res[3]) document.getElementById('artBodyEn').value = res[3];
       btn.disabled = false; btn.textContent = '↻ Terjemahkan judul & isi dari ID';
     });
   });
@@ -510,6 +542,9 @@ function renderArticleForm(){
       title_en: document.getElementById('artTitleEn').value.trim(),
       excerpt_id: document.getElementById('artExcId').value.trim(),
       excerpt_en: document.getElementById('artExcEn').value.trim(),
+      body_id: document.getElementById('artBodyId').value.trim(),
+      body_en: document.getElementById('artBodyEn').value.trim(),
+      youtube_url: document.getElementById('artYoutube').value.trim() || null,
       image_url: document.getElementById('artPendingImageUrl').value || null,
     };
     if(!row.title_id){ statusEl.textContent = 'Judul (ID) wajib diisi.'; return; }
