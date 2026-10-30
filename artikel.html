@@ -141,18 +141,17 @@
     sectionEl.style.display = '';
     gridEl.innerHTML = list.map(function(a){
       var img = a.image_url || 'https://picsum.photos/seed/'+encodeURIComponent(a.id)+'/500/340';
+      var href = 'artikel-baca.html?id=' + encodeURIComponent(a.id);
+      var tagEn = a.tag_en || a.tag_id, titleEn = a.title_en || a.title_id, excEn = a.excerpt_en || a.excerpt_id;
       return '<article class="article-card">' +
-        '<img src="'+esc(img)+'" alt="">' +
+        '<a href="'+href+'" style="display:block;"><img src="'+esc(img)+'" alt=""></a>' +
         '<div class="body">' +
-          (a.tag_id ? '<span class="tag" lang="id">'+esc(a.tag_id)+'</span>' : '') +
-          (a.tag_en ? '<span class="tag" lang="en" hidden>'+esc(a.tag_en)+'</span>' : '') +
-          '<h3 lang="id">'+esc(a.title_id||'')+'</h3>' +
-          (a.title_en ? '<h3 lang="en" hidden>'+esc(a.title_en)+'</h3>' : '') +
-          '<p lang="id">'+esc(a.excerpt_id||'')+'</p>' +
-          (a.excerpt_en ? '<p lang="en" hidden>'+esc(a.excerpt_en)+'</p>' : '') +
+          (a.tag_id ? '<span class="tag" lang="id">'+esc(a.tag_id)+'</span><span class="tag" lang="en" hidden>'+esc(tagEn)+'</span>' : '') +
+          '<h3><a href="'+href+'" style="color:inherit;"><span lang="id">'+esc(a.title_id||'')+'</span><span lang="en" hidden>'+esc(titleEn)+'</span></a></h3>' +
+          '<p lang="id">'+esc(a.excerpt_id||'')+'</p><p lang="en" hidden>'+esc(excEn||'')+'</p>' +
+          '<p style="margin-top:10px;"><a href="'+href+'" style="font-weight:600;"><span lang="id">Baca selengkapnya →</span><span lang="en" hidden>Read more →</span></a></p>' +
         '</div></article>';
     }).join('');
-    // Samakan dengan bahasa yang sedang aktif di halaman.
     var curLang = document.documentElement.getAttribute('data-lang') || 'id';
     gridEl.querySelectorAll('[lang="id"]').forEach(function(el){ el.hidden = (curLang !== 'id'); });
     gridEl.querySelectorAll('[lang="en"]').forEach(function(el){ el.hidden = (curLang !== 'en'); });
