@@ -431,6 +431,12 @@
    "label": "Terima kasih! Pesanmu sudah tercatat (demo tampilan, belum t",
    "id": "Terima kasih! Pesanmu sudah tercatat (demo tampilan, belum terhubung ke sistem pengiriman).",
    "en": "Thank you! Your message has been noted (display demo, not yet connected to a sending system)."
+  },
+  {
+   "key": "kontak.17",
+   "label": "Alamat email kontak",
+   "id": "zerowaste.pandansimo@example.ac.id",
+   "en": "zerowaste.pandansimo@example.ac.id"
   }
  ],
  "zero-waste.html": [
